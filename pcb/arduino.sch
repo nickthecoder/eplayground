@@ -1102,4 +1102,80 @@ Wire Wire Line
 	1900 5400 2250 5400
 Text Label 2250 4800 0    60   ~ 0
 VCC
+$Comp
+L I2CHeader I2C1
+U 1 1 5AC03259
+P 5800 6200
+F 0 "I2C1" H 5950 5800 60  0000 C CNN
+F 1 "I2CHeader" H 5950 6300 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 5600 6250 60  0001 C CNN
+F 3 "" H 5600 6250 60  0001 C CNN
+	1    5800 6200
+	1    0    0    -1  
+$EndComp
+Text Label 5600 6200 2    60   ~ 0
+GND
+Text Label 5600 6300 2    60   ~ 0
+VCC
+Text Label 5600 6400 2    60   ~ 0
+SCK
+Text Label 5600 6500 2    60   ~ 0
+SDA
+$Comp
+L I2CHeader I2C2
+U 1 1 5AC03A28
+P 5800 6800
+F 0 "I2C2" H 5950 6400 60  0000 C CNN
+F 1 "I2CHeader" H 5950 6900 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 5600 6850 60  0001 C CNN
+F 3 "" H 5600 6850 60  0001 C CNN
+	1    5800 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2CHeader I2C3
+U 1 1 5AC03CEB
+P 6550 6200
+F 0 "I2C3" H 6700 5800 60  0000 C CNN
+F 1 "I2CHeader" H 6700 6300 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6350 6250 60  0001 C CNN
+F 3 "" H 6350 6250 60  0001 C CNN
+	1    6550 6200
+	1    0    0    -1  
+$EndComp
+Text Label 5600 6800 2    60   ~ 0
+GND
+Text Label 5600 6900 2    60   ~ 0
+VCC
+Text Label 5600 7000 2    60   ~ 0
+SCK
+Text Label 5600 7100 2    60   ~ 0
+SDA
+Text Label 6350 6200 2    60   ~ 0
+GND
+Text Label 6350 6300 2    60   ~ 0
+VCC
+Text Label 6350 6400 2    60   ~ 0
+SCK
+Text Label 6350 6500 2    60   ~ 0
+SDA
+$Comp
+L I2CHeader I2C?
+U 1 1 5AC04627
+P 6550 6850
+F 0 "I2C?" H 6700 6450 60  0000 C CNN
+F 1 "I2CHeader" H 6700 6950 60  0000 C CNN
+F 2 "" H 6350 6900 60  0001 C CNN
+F 3 "" H 6350 6900 60  0001 C CNN
+	1    6550 6850
+	1    0    0    -1  
+$EndComp
+Text Label 6350 6850 2    60   ~ 0
+GND
+Text Label 6350 6950 2    60   ~ 0
+VCC
+Text Label 6350 7050 2    60   ~ 0
+SCK
+Text Label 6350 7150 2    60   ~ 0
+SDA
 $EndSCHEMATC
