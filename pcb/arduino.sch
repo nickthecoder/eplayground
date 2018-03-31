@@ -31,6 +31,8 @@ LIBS:contrib
 LIBS:valves
 LIBS:eplay
 LIBS:Switch
+LIBS:arduino
+LIBS:arduino-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -69,45 +71,45 @@ Text Label 4500 6150 2    60   ~ 0
 VIN
 Text Label 4500 6350 2    60   ~ 0
 3V3
-Text Label 4450 4300 2    60   ~ 0
+Text Label 9500 750  2    60   ~ 0
 VIN
-Text Label 4450 4400 2    60   ~ 0
+Text Label 9500 850  2    60   ~ 0
 VCC
-Text Label 4450 4500 2    60   ~ 0
+Text Label 9500 950  2    60   ~ 0
 3V3
-Text Label 4450 4600 2    60   ~ 0
+Text Label 9500 1050 2    60   ~ 0
 GND
-Text Label 4450 5500 2    60   ~ 0
+Text Label 9500 1950 2    60   ~ 0
 D9
-Text Label 4450 5400 2    60   ~ 0
+Text Label 9500 1850 2    60   ~ 0
 D8
-Text Label 4450 5300 2    60   ~ 0
+Text Label 9500 1750 2    60   ~ 0
 D7
-Text Label 4450 5200 2    60   ~ 0
+Text Label 9500 1650 2    60   ~ 0
 D6
-Text Label 4450 5100 2    60   ~ 0
+Text Label 9500 1550 2    60   ~ 0
 D5
-Text Label 4450 5000 2    60   ~ 0
+Text Label 9500 1450 2    60   ~ 0
 D4
-Text Label 4450 4900 2    60   ~ 0
+Text Label 9500 1350 2    60   ~ 0
 D3
-Text Label 4450 4800 2    60   ~ 0
+Text Label 9500 1250 2    60   ~ 0
 D2
-Text Label 5450 4300 2    60   ~ 0
+Text Label 10500 750  2    60   ~ 0
 VIN
-Text Label 5450 4400 2    60   ~ 0
+Text Label 10500 850  2    60   ~ 0
 VCC
-Text Label 5450 4500 2    60   ~ 0
+Text Label 10500 950  2    60   ~ 0
 3V3
-Text Label 5450 4600 2    60   ~ 0
+Text Label 10500 1050 2    60   ~ 0
 GND
-Text Label 5450 5500 2    60   ~ 0
+Text Label 10500 1950 2    60   ~ 0
 RXD
-Text Label 5450 5400 2    60   ~ 0
+Text Label 10500 1850 2    60   ~ 0
 TXD
-Text Label 5450 5200 2    60   ~ 0
+Text Label 10500 1650 2    60   ~ 0
 MOSI
-Text Label 5450 5100 2    60   ~ 0
+Text Label 10500 1550 2    60   ~ 0
 MISO
 Text Label 3550 1450 0    60   ~ 0
 MISO
@@ -171,13 +173,13 @@ Text Label 3500 2650 0    60   ~ 0
 RXD
 Text Label 3500 2750 0    60   ~ 0
 TXD
-Text Label 5450 4900 2    60   ~ 0
+Text Label 10500 1350 2    60   ~ 0
 SDA
-Text Label 5450 4800 2    60   ~ 0
+Text Label 10500 1250 2    60   ~ 0
 SCL
-Text Label 5450 5000 2    60   ~ 0
+Text Label 10500 1450 2    60   ~ 0
 SCK
-Text Label 5450 5300 2    60   ~ 0
+Text Label 10500 1750 2    60   ~ 0
 D10
 Text Label 4500 6750 0    60   ~ 0
 A1
@@ -197,188 +199,188 @@ $EndComp
 $Comp
 L R R2
 U 1 1 5ABE6E7A
-P 3050 4800
-F 0 "R2" V 3050 4550 50  0000 C CNN
-F 1 "R" V 3050 4800 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2980 4800 50  0001 C CNN
-F 3 "" H 3050 4800 50  0001 C CNN
-	1    3050 4800
+P 8100 1250
+F 0 "R2" V 8100 1000 50  0000 C CNN
+F 1 "R" V 8100 1250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8030 1250 50  0001 C CNN
+F 3 "" H 8100 1250 50  0001 C CNN
+	1    8100 1250
 	0    1    1    0   
 $EndComp
 $Comp
 L R R3
 U 1 1 5ABE6EB5
-P 3050 4900
-F 0 "R3" V 3050 4650 50  0000 C CNN
-F 1 "R" V 3050 4900 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2980 4900 50  0001 C CNN
-F 3 "" H 3050 4900 50  0001 C CNN
-	1    3050 4900
+P 8100 1350
+F 0 "R3" V 8100 1100 50  0000 C CNN
+F 1 "R" V 8100 1350 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8030 1350 50  0001 C CNN
+F 3 "" H 8100 1350 50  0001 C CNN
+	1    8100 1350
 	0    1    1    0   
 $EndComp
 $Comp
 L R R4
 U 1 1 5ABE6EDE
-P 3050 5000
-F 0 "R4" V 3050 4750 50  0000 C CNN
-F 1 "R" V 3050 5000 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2980 5000 50  0001 C CNN
-F 3 "" H 3050 5000 50  0001 C CNN
-	1    3050 5000
+P 8100 1450
+F 0 "R4" V 8100 1200 50  0000 C CNN
+F 1 "R" V 8100 1450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8030 1450 50  0001 C CNN
+F 3 "" H 8100 1450 50  0001 C CNN
+	1    8100 1450
 	0    1    1    0   
 $EndComp
 $Comp
 L R R5
 U 1 1 5ABE6F03
-P 3050 5100
-F 0 "R5" V 3050 4850 50  0000 C CNN
-F 1 "R" V 3050 5100 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2980 5100 50  0001 C CNN
-F 3 "" H 3050 5100 50  0001 C CNN
-	1    3050 5100
+P 8100 1550
+F 0 "R5" V 8100 1300 50  0000 C CNN
+F 1 "R" V 8100 1550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8030 1550 50  0001 C CNN
+F 3 "" H 8100 1550 50  0001 C CNN
+	1    8100 1550
 	0    1    1    0   
 $EndComp
 $Comp
 L R R6
 U 1 1 5ABE6F2E
-P 3050 5200
-F 0 "R6" V 3050 4950 50  0000 C CNN
-F 1 "R" V 3050 5200 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2980 5200 50  0001 C CNN
-F 3 "" H 3050 5200 50  0001 C CNN
-	1    3050 5200
+P 8100 1650
+F 0 "R6" V 8100 1400 50  0000 C CNN
+F 1 "R" V 8100 1650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8030 1650 50  0001 C CNN
+F 3 "" H 8100 1650 50  0001 C CNN
+	1    8100 1650
 	0    1    1    0   
 $EndComp
 $Comp
 L R R7
 U 1 1 5ABE6F5F
-P 3050 5300
-F 0 "R7" V 3050 5050 50  0000 C CNN
-F 1 "R" V 3050 5300 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2980 5300 50  0001 C CNN
-F 3 "" H 3050 5300 50  0001 C CNN
-	1    3050 5300
+P 8100 1750
+F 0 "R7" V 8100 1500 50  0000 C CNN
+F 1 "R" V 8100 1750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8030 1750 50  0001 C CNN
+F 3 "" H 8100 1750 50  0001 C CNN
+	1    8100 1750
 	0    1    1    0   
 $EndComp
 $Comp
 L R R8
 U 1 1 5ABE6F8E
-P 3050 5400
-F 0 "R8" V 3050 5150 50  0000 C CNN
-F 1 "R" V 3050 5400 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2980 5400 50  0001 C CNN
-F 3 "" H 3050 5400 50  0001 C CNN
-	1    3050 5400
+P 8100 1850
+F 0 "R8" V 8100 1600 50  0000 C CNN
+F 1 "R" V 8100 1850 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8030 1850 50  0001 C CNN
+F 3 "" H 8100 1850 50  0001 C CNN
+	1    8100 1850
 	0    1    1    0   
 $EndComp
 $Comp
 L R R9
 U 1 1 5ABE6FC7
-P 3050 5500
-F 0 "R9" V 3050 5250 50  0000 C CNN
-F 1 "R" V 3050 5500 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2980 5500 50  0001 C CNN
-F 3 "" H 3050 5500 50  0001 C CNN
-	1    3050 5500
+P 8100 1950
+F 0 "R9" V 8100 1700 50  0000 C CNN
+F 1 "R" V 8100 1950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 8030 1950 50  0001 C CNN
+F 3 "" H 8100 1950 50  0001 C CNN
+	1    8100 1950
 	0    1    1    0   
 $EndComp
 $Comp
 L SW_DIP_x08 SW1
 U 1 1 5ABE72D6
-P 3500 5200
-F 0 "SW1" H 3500 5750 50  0000 C CNN
-F 1 "SW_DIP_x08" H 3500 4750 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_DIP_x8_W7.62mm_Slide" H 3500 5200 50  0001 C CNN
-F 3 "" H 3500 5200 50  0001 C CNN
-	1    3500 5200
+P 8550 1650
+F 0 "SW1" H 8550 2200 50  0000 C CNN
+F 1 "SW_DIP_x08" H 8550 1200 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_DIP_x8_W7.62mm_Slide" H 8550 1650 50  0001 C CNN
+F 3 "" H 8550 1650 50  0001 C CNN
+	1    8550 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED D2
 U 1 1 5ABE8776
-P 3950 4800
-F 0 "D2" H 4150 4850 50  0000 C CNN
-F 1 "LED" H 3800 4850 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 3950 4800 50  0001 C CNN
-F 3 "" H 3950 4800 50  0001 C CNN
-	1    3950 4800
+P 9000 1250
+F 0 "D2" H 9200 1300 50  0000 C CNN
+F 1 "LED" H 8850 1300 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 9000 1250 50  0001 C CNN
+F 3 "" H 9000 1250 50  0001 C CNN
+	1    9000 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED D3
 U 1 1 5ABE87B3
-P 3950 4900
-F 0 "D3" H 4150 4950 50  0000 C CNN
-F 1 "LED" H 3800 4950 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 3950 4900 50  0001 C CNN
-F 3 "" H 3950 4900 50  0001 C CNN
-	1    3950 4900
+P 9000 1350
+F 0 "D3" H 9200 1400 50  0000 C CNN
+F 1 "LED" H 8850 1400 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 9000 1350 50  0001 C CNN
+F 3 "" H 9000 1350 50  0001 C CNN
+	1    9000 1350
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED D4
 U 1 1 5ABE87E8
-P 3950 5000
-F 0 "D4" H 4150 5050 50  0000 C CNN
-F 1 "LED" H 3800 5050 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 3950 5000 50  0001 C CNN
-F 3 "" H 3950 5000 50  0001 C CNN
-	1    3950 5000
+P 9000 1450
+F 0 "D4" H 9200 1500 50  0000 C CNN
+F 1 "LED" H 8850 1500 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 9000 1450 50  0001 C CNN
+F 3 "" H 9000 1450 50  0001 C CNN
+	1    9000 1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED D5
 U 1 1 5ABE881D
-P 3950 5100
-F 0 "D5" H 4150 5150 50  0000 C CNN
-F 1 "LED" H 3800 5150 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 3950 5100 50  0001 C CNN
-F 3 "" H 3950 5100 50  0001 C CNN
-	1    3950 5100
+P 9000 1550
+F 0 "D5" H 9200 1600 50  0000 C CNN
+F 1 "LED" H 8850 1600 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 9000 1550 50  0001 C CNN
+F 3 "" H 9000 1550 50  0001 C CNN
+	1    9000 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED D6
 U 1 1 5ABE8858
-P 3950 5200
-F 0 "D6" H 4150 5250 50  0000 C CNN
-F 1 "LED" H 3800 5250 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 3950 5200 50  0001 C CNN
-F 3 "" H 3950 5200 50  0001 C CNN
-	1    3950 5200
+P 9000 1650
+F 0 "D6" H 9200 1700 50  0000 C CNN
+F 1 "LED" H 8850 1700 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 9000 1650 50  0001 C CNN
+F 3 "" H 9000 1650 50  0001 C CNN
+	1    9000 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED D7
 U 1 1 5ABE8895
-P 3950 5300
-F 0 "D7" H 4150 5350 50  0000 C CNN
-F 1 "LED" H 3800 5350 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 3950 5300 50  0001 C CNN
-F 3 "" H 3950 5300 50  0001 C CNN
-	1    3950 5300
+P 9000 1750
+F 0 "D7" H 9200 1800 50  0000 C CNN
+F 1 "LED" H 8850 1800 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 9000 1750 50  0001 C CNN
+F 3 "" H 9000 1750 50  0001 C CNN
+	1    9000 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED D8
 U 1 1 5ABE88D4
-P 3950 5400
-F 0 "D8" H 4150 5450 50  0000 C CNN
-F 1 "LED" H 3800 5450 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 3950 5400 50  0001 C CNN
-F 3 "" H 3950 5400 50  0001 C CNN
-	1    3950 5400
+P 9000 1850
+F 0 "D8" H 9200 1900 50  0000 C CNN
+F 1 "LED" H 8850 1900 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 9000 1850 50  0001 C CNN
+F 3 "" H 9000 1850 50  0001 C CNN
+	1    9000 1850
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED D9
 U 1 1 5ABE8915
-P 3950 5500
-F 0 "D9" H 4150 5550 50  0000 C CNN
-F 1 "LED" H 3800 5550 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 3950 5500 50  0001 C CNN
-F 3 "" H 3950 5500 50  0001 C CNN
-	1    3950 5500
+P 9000 1950
+F 0 "D9" H 9200 2000 50  0000 C CNN
+F 1 "LED" H 8850 2000 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 9000 1950 50  0001 C CNN
+F 3 "" H 9000 1950 50  0001 C CNN
+	1    9000 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -494,23 +496,23 @@ $EndComp
 $Comp
 L ePlayOutput O2
 U 1 1 5ABF3FC4
-P 4750 4100
-F 0 "O2" H 4750 2550 60  0000 C CNN
-F 1 "Digital" H 4800 4050 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x13_Pitch2.54mm" H 4800 4050 60  0001 C CNN
-F 3 "" H 4800 4050 60  0001 C CNN
-	1    4750 4100
+P 9800 550
+F 0 "O2" H 9800 -1000 60  0000 C CNN
+F 1 "Digital" H 9850 500 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x13_Pitch2.54mm" H 9850 500 60  0001 C CNN
+F 3 "" H 9850 500 60  0001 C CNN
+	1    9800 550 
 	1    0    0    -1  
 $EndComp
 $Comp
 L ePlayOutput O3
 U 1 1 5ABF5DC9
-P 5750 4100
-F 0 "O3" H 5750 2550 60  0000 C CNN
-F 1 "Serial" H 5800 4050 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x13_Pitch2.54mm" H 5800 4050 60  0001 C CNN
-F 3 "" H 5800 4050 60  0001 C CNN
-	1    5750 4100
+P 10800 550
+F 0 "O3" H 10800 -1000 60  0000 C CNN
+F 1 "Serial" H 10850 500 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x13_Pitch2.54mm" H 10850 500 60  0001 C CNN
+F 3 "" H 10850 500 60  0001 C CNN
+	1    10800 550 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -768,32 +770,32 @@ Wire Wire Line
 Wire Wire Line
 	1000 7350 1000 6300
 Wire Wire Line
-	4100 5500 4450 5500
+	9150 1950 9500 1950
 Wire Wire Line
-	4450 5400 4100 5400
+	9500 1850 9150 1850
 Wire Wire Line
-	4100 5300 4450 5300
+	9150 1750 9500 1750
 Wire Wire Line
-	4450 5200 4100 5200
+	9500 1650 9150 1650
 Wire Wire Line
-	4100 5100 4450 5100
+	9150 1550 9500 1550
 Wire Wire Line
-	4450 5000 4100 5000
+	9500 1450 9150 1450
 Wire Wire Line
-	4100 4900 4450 4900
+	9150 1350 9500 1350
 Wire Wire Line
-	4450 4800 4100 4800
+	9500 1250 9150 1250
 Wire Wire Line
-	2900 4600 2900 5500
-Connection ~ 2900 5400
-Connection ~ 2900 5300
-Connection ~ 2900 5200
-Connection ~ 2900 5100
-Connection ~ 2900 5000
-Connection ~ 2900 4900
+	7950 1050 7950 1950
+Connection ~ 7950 1850
+Connection ~ 7950 1750
+Connection ~ 7950 1650
+Connection ~ 7950 1550
+Connection ~ 7950 1450
+Connection ~ 7950 1350
 Wire Wire Line
-	2900 4600 4450 4600
-Connection ~ 2900 4800
+	7950 1050 9500 1050
+Connection ~ 7950 1250
 Wire Wire Line
 	4500 6250 4150 6250
 Wire Wire Line
@@ -907,4 +909,147 @@ F 3 "" H 2150 2150 50  0001 C CNN
 	1    2150 2150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Arduino_Nano_Socket NANO1
+U 1 1 5ABF0BF7
+P 5400 2050
+F 0 "NANO1" V 5500 2050 60  0000 C CNN
+F 1 "Arduino_Nano_Socket" V 5300 2050 60  0000 C CNN
+F 2 "Arduino:Arduino_Nano_Socket" H 7200 5800 60  0001 C CNN
+F 3 "" H 7200 5800 60  0001 C CNN
+	1    5400 2050
+	1    0    0    -1  
+$EndComp
+Text Label 4100 2250 2    60   ~ 0
+A0
+Text Label 4100 2150 2    60   ~ 0
+A1
+Text Label 4100 2050 2    60   ~ 0
+A2
+Text Label 4100 1950 2    60   ~ 0
+A3
+Text Label 4100 1850 2    60   ~ 0
+A4
+Text Label 4100 1750 2    60   ~ 0
+A5
+Text Label 4100 1650 2    60   ~ 0
+A6
+Text Label 4100 1550 2    60   ~ 0
+A7
+Text Label 4100 1150 2    60   ~ 0
+RXD
+Text Label 4100 1250 2    60   ~ 0
+TXD
+Text Label 4100 2550 2    60   ~ 0
+GND
+Text Label 4100 2650 2    60   ~ 0
+GND
+Text Label 4100 2750 2    60   ~ 0
+3V3
+Text Label 4100 2950 2    60   ~ 0
+VIN
+Text Label 4100 2850 2    60   ~ 0
+VCC
+Text Label 6700 3450 0    60   ~ 0
+D2
+Text Label 6700 3550 0    60   ~ 0
+D3
+Text Label 6700 3650 0    60   ~ 0
+D4
+Text Label 6700 3750 0    60   ~ 0
+D5
+Text Label 6700 3850 0    60   ~ 0
+D6
+Text Label 6700 3950 0    60   ~ 0
+D7
+Text Label 6700 4050 0    60   ~ 0
+D8
+Text Label 6700 4150 0    60   ~ 0
+D9
+Text Label 6700 4250 0    60   ~ 0
+D10
+Text Label 6700 4350 0    60   ~ 0
+MOSI
+Text Label 6700 4450 0    60   ~ 0
+MISO
+Text Label 6700 4550 0    60   ~ 0
+SCK
+$Comp
+L Arduino_Mini_03_Socket XA1
+U 1 1 5ABF93D5
+P 5400 4450
+F 0 "XA1" V 5500 4450 60  0000 C CNN
+F 1 "Arduino_Mini_03_Socket" V 5300 4450 60  0000 C CNN
+F 2 "Arduino:Arduino_Mini_Socket" H 7200 8200 60  0001 C CNN
+F 3 "" H 7200 8200 60  0001 C CNN
+	1    5400 4450
+	1    0    0    -1  
+$EndComp
+Text Label 6700 1150 0    60   ~ 0
+D2
+Text Label 6700 1250 0    60   ~ 0
+D3
+Text Label 6700 1350 0    60   ~ 0
+D4
+Text Label 6700 1450 0    60   ~ 0
+D5
+Text Label 6700 1550 0    60   ~ 0
+D6
+Text Label 6700 1650 0    60   ~ 0
+D7
+Text Label 6700 1750 0    60   ~ 0
+D8
+Text Label 6700 1850 0    60   ~ 0
+D9
+Text Label 6700 1950 0    60   ~ 0
+D10
+Text Label 6700 2050 0    60   ~ 0
+MOSI
+Text Label 6700 2150 0    60   ~ 0
+MISO
+Text Label 6700 2250 0    60   ~ 0
+SCK
+Text Label 4100 3550 2    60   ~ 0
+RXD
+Text Label 4100 3650 2    60   ~ 0
+TXD
+Text Label 4100 3950 2    60   ~ 0
+A7
+Text Label 4100 4050 2    60   ~ 0
+A6
+Text Label 4100 4150 2    60   ~ 0
+A5
+Text Label 4100 4250 2    60   ~ 0
+A4
+Text Label 4100 4350 2    60   ~ 0
+A3
+Text Label 4100 4450 2    60   ~ 0
+A2
+Text Label 4100 4550 2    60   ~ 0
+A1
+Text Label 4100 4650 2    60   ~ 0
+A0
+Text Label 4100 4950 2    60   ~ 0
+GND
+Text Label 4100 5050 2    60   ~ 0
+GND
+Text Label 4100 5150 2    60   ~ 0
+VCC
+Text Label 4100 5350 2    60   ~ 0
+VIN
+$Comp
+L Conn_Coaxial_Power J1
+U 1 1 5ABFE70F
+P 7300 850
+F 0 "J1" V 7100 800 50  0000 C CNN
+F 1 "Conn_Coaxial_Power" V 7175 800 50  0000 C CNN
+F 2 "Connectors:BARREL_JACK" H 7300 800 50  0001 C CNN
+F 3 "" H 7300 800 50  0001 C CNN
+	1    7300 850 
+	0    1    1    0   
+$EndComp
+Text Label 7100 850  2    60   ~ 0
+GND
+Text Label 7400 850  0    60   ~ 0
+VIN
 $EndSCHEMATC
