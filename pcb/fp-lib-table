@@ -4,4 +4,6 @@
   (lib (name Connectors_Mini-Universal)(type KiCad)(uri "$(KIPRJMOD)/library/fromGithub/Connectors_Mini-Universal.pretty")(options "")(descr ""))
   (lib (name Connectors_TestPoints)(type KiCad)(uri "$(KIPRJMOD)/library/fromGithub/Connectors_TestPoints.pretty")(options "")(descr ""))
   (lib (name Connectors_USB)(type KiCad)(uri "$(KIPRJMOD)/library/fromGithub/Connectors_USB.pretty")(options "")(descr ""))
+  (lib (name Modules)(type KiCad)(uri "$(KIPRJMOD)/library/fromGithub/Modules.pretty")(options "")(descr ""))
+  (lib (name LEDs)(type KiCad)(uri "$(KIPRJMOD)/library/fromGithub/LEDs.pretty")(options "")(descr ""))
 )
