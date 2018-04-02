@@ -1547,4 +1547,6 @@ Text Label 6700 4750 0    60   ~ 0
 RESET
 Text Label 7600 5950 2    60   ~ 0
 VCC
+Text Label 6700 2850 0    60   ~ 0
+RESET
 $EndSCHEMATC
