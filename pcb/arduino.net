@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/nick/projects/eplayground/pcb/arduino.sch)
-    (date "Mon 02 Apr 2018 04:37:29 BST")
+    (date "Mon 02 Apr 2018 11:03:28 BST")
     (tool "Eeschema 4.0.7+dfsg1-1~bpo9+1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -806,10 +806,10 @@
         (pin (num 12) (name L6) (type BiDi))
         (pin (num 13) (name L7) (type BiDi)))))
   (libraries
-    (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib))
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib))
     (library (logical regul)
       (uri /usr/share/kicad/library/regul.lib))
     (library (logical atmel)
