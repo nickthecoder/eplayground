@@ -757,8 +757,6 @@ Text Label 4100 2650 2    60   ~ 0
 GND
 Text Label 4100 2750 2    60   ~ 0
 3V3
-Text Label 4100 2950 2    60   ~ 0
-VIN
 Text Label 4100 2850 2    60   ~ 0
 VCC
 Text Label 6700 3450 0    60   ~ 0
@@ -846,8 +844,6 @@ Text Label 4100 5050 2    60   ~ 0
 GND
 Text Label 4100 5150 2    60   ~ 0
 VCC
-Text Label 4100 5350 2    60   ~ 0
-VIN
 $Comp
 L Conn_Coaxial_Power J1
 U 1 1 5ABFE70F
@@ -1543,7 +1539,7 @@ Wire Wire Line
 Connection ~ 2200 5750
 Text Label 2200 5750 3    60   ~ 0
 GND
-Text Label 6700 4750 0    60   ~ 0
+Text Label 6700 5400 0    60   ~ 0
 RESET
 Text Label 7600 5950 2    60   ~ 0
 VCC
