@@ -1,0 +1,35 @@
+(module SW_SPDT_8mm (layer F.Cu) (tedit 5932DAF9)
+  (descr "Push switch")
+  (tags "switch DPDT")
+  
+  (fp_text reference REF** (at 2.5 1.6) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  
+  (fp_text value SW_SPDT_8mm (at 2.5 3.3) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_line (start -2.25 -2.25) (end -2.25 7.25) (layer F.CrtYd) (width 0.05))
+  (fp_line (start -2.25 7.25) (end 7.25 7.25) (layer F.CrtYd) (width 0.05))
+  (fp_line (start 7.25 7.25) (end 7.25 -2.25) (layer F.CrtYd) (width 0.05))
+  (fp_line (start 7.25 -2.25) (end -2.25 -2.25) (layer F.CrtYd) (width 0.05))
+  
+  (fp_line (start -2.1 -2.1) (end -2.1 7.1) (layer F.SilkS) (width 0.12))
+  (fp_line (start -2.1 7.1) (end 7.1 7.1) (layer F.SilkS) (width 0.12))
+  (fp_line (start 7.1 7.1) (end 7.1 -2.1) (layer F.SilkS) (width 0.12))
+  (fp_line (start 7.1 -2.1) (end -2.1 -2.1) (layer F.SilkS) (width 0.12))
+  
+  (fp_line (start -2 0) (end 0 -2) (layer F.Fab) (width 0.1))
+  (fp_line (start -2 7) (end -2 -2) (layer F.Fab) (width 0.1))
+  (fp_line (start 7 7) (end -2 7) (layer F.Fab) (width 0.1))
+  (fp_line (start 7 -2) (end 7 7) (layer F.Fab) (width 0.1))
+  (fp_line (start -2 -2) (end 7 -2) (layer F.Fab) (width 0.1))
+  
+  (pad 1 thru_hole rect (at 0 0) (size 1.4 1.4) (drill 0.9) (layers *.Cu *.Mask))
+  (pad 2 thru_hole circle (at 2.54 0) (size 1.4 1.4) (drill 0.9) (layers *.Cu *.Mask))
+  (pad 3 thru_hole circle (at 5.08 0) (size 1.4 1.4) (drill 0.9) (layers *.Cu *.Mask))
+  (pad 4 thru_hole circle (at 0 5.08) (size 1.4 1.4) (drill 0.9) (layers *.Cu *.Mask))
+  (pad 5 thru_hole circle (at 2.54 5.08) (size 1.4 1.4) (drill 0.9) (layers *.Cu *.Mask))
+  (pad 6 thru_hole circle (at 5.08 5.08) (size 1.4 1.4) (drill 0.9) (layers *.Cu *.Mask))
+)

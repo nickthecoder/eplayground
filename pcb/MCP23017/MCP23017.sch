@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:MCP23017-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -49,7 +50,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ePlayInput I1
+L ePlayInput-RESCUE-MCP23017 I1
 U 1 1 5AC243A7
 P 1950 1600
 F 0 "I1" H 1950 50  60  0000 C CNN
@@ -60,7 +61,7 @@ F 3 "" H 2000 1550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ePlayOutput O1
+L ePlayOutput-RESCUE-MCP23017 O1
 U 1 1 5AC241F8
 P 6400 1600
 F 0 "O1" H 6400 50  60  0000 C CNN
@@ -117,7 +118,7 @@ F 3 "" H 4650 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ePlayOutput O3
+L ePlayOutput-RESCUE-MCP23017 O3
 U 1 1 5AC32C2A
 P 3900 5950
 F 0 "O3" H 3900 4400 60  0000 C CNN
@@ -128,7 +129,7 @@ F 3 "" H 3950 5900 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ePlayOutput O2
+L ePlayOutput-RESCUE-MCP23017 O2
 U 1 1 5AC32D5F
 P 2300 3400
 F 0 "O2" H 2300 1850 60  0000 C CNN
@@ -155,7 +156,7 @@ Text Label 3500 5650 1    60   ~ 0
 Text Label 3400 5650 1    60   ~ 0
 GND
 $Comp
-L High-Low HL1
+L High-Low-RESCUE-MCP23017 HL1
 U 1 1 5AC332D5
 P 5550 5900
 F 0 "HL1" H 5550 5400 60  0000 C CNN
@@ -166,7 +167,7 @@ F 3 "" H 5550 5900 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L High-Low HL2
+L High-Low-RESCUE-MCP23017 HL2
 U 1 1 5AC33401
 P 6200 5900
 F 0 "HL2" H 6200 5400 60  0000 C CNN
@@ -177,7 +178,7 @@ F 3 "" H 6200 5900 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L High-Low HL3
+L High-Low-RESCUE-MCP23017 HL3
 U 1 1 5AC3345A
 P 6850 5900
 F 0 "HL3" H 6850 5400 60  0000 C CNN
@@ -316,7 +317,7 @@ SCL
 Text Label 4900 3850 0    60   ~ 0
 VCC
 $Comp
-L I2CHeader I2C1
+L I2CHeader-RESCUE-MCP23017 I2C1
 U 1 1 5AC33E90
 P 6100 4150
 F 0 "I2C1" H 6250 3750 60  0000 C CNN
@@ -335,7 +336,7 @@ VCC
 Text Label 5900 4150 2    60   ~ 0
 GND
 $Comp
-L Header2 U2
+L Header2-RESCUE-MCP23017 U2
 U 1 1 5AC33FEE
 P 5150 4150
 F 0 "U2" H 5150 3800 60  0000 C CNN
