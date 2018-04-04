@@ -286,12 +286,12 @@ $EndComp
 $Comp
 L Output O3
 U 1 1 5AC3A8AB
-P 5650 4600
-F 0 "O3" H 5650 3050 60  0000 C CNN
-F 1 "Output" H 5550 4550 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 5700 4550 60  0001 C CNN
-F 3 "" H 5700 4550 60  0001 C CNN
-	1    5650 4600
+P 6350 2900
+F 0 "O3" H 6350 1350 60  0000 C CNN
+F 1 "Output" H 6250 2850 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 6400 2850 60  0001 C CNN
+F 3 "" H 6400 2850 60  0001 C CNN
+	1    6350 2900
 	1    0    0    -1  
 $EndComp
 Text Label 5350 1450 2    60   ~ 0
@@ -322,39 +322,39 @@ Text Label 5300 3300 2    60   ~ 0
 VCC
 Text Label 5300 3400 2    60   ~ 0
 GND
-Text Label 5300 3600 2    60   ~ 0
-SCL
-Text Label 5300 3700 2    60   ~ 0
-SDA
-Text Label 5300 3800 2    60   ~ 0
-SCK
-Text Label 5300 3900 2    60   ~ 0
-MISO
-Text Label 5300 4000 2    60   ~ 0
-MOSI
 Text Label 5300 4100 2    60   ~ 0
+SCL
+Text Label 5300 4000 2    60   ~ 0
+SDA
+Text Label 5300 3600 2    60   ~ 0
+SCK
+Text Label 5300 3700 2    60   ~ 0
+MISO
+Text Label 5300 3800 2    60   ~ 0
+MOSI
+Text Label 5300 3900 2    60   ~ 0
 D10
 Text Label 5300 4200 2    60   ~ 0
 TXD
 Text Label 5300 4300 2    60   ~ 0
 RXD
-Text Label 5350 4900 2    60   ~ 0
+Text Label 6050 3200 2    60   ~ 0
 VIN
-Text Label 5350 5000 2    60   ~ 0
+Text Label 6050 3300 2    60   ~ 0
 VCC
-Text Label 5350 5100 2    60   ~ 0
+Text Label 6050 3400 2    60   ~ 0
 GND
-Text Label 5350 5300 2    60   ~ 0
+Text Label 6050 3600 2    60   ~ 0
 A0
-Text Label 5350 5400 2    60   ~ 0
+Text Label 6050 3700 2    60   ~ 0
 A1
-Text Label 5350 5500 2    60   ~ 0
+Text Label 6050 3800 2    60   ~ 0
 A2
-Text Label 5350 5600 2    60   ~ 0
+Text Label 6050 3900 2    60   ~ 0
 A3
-Text Label 5350 5700 2    60   ~ 0
+Text Label 6050 4000 2    60   ~ 0
 A4
-Text Label 5350 5800 2    60   ~ 0
+Text Label 6050 4100 2    60   ~ 0
 A5
 Text Label 3200 5300 0    60   ~ 0
 VCC
