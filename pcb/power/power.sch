@@ -102,65 +102,8 @@ F 3 "" H 2750 1400 60  0001 C CNN
 	1    2700 1450
 	1    0    0    -1  
 $EndComp
-$Comp
-L L7805 U1
-U 1 1 5AC3DA6D
-P 3050 4000
-F 0 "U1" H 2900 4125 50  0000 C CNN
-F 1 "L7805" H 3050 4125 50  0000 L CNN
-F 2 "Power_Integrations:TO-220" H 3075 3850 50  0001 L CIN
-F 3 "" H 3050 3950 50  0001 C CNN
-	1    3050 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L C .47uF1
-U 1 1 5AC3DA90
-P 2350 4250
-F 0 ".47uF1" H 2375 4350 50  0000 L CNN
-F 1 "C" H 2375 4150 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 2388 4100 50  0001 C CNN
-F 3 "" H 2350 4250 50  0001 C CNN
-	1    2350 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L C 100nF1
-U 1 1 5AC3DAAD
-P 3350 4150
-F 0 "100nF1" H 3375 4250 50  0000 L CNN
-F 1 "C" H 3375 4050 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 3388 4000 50  0001 C CNN
-F 3 "" H 3350 4150 50  0001 C CNN
-	1    3350 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R1
-U 1 1 5AC3DACC
-P 3650 4350
-F 0 "R1" V 3730 4350 50  0000 C CNN
-F 1 "R" V 3650 4350 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3580 4350 50  0001 C CNN
-F 3 "" H 3650 4350 50  0001 C CNN
-	1    3650 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED D1
-U 1 1 5AC3DC09
-P 3650 4650
-F 0 "D1" H 3650 4750 50  0000 C CNN
-F 1 "LED" H 3650 4550 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 3650 4650 50  0001 C CNN
-F 3 "" H 3650 4650 50  0001 C CNN
-	1    3650 4650
-	0    -1   -1   0   
-$EndComp
-Text Label 2350 4100 2    60   ~ 0
+Text Label 2750 4100 0    60   ~ 0
 VIN
-Text Label 3650 4000 0    60   ~ 0
-VCC
 $Comp
 L Conn_Coaxial_Power J1
 U 1 1 5AC3E006
@@ -322,23 +265,23 @@ $EndComp
 $Comp
 L R R2
 U 1 1 5AC48099
-P 2000 4250
-F 0 "R2" V 2080 4250 50  0000 C CNN
-F 1 "R" V 2000 4250 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1930 4250 50  0001 C CNN
-F 3 "" H 2000 4250 50  0001 C CNN
-	1    2000 4250
+P 2750 4250
+F 0 "R2" V 2830 4250 50  0000 C CNN
+F 1 "R" V 2750 4250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2680 4250 50  0001 C CNN
+F 3 "" H 2750 4250 50  0001 C CNN
+	1    2750 4250
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED D10
 U 1 1 5AC480E4
-P 2000 4550
-F 0 "D10" H 2000 4650 50  0000 C CNN
-F 1 "LED" H 2000 4450 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 2000 4550 50  0001 C CNN
-F 3 "" H 2000 4550 50  0001 C CNN
-	1    2000 4550
+P 2750 4550
+F 0 "D10" H 2750 4650 50  0000 C CNN
+F 1 "LED" H 2750 4450 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 2750 4550 50  0001 C CNN
+F 3 "" H 2750 4550 50  0001 C CNN
+	1    2750 4550
 	0    -1   -1   0   
 $EndComp
 Text Label 2650 4800 2    60   ~ 0
@@ -352,39 +295,28 @@ F 1 "SW_SPST" H 2550 4000 50  0000 C CNN
 F 2 "eplay:SW_SPDT_8mm" H 2550 4100 50  0001 C CNN
 F 3 "" H 2550 4100 50  0001 C CNN
 	1    2550 4100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L TEST TP1
 U 1 1 5AC4A364
-P 1750 4100
-F 0 "TP1" H 1750 4400 50  0000 C BNN
-F 1 "TEST" H 1750 4350 50  0000 C CNN
-F 2 "Connectors:PINTST" H 1750 4100 50  0001 C CNN
-F 3 "" H 1750 4100 50  0001 C CNN
-	1    1750 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST TP3
-U 1 1 5AC4A405
-P 3650 4000
-F 0 "TP3" H 3650 4300 50  0000 C BNN
-F 1 "TEST" H 3650 4250 50  0000 C CNN
-F 2 "Connectors:PINTST" H 3650 4000 50  0001 C CNN
-F 3 "" H 3650 4000 50  0001 C CNN
-	1    3650 4000
+P 2750 4100
+F 0 "TP1" H 2750 4400 50  0000 C BNN
+F 1 "TEST" H 2750 4350 50  0000 C CNN
+F 2 "Connectors:PINTST" H 2750 4100 50  0001 C CNN
+F 3 "" H 2750 4100 50  0001 C CNN
+	1    2750 4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L TEST TP2
 U 1 1 5AC4A450
-P 2700 4800
-F 0 "TP2" H 2700 5100 50  0000 C BNN
-F 1 "TEST" H 2700 5050 50  0000 C CNN
-F 2 "Connectors:PINTST" H 2700 4800 50  0001 C CNN
-F 3 "" H 2700 4800 50  0001 C CNN
-	1    2700 4800
+P 2350 4800
+F 0 "TP2" H 2350 5100 50  0000 C BNN
+F 1 "TEST" H 2350 5050 50  0000 C CNN
+F 2 "Connectors:PINTST" H 2350 4800 50  0001 C CNN
+F 3 "" H 2350 4800 50  0001 C CNN
+	1    2350 4800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -402,10 +334,6 @@ Text Notes 8400 1800 0    60   ~ 0
 A solder bridge. Normally connect to GND.\n\nFor LEDs to light when the data is LOW:\n	Reverse the LEDs and connect the solder bridge to VCC
 Text Notes 6450 1850 0    60   ~ 0
 Use jumpers to enable each LED.
-Text Notes 1250 5600 0    60   ~ 0
-NOTE. The switch only turns the VCC on/off. VIN is ALWAYS connected.\n\nFor a DIY-Duino (i.e. a bare ATMEGA 382 without its own voltage regulator),\nuse the complete circuit.\n\nFor Pro-Mini or Nano boards, either exclude the voltage regulator, switch\nand VCC's LED, or be VERY careful never to switch on VCC !
-Wire Wire Line
-	2350 4400 2350 4800
 Wire Wire Line
 	6850 2150 7400 2150
 Wire Wire Line
@@ -492,33 +420,11 @@ Wire Wire Line
 	8000 2850 8000 3600
 Wire Wire Line
 	8000 3600 7700 3600
-Connection ~ 2000 4100
 Wire Wire Line
 	1750 4250 1750 4100
-Connection ~ 1750 4100
 Wire Wire Line
 	1750 4550 1750 4800
-Wire Wire Line
-	1200 4100 2350 4100
-Wire Wire Line
-	2000 4800 2000 4700
 Connection ~ 2350 4800
-Connection ~ 2000 4800
-Wire Wire Line
-	1750 4800 3650 4800
-Wire Wire Line
-	3350 4800 3350 4300
-Connection ~ 3350 4800
-Wire Wire Line
-	3650 4200 3650 4000
-Wire Wire Line
-	3650 4000 3350 4000
-Wire Wire Line
-	3050 4300 3050 4800
-Connection ~ 3050 4800
-Wire Wire Line
-	2750 4100 2750 4000
-Connection ~ 2700 4800
 $Comp
 L Output O2
 U 1 1 5AC3F2A9
@@ -557,4 +463,29 @@ Wire Wire Line
 	6050 2250 5600 2250
 Wire Wire Line
 	5600 2150 6050 2150
+Wire Wire Line
+	1300 4800 2750 4800
+Wire Wire Line
+	2750 4800 2750 4700
+Wire Wire Line
+	1300 4100 2350 4100
+Text Label 1850 4100 0    60   ~ 0
+POWER
+$Comp
+L Screw_Terminal_01x02 J3
+U 1 1 5AC4EAFB
+P 1100 4400
+F 0 "J3" H 1100 4500 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1100 4200 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Philmore_TB132_02x5mm_Straight" H 1100 4400 50  0001 C CNN
+F 3 "" H 1100 4400 50  0001 C CNN
+	1    1100 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 4300 1300 4100
+Connection ~ 1750 4100
+Wire Wire Line
+	1300 4400 1300 4800
+Connection ~ 1750 4800
 $EndSCHEMATC

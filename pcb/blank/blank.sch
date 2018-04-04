@@ -49,28 +49,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	2250 1900 6100 1900
-Wire Wire Line
-	2250 2000 6100 2000
-Wire Wire Line
-	2250 2100 6100 2100
-Wire Wire Line
-	2250 2300 6100 2300
-Wire Wire Line
-	2250 2400 6100 2400
-Wire Wire Line
-	2250 2500 6100 2500
-Wire Wire Line
-	2250 2600 6100 2600
-Wire Wire Line
-	2250 2700 6100 2700
-Wire Wire Line
-	2250 2800 6100 2800
-Wire Wire Line
-	2250 2900 6100 2900
-Wire Wire Line
-	2250 3000 6100 3000
 Text Label 2250 2100 0    60   ~ 0
 GND
 Text Label 2250 2000 0    60   ~ 0
@@ -96,15 +74,14 @@ L7
 $Comp
 L Earth #PWR01
 U 1 1 5AC24527
-P 2650 2100
-F 0 "#PWR01" H 2650 1850 50  0001 C CNN
-F 1 "Earth" H 2650 1950 50  0001 C CNN
-F 2 "" H 2650 2100 50  0001 C CNN
-F 3 "" H 2650 2100 50  0001 C CNN
-	1    2650 2100
+P 2250 2100
+F 0 "#PWR01" H 2250 1850 50  0001 C CNN
+F 1 "Earth" H 2250 1950 50  0001 C CNN
+F 2 "" H 2250 2100 50  0001 C CNN
+F 3 "" H 2250 2100 50  0001 C CNN
+	1    2250 2100
 	1    0    0    -1  
 $EndComp
-Connection ~ 2650 2100
 $Comp
 L Input I1
 U 1 1 5AC3D559
@@ -119,12 +96,12 @@ $EndComp
 $Comp
 L Output O1
 U 1 1 5AC3D61D
-P 6400 1600
-F 0 "O1" H 6400 50  60  0000 C CNN
-F 1 "Output" H 6300 1550 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 6450 1550 60  0001 C CNN
-F 3 "" H 6450 1550 60  0001 C CNN
-	1    6400 1600
+P 2550 1600
+F 0 "O1" H 2550 50  60  0000 C CNN
+F 1 "Output" H 2450 1550 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 2600 1550 60  0001 C CNN
+F 3 "" H 2600 1550 60  0001 C CNN
+	1    2550 1600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

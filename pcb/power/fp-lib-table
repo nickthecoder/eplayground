@@ -1,3 +1,2 @@
 (fp_lib_table
-  (lib (name eplay)(type KiCad)(uri /home/nick/projects/eplayground/pcb/library/eplay.pretty)(options "")(descr "ePlay Specific Components"))
 )
