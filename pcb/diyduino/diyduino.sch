@@ -356,7 +356,7 @@ Text Label 5350 5700 2    60   ~ 0
 A4
 Text Label 5350 5800 2    60   ~ 0
 A5
-Text Label 2600 5300 0    60   ~ 0
+Text Label 3200 5300 0    60   ~ 0
 VCC
 $Comp
 L C C4
@@ -429,12 +429,12 @@ Connection ~ 2800 4800
 $Comp
 L D D1
 U 1 1 5AC4FB56
-P 2450 5300
-F 0 "D1" H 2450 5400 50  0000 C CNN
-F 1 "D" H 2450 5200 50  0000 C CNN
-F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 2450 5300 50  0001 C CNN
-F 3 "" H 2450 5300 50  0001 C CNN
-	1    2450 5300
+P 3050 5300
+F 0 "D1" H 3050 5400 50  0000 C CNN
+F 1 "D" H 3050 5200 50  0000 C CNN
+F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 3050 5300 50  0001 C CNN
+F 3 "" H 3050 5300 50  0001 C CNN
+	1    3050 5300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -453,4 +453,39 @@ Wire Wire Line
 Wire Wire Line
 	3400 4500 3400 4800
 Connection ~ 3400 4800
+$Comp
+L FTDI FT2
+U 1 1 5AC50B3D
+P 2950 6150
+F 0 "FT2" H 2950 5800 60  0000 C CNN
+F 1 "FTDI" H 2950 6500 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 2950 6150 60  0001 C CNN
+F 3 "" H 2950 6150 60  0001 C CNN
+	1    2950 6150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 5600 3200 5600
+Wire Wire Line
+	3200 5600 3200 5850
+Wire Wire Line
+	2300 5100 2700 5100
+Wire Wire Line
+	2700 5100 2700 5850
+Wire Wire Line
+	2300 5200 2800 5200
+Wire Wire Line
+	2800 5200 2800 5850
+Wire Wire Line
+	2300 5300 2900 5300
+Wire Wire Line
+	2900 5300 2900 5850
+Wire Wire Line
+	2300 5400 3100 5400
+Wire Wire Line
+	3100 5400 3100 5850
+Wire Wire Line
+	2300 5500 3000 5500
+Wire Wire Line
+	3000 5500 3000 5850
 $EndSCHEMATC
