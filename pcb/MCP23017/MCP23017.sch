@@ -49,35 +49,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L ePlayInput-RESCUE-MCP23017 I1
-U 1 1 5AC243A7
-P 1950 1600
-F 0 "I1" H 1950 50  60  0000 C CNN
-F 1 "ePlayInput" H 2000 1550 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x13_Pitch2.54mm" H 2000 1550 60  0001 C CNN
-F 3 "" H 2000 1550 60  0001 C CNN
-	1    1950 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L ePlayOutput-RESCUE-MCP23017 O1
-U 1 1 5AC241F8
-P 6400 1600
-F 0 "O1" H 6400 50  60  0000 C CNN
-F 1 "ePlayOutput" H 6450 1550 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x13_Pitch2.54mm" H 6450 1550 60  0001 C CNN
-F 3 "" H 6450 1550 60  0001 C CNN
-	1    6400 1600
-	1    0    0    -1  
-$EndComp
 Text Label 2250 2100 0    60   ~ 0
 GND
 Text Label 2250 2000 0    60   ~ 0
-3V3
-Text Label 2250 1900 0    60   ~ 0
 VCC
-Text Label 2250 1800 0    60   ~ 0
+Text Label 2250 1900 0    60   ~ 0
 VIN
 Text Label 2250 2300 0    60   ~ 0
 L0
@@ -117,79 +93,18 @@ F 3 "" H 4650 5650 50  0001 C CNN
 	1    4400 4650
 	1    0    0    -1  
 $EndComp
-$Comp
-L ePlayOutput-RESCUE-MCP23017 O3
-U 1 1 5AC32C2A
-P 3900 5950
-F 0 "O3" H 3900 4400 60  0000 C CNN
-F 1 "ePlayOutput" H 3950 5900 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x13_Pitch2.54mm" H 3950 5900 60  0001 C CNN
-F 3 "" H 3950 5900 60  0001 C CNN
-	1    3900 5950
-	0    1    1    0   
-$EndComp
-$Comp
-L ePlayOutput-RESCUE-MCP23017 O2
-U 1 1 5AC32D5F
-P 2300 3400
-F 0 "O2" H 2300 1850 60  0000 C CNN
-F 1 "ePlayOutput" H 2350 3350 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x13_Pitch2.54mm" H 2350 3350 60  0001 C CNN
-F 3 "" H 2350 3350 60  0001 C CNN
-	1    2300 3400
-	0    -1   -1   0   
-$EndComp
-Text Label 2500 3700 3    60   ~ 0
-VIN
 Text Label 2600 3700 3    60   ~ 0
-VCC
+VIN
 Text Label 2700 3700 3    60   ~ 0
-3V3
+VCC
 Text Label 2800 3700 3    60   ~ 0
 GND
-Text Label 3700 5650 1    60   ~ 0
-VIN
 Text Label 3600 5650 1    60   ~ 0
-VCC
+VIN
 Text Label 3500 5650 1    60   ~ 0
-3V3
+VCC
 Text Label 3400 5650 1    60   ~ 0
 GND
-$Comp
-L High-Low-RESCUE-MCP23017 HL1
-U 1 1 5AC332D5
-P 5550 5900
-F 0 "HL1" H 5550 5400 60  0000 C CNN
-F 1 "High-Low" H 5550 5900 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5550 5900 60  0001 C CNN
-F 3 "" H 5550 5900 60  0001 C CNN
-	1    5550 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L High-Low-RESCUE-MCP23017 HL2
-U 1 1 5AC33401
-P 6200 5900
-F 0 "HL2" H 6200 5400 60  0000 C CNN
-F 1 "High-Low" H 6200 5900 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6200 5900 60  0001 C CNN
-F 3 "" H 6200 5900 60  0001 C CNN
-	1    6200 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L High-Low-RESCUE-MCP23017 HL3
-U 1 1 5AC3345A
-P 6850 5900
-F 0 "HL3" H 6850 5400 60  0000 C CNN
-F 1 "High-Low" H 6850 5900 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6850 5900 60  0001 C CNN
-F 3 "" H 6850 5900 60  0001 C CNN
-	1    6850 5900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 1800 6100 1800
 Wire Wire Line
 	2250 1900 6100 1900
 Wire Wire Line
@@ -289,26 +204,13 @@ Wire Wire Line
 	4900 5450 6600 5450
 Wire Wire Line
 	6600 5450 6600 5600
-Wire Wire Line
-	5200 5600 5200 5500
-Wire Wire Line
-	5200 5500 6700 5500
-Wire Wire Line
-	5850 5500 5850 5600
-Wire Wire Line
-	6500 5500 6500 5600
-Connection ~ 5850 5500
-Wire Wire Line
-	5400 5600 6700 5600
-Connection ~ 6050 5600
-Connection ~ 6500 5500
-Text Label 6700 5500 0    60   ~ 0
+Text Label 5200 6000 2    60   ~ 0
 VCC
-Text Label 6700 5600 0    60   ~ 0
+Text Label 6700 6100 0    60   ~ 0
 GND
-Text Label 3150 2300 2    60   ~ 0
+Text Label 2700 2800 2    60   ~ 0
 SCL
-Text Label 3400 2400 2    60   ~ 0
+Text Label 2700 2700 2    60   ~ 0
 SDA
 Text Label 4900 5050 0    60   ~ 0
 SDA
@@ -355,6 +257,101 @@ F 1 "Headers8" H 5850 2000 60  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 5850 2000 60  0001 C CNN
 F 3 "" H 5850 2000 60  0001 C CNN
 	1    5800 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GS3 J1
+U 1 1 5AC7B0E5
+P 5300 5750
+F 0 "J1" H 5350 5950 50  0000 C CNN
+F 1 "GS3" H 5350 5551 50  0000 C CNN
+F 2 "Connectors:GS3" V 5388 5676 50  0001 C CNN
+F 3 "" H 5300 5750 50  0001 C CNN
+	1    5300 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GS3 J2
+U 1 1 5AC7B1FC
+P 5950 5750
+F 0 "J2" H 6000 5950 50  0000 C CNN
+F 1 "GS3" H 6000 5551 50  0000 C CNN
+F 2 "Connectors:GS3" V 6038 5676 50  0001 C CNN
+F 3 "" H 5950 5750 50  0001 C CNN
+	1    5950 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GS3 J3
+U 1 1 5AC7B231
+P 6600 5750
+F 0 "J3" H 6650 5950 50  0000 C CNN
+F 1 "GS3" H 6650 5551 50  0000 C CNN
+F 2 "Connectors:GS3" V 6688 5676 50  0001 C CNN
+F 3 "" H 6600 5750 50  0001 C CNN
+	1    6600 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 5900 5200 6000
+Wire Wire Line
+	5200 6000 6500 6000
+Wire Wire Line
+	5850 6000 5850 5900
+Wire Wire Line
+	6500 6000 6500 5900
+Connection ~ 5850 6000
+Wire Wire Line
+	5400 5900 5400 6100
+Wire Wire Line
+	5400 6100 6700 6100
+Wire Wire Line
+	6050 6100 6050 5900
+Wire Wire Line
+	6700 6100 6700 5900
+Connection ~ 6050 6100
+$Comp
+L Output O1
+U 1 1 5AC7B49B
+P 3900 5950
+F 0 "O1" H 3900 4400 60  0000 C CNN
+F 1 "Output" H 3800 5900 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 3950 5900 60  0001 C CNN
+F 3 "" H 3950 5900 60  0001 C CNN
+	1    3900 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Output O2
+U 1 1 5AC7BA28
+P 2300 3400
+F 0 "O2" H 2300 1850 60  0000 C CNN
+F 1 "Output" H 2200 3350 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 2350 3350 60  0001 C CNN
+F 3 "" H 2350 3350 60  0001 C CNN
+	1    2300 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SerialOutput O3
+U 1 1 5AC7BD75
+P 6400 1600
+F 0 "O3" H 6400 50  60  0000 C CNN
+F 1 "SerialOutput" H 6450 1550 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 6450 1550 60  0001 C CNN
+F 3 "" H 6450 1550 60  0001 C CNN
+	1    6400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SerialInput I1
+U 1 1 5AC7BF99
+P 1950 1600
+F 0 "I1" H 1950 50  60  0000 C CNN
+F 1 "SerialInput" H 2000 1550 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 2000 1550 60  0001 C CNN
+F 3 "" H 2000 1550 60  0001 C CNN
+	1    1950 1600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
