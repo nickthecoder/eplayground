@@ -139,7 +139,7 @@ VCC
 Text Label 6750 2200 2    60   ~ 0
 GND
 Text Label 5350 3000 2    60   ~ 0
-GND
+eo
 Text Label 5350 2700 2    60   ~ 0
 GND
 Text Label 4050 5800 1    60   ~ 0
@@ -160,17 +160,6 @@ F 3 "" H 2600 2000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x03 J1
-U 1 1 5AC7586B
-P 2900 2500
-F 0 "J1" H 2900 2700 50  0000 C CNN
-F 1 "Conn_01x03" H 2900 2300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2900 2500 50  0001 C CNN
-F 3 "" H 2900 2500 50  0001 C CNN
-	1    2900 2500
-	-1   0    0    1   
-$EndComp
-$Comp
 L Input I2
 U 1 1 5AC76C5E
 P 4750 4800
@@ -187,20 +176,20 @@ Text Label 3850 5100 3    60   ~ 0
 clock
 Text Label 3950 5100 3    60   ~ 0
 latch
-Text Notes 1500 4150 0    60   ~ 0
-If this is the "Master", then data, clock and latch are taken from I1\nvia jumper wires from H1 to J1.\nI2 is NOT popuplated.\n\nIf this is a slave board, then I1 and H1 and J1 are NOT populated.\nData, clock and latch are taken from the input I2
+Text Notes 1800 4600 0    60   ~ 0
+A "Master" module takes data, clock and latch from I1\nvia jumper wires from H1 to J1.\nI2 is NOT popuplated.\n\nA "Slave" module takes data, clock and latch from I2.\nI1 and H1 and J1 are NOT populated.\n
 Text Label 3100 2400 0    60   ~ 0
 data
 Text Label 3100 2600 0    60   ~ 0
 clock
 Text Label 3100 2500 0    60   ~ 0
 latch
-Text Notes 3050 4900 2    60   ~ 0
+Text Notes 4750 4900 0    60   ~ 0
 Connection from the previous\nshift module.
-Text Notes 3000 6150 2    60   ~ 0
+Text Notes 4750 6150 0    60   ~ 0
 Connection to the next\nshift module.
-Text Notes 3500 5450 2    60   ~ 0
-Note that only data pins 0..2 are used.
+Text Notes 4750 5450 0    60   ~ 0
+Note that only data pins 0..3 are used.
 Wire Wire Line
 	4450 5800 4450 5100
 Wire Wire Line
@@ -229,4 +218,52 @@ Text Label 6750 3000 2    60   ~ 0
 QG
 Text Label 6750 3100 2    60   ~ 0
 QH
+$Comp
+L Conn_01x04 J1
+U 1 1 5AC767D3
+P 2900 2600
+F 0 "J1" H 2900 2800 50  0000 C CNN
+F 1 "Conn_01x04" H 2900 2300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 2900 2600 50  0001 C CNN
+F 3 "" H 2900 2600 50  0001 C CNN
+	1    2900 2600
+	-1   0    0    1   
+$EndComp
+Text Label 3100 2700 0    60   ~ 0
+oe
+$Comp
+L GS2 J2
+U 1 1 5AC7691D
+P 3100 2900
+F 0 "J2" H 3200 3050 50  0000 C CNN
+F 1 "GS2" H 3200 2751 50  0000 C CNN
+F 2 "Connectors:GS2" V 3174 2900 50  0001 C CNN
+F 3 "" H 3100 2900 50  0001 C CNN
+	1    3100 2900
+	1    0    0    -1  
+$EndComp
+Text Label 3100 3100 2    60   ~ 0
+GND
+Wire Wire Line
+	3100 2700 4600 2700
+Wire Wire Line
+	4600 2700 4600 3000
+Wire Wire Line
+	4600 3000 5350 3000
+Wire Wire Line
+	3100 2500 4900 2500
+Wire Wire Line
+	4900 2500 4900 2900
+Wire Wire Line
+	4900 2900 5350 2900
+Wire Wire Line
+	5350 2600 3100 2600
+Wire Wire Line
+	3100 2400 5350 2400
+Text Label 3750 5100 3    60   ~ 0
+oe
+Text Label 3750 5800 1    60   ~ 0
+oe
+Text Notes 2800 3700 0    60   ~ 0
+On the master module, either\nSolder the bridge and only have 3 pins on J1\nOr leave the bridge unsoldered and have 4 pins on J1\n\nOn the slave module, use only 3 pins on J1\nand leave the bridge unsoldered.
 $EndSCHEMATC
