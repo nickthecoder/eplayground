@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name ePlay)(type KiCad)(uri ${KIPRJMOD}/../library/eplay.lib)(options "")(descr ""))
+  (lib (name ePlayPretty)(type KiCad)(uri ${KIPRJMOD}/../library/eplay.pretty)(options "")(descr ""))
+)
