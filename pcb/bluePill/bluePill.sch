@@ -386,4 +386,61 @@ Text Label 900  1750 2    60   ~ 0
 A10
 Text Label 900  1650 2    60   ~ 0
 A9
+$Comp
+L L7805 U2
+U 1 1 5ACA407A
+P 1250 4300
+F 0 "U2" H 1100 4425 50  0000 C CNN
+F 1 "L7805" H 1250 4425 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 1275 4150 50  0001 L CIN
+F 3 "" H 1250 4250 50  0001 C CNN
+	1    1250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5ACA411D
+P 950 4450
+F 0 "C1" H 975 4550 50  0000 L CNN
+F 1 "C" H 975 4350 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 988 4300 50  0001 C CNN
+F 3 "" H 950 4450 50  0001 C CNN
+	1    950  4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5ACA4158
+P 1550 4450
+F 0 "C2" H 1575 4550 50  0000 L CNN
+F 1 "C" H 1575 4350 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 1588 4300 50  0001 C CNN
+F 3 "" H 1550 4450 50  0001 C CNN
+	1    1550 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4600 1550 4600
+Connection ~ 1250 4600
+Text Label 950  4300 2    60   ~ 0
+VIN
+Text Label 950  4600 2    60   ~ 0
+GND
+$Comp
+L D D1
+U 1 1 5ACA4326
+P 1550 3650
+F 0 "D1" H 1550 3750 50  0000 C CNN
+F 1 "D" H 1550 3550 50  0000 C CNN
+F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 1550 3650 50  0001 C CNN
+F 3 "" H 1550 3650 50  0001 C CNN
+	1    1550 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 4300 1550 3800
+Wire Wire Line
+	1550 3500 1550 2850
+Wire Wire Line
+	1550 2850 1950 2850
 $EndSCHEMATC
