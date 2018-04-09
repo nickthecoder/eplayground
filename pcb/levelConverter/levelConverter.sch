@@ -1,0 +1,536 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:eplay
+LIBS:levelConverter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 2250 2100 0    60   ~ 0
+GND
+Text Label 2250 2000 0    60   ~ 0
+5V
+Text Label 2250 1900 0    60   ~ 0
+VIN
+Text Label 2250 2300 0    60   ~ 0
+L0
+Text Label 2250 2400 0    60   ~ 0
+L1
+Text Label 2250 2500 0    60   ~ 0
+L2
+Text Label 2250 2600 0    60   ~ 0
+L3
+Text Label 2250 2700 0    60   ~ 0
+L4
+Text Label 2250 2800 0    60   ~ 0
+L5
+Text Label 2250 2900 0    60   ~ 0
+L6
+Text Label 2250 3000 0    60   ~ 0
+L7
+$Comp
+L Earth #PWR01
+U 1 1 5AC24527
+P 2250 2100
+F 0 "#PWR01" H 2250 1850 50  0001 C CNN
+F 1 "Earth" H 2250 1950 50  0001 C CNN
+F 2 "" H 2250 2100 50  0001 C CNN
+F 3 "" H 2250 2100 50  0001 C CNN
+	1    2250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Input I1
+U 1 1 5AC3D559
+P 1950 1600
+F 0 "I1" H 1950 50  60  0000 C CNN
+F 1 "Input" H 2000 1550 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 2000 1550 60  0001 C CNN
+F 3 "" H 2000 1550 60  0001 C CNN
+	1    1950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Output O1
+U 1 1 5AC3D61D
+P 4400 1600
+F 0 "O1" H 4400 50  60  0000 C CNN
+F 1 "Output" H 4300 1550 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 4450 1550 60  0001 C CNN
+F 3 "" H 4450 1550 60  0001 C CNN
+	1    4400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L BSS138 Q1
+U 1 1 5ACB78FB
+P 3100 2200
+F 0 "Q1" V 2950 2100 50  0000 L CNN
+F 1 "BSS138" V 3300 2050 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3300 2125 50  0001 L CIN
+F 3 "" H 3100 2200 50  0001 L CNN
+	1    3100 2200
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R9
+U 1 1 5ACB7944
+P 3300 2150
+F 0 "R9" V 3380 2150 50  0000 C CNN
+F 1 "R" V 3300 2150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3230 2150 50  0001 C CNN
+F 3 "" H 3300 2150 50  0001 C CNN
+	1    3300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5ACB797B
+P 2900 2150
+F 0 "R1" V 2980 2150 50  0000 C CNN
+F 1 "R" V 2900 2150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2830 2150 50  0001 C CNN
+F 3 "" H 2900 2150 50  0001 C CNN
+	1    2900 2150
+	-1   0    0    1   
+$EndComp
+Text Label 4100 1900 2    60   ~ 0
+VIN
+Text Label 4100 2100 2    60   ~ 0
+GND
+Text Notes 5150 950  2    60   ~ 0
+https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide
+$Comp
+L BSS138 Q2
+U 1 1 5ACB7E8A
+P 3100 2700
+F 0 "Q2" V 2950 2600 50  0000 L CNN
+F 1 "BSS138" V 3300 2550 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3300 2625 50  0001 L CIN
+F 3 "" H 3100 2700 50  0001 L CNN
+	1    3100 2700
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5ACB7F99
+P 2900 2650
+F 0 "R2" V 2980 2650 50  0000 C CNN
+F 1 "R" V 2900 2650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2830 2650 50  0001 C CNN
+F 3 "" H 2900 2650 50  0001 C CNN
+	1    2900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 5ACB7FC2
+P 3300 2650
+F 0 "R10" V 3380 2650 50  0000 C CNN
+F 1 "R" V 3300 2650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3230 2650 50  0001 C CNN
+F 3 "" H 3300 2650 50  0001 C CNN
+	1    3300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 5ACB81C8
+P 3300 3150
+F 0 "R11" V 3380 3150 50  0000 C CNN
+F 1 "R" V 3300 3150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3230 3150 50  0001 C CNN
+F 3 "" H 3300 3150 50  0001 C CNN
+	1    3300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5ACB81F9
+P 2900 3150
+F 0 "R3" V 2980 3150 50  0000 C CNN
+F 1 "R" V 2900 3150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2830 3150 50  0001 C CNN
+F 3 "" H 2900 3150 50  0001 C CNN
+	1    2900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L BSS138 Q3
+U 1 1 5ACB8495
+P 3100 3200
+F 0 "Q3" V 2950 3100 50  0000 L CNN
+F 1 "BSS138" V 3300 3050 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3300 3125 50  0001 L CIN
+F 3 "" H 3100 3200 50  0001 L CNN
+	1    3100 3200
+	0    -1   1    0   
+$EndComp
+$Comp
+L BSS138 Q4
+U 1 1 5ACB8A44
+P 3100 3700
+F 0 "Q4" V 2950 3600 50  0000 L CNN
+F 1 "BSS138" V 3300 3550 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3300 3625 50  0001 L CIN
+F 3 "" H 3100 3700 50  0001 L CNN
+	1    3100 3700
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5ACB8BE4
+P 2900 3650
+F 0 "R4" V 2980 3650 50  0000 C CNN
+F 1 "R" V 2900 3650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2830 3650 50  0001 C CNN
+F 3 "" H 2900 3650 50  0001 C CNN
+	1    2900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 5ACB8C25
+P 3300 3650
+F 0 "R12" V 3380 3650 50  0000 C CNN
+F 1 "R" V 3300 3650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3230 3650 50  0001 C CNN
+F 3 "" H 3300 3650 50  0001 C CNN
+	1    3300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L BSS138 Q5
+U 1 1 5ACB90B7
+P 3100 4200
+F 0 "Q5" V 2950 4100 50  0000 L CNN
+F 1 "BSS138" V 3300 4050 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3300 4125 50  0001 L CIN
+F 3 "" H 3100 4200 50  0001 L CNN
+	1    3100 4200
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 5ACB912B
+P 2900 4150
+F 0 "R5" V 2980 4150 50  0000 C CNN
+F 1 "R" V 2900 4150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2830 4150 50  0001 C CNN
+F 3 "" H 2900 4150 50  0001 C CNN
+	1    2900 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 5ACB91BC
+P 3300 4150
+F 0 "R13" V 3380 4150 50  0000 C CNN
+F 1 "R" V 3300 4150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3230 4150 50  0001 C CNN
+F 3 "" H 3300 4150 50  0001 C CNN
+	1    3300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L BSS138 Q6
+U 1 1 5ACB97D5
+P 3100 4700
+F 0 "Q6" V 2950 4600 50  0000 L CNN
+F 1 "BSS138" V 3300 4550 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3300 4625 50  0001 L CIN
+F 3 "" H 3100 4700 50  0001 L CNN
+	1    3100 4700
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 5ACB9824
+P 2900 4650
+F 0 "R6" V 2980 4650 50  0000 C CNN
+F 1 "R" V 2900 4650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2830 4650 50  0001 C CNN
+F 3 "" H 2900 4650 50  0001 C CNN
+	1    2900 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 5ACB987D
+P 3300 4650
+F 0 "R14" V 3380 4650 50  0000 C CNN
+F 1 "R" V 3300 4650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3230 4650 50  0001 C CNN
+F 3 "" H 3300 4650 50  0001 C CNN
+	1    3300 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L BSS138 Q7
+U 1 1 5ACB9DAE
+P 3100 5250
+F 0 "Q7" V 2950 5150 50  0000 L CNN
+F 1 "BSS138" V 3300 5100 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3300 5175 50  0001 L CIN
+F 3 "" H 3100 5250 50  0001 L CNN
+	1    3100 5250
+	0    -1   1    0   
+$EndComp
+$Comp
+L BSS138 Q8
+U 1 1 5ACB9DF9
+P 3100 5850
+F 0 "Q8" V 2950 5750 50  0000 L CNN
+F 1 "BSS138" V 3300 5700 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3300 5775 50  0001 L CIN
+F 3 "" H 3100 5850 50  0001 L CNN
+	1    3100 5850
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 5ACB9E62
+P 2900 5200
+F 0 "R7" V 2980 5200 50  0000 C CNN
+F 1 "R" V 2900 5200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2830 5200 50  0001 C CNN
+F 3 "" H 2900 5200 50  0001 C CNN
+	1    2900 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R15
+U 1 1 5ACB9EE9
+P 3300 5200
+F 0 "R15" V 3380 5200 50  0000 C CNN
+F 1 "R" V 3300 5200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3230 5200 50  0001 C CNN
+F 3 "" H 3300 5200 50  0001 C CNN
+	1    3300 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5ACB9F3E
+P 2900 5800
+F 0 "R8" V 2980 5800 50  0000 C CNN
+F 1 "R" V 2900 5800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2830 5800 50  0001 C CNN
+F 3 "" H 2900 5800 50  0001 C CNN
+	1    2900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 5ACB9F9B
+P 3300 5800
+F 0 "R16" V 3380 5800 50  0000 C CNN
+F 1 "R" V 3300 5800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3230 5800 50  0001 C CNN
+F 3 "" H 3300 5800 50  0001 C CNN
+	1    3300 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L AP1117-33 U1
+U 1 1 5ACBB197
+P 3100 1350
+F 0 "U1" H 2950 1475 50  0000 C CNN
+F 1 "AP1117-33" H 3100 1475 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3Lead_TabPin2" H 3100 1550 50  0001 C CNN
+F 3 "" H 3200 1100 50  0001 C CNN
+	1    3100 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2300 2900 2300
+Wire Wire Line
+	2250 2000 3100 2000
+Wire Wire Line
+	3300 2000 4100 2000
+Wire Wire Line
+	3300 2300 4100 2300
+Wire Wire Line
+	2800 2500 3100 2500
+Connection ~ 2800 2000
+Wire Wire Line
+	2700 2800 2900 2800
+Wire Wire Line
+	2700 2400 2250 2400
+Wire Wire Line
+	4100 2400 3550 2400
+Wire Wire Line
+	3550 2800 3300 2800
+Connection ~ 2900 2000
+Connection ~ 2900 2500
+Wire Wire Line
+	3400 2500 3300 2500
+Connection ~ 3400 2000
+Wire Wire Line
+	3400 1350 3400 5650
+Wire Wire Line
+	2800 1350 2800 5650
+Wire Wire Line
+	2700 2400 2700 2800
+Wire Wire Line
+	3550 2400 3550 2800
+Wire Wire Line
+	2800 3000 3100 3000
+Connection ~ 2800 2500
+Connection ~ 2900 3000
+Wire Wire Line
+	3400 3000 3300 3000
+Connection ~ 3400 2500
+Wire Wire Line
+	3300 3300 3650 3300
+Wire Wire Line
+	3650 3300 3650 2500
+Wire Wire Line
+	3650 2500 4100 2500
+Wire Wire Line
+	2250 2500 2650 2500
+Wire Wire Line
+	2650 2500 2650 3300
+Wire Wire Line
+	2650 3300 2900 3300
+Wire Wire Line
+	2800 3500 3100 3500
+Connection ~ 2800 3000
+Connection ~ 2900 3500
+Wire Wire Line
+	3400 3500 3300 3500
+Connection ~ 3400 3000
+Wire Wire Line
+	2900 3800 2600 3800
+Wire Wire Line
+	2600 3800 2600 2600
+Wire Wire Line
+	2600 2600 2250 2600
+Wire Wire Line
+	3300 3800 3750 3800
+Wire Wire Line
+	3750 3800 3750 2600
+Wire Wire Line
+	3750 2600 4100 2600
+Wire Wire Line
+	2800 4000 3100 4000
+Connection ~ 2800 3500
+Connection ~ 2900 4000
+Wire Wire Line
+	2550 4300 2900 4300
+Wire Wire Line
+	2550 4300 2550 2700
+Wire Wire Line
+	2550 2700 2250 2700
+Wire Wire Line
+	3300 4300 3850 4300
+Wire Wire Line
+	3850 4300 3850 2700
+Wire Wire Line
+	3850 2700 4100 2700
+Wire Wire Line
+	3400 4000 3300 4000
+Connection ~ 3400 3500
+Wire Wire Line
+	2800 4500 3100 4500
+Connection ~ 2900 4500
+Connection ~ 2800 4000
+Wire Wire Line
+	3400 4500 3300 4500
+Wire Wire Line
+	3300 4800 3950 4800
+Wire Wire Line
+	3950 4800 3950 2800
+Wire Wire Line
+	3950 2800 4100 2800
+Wire Wire Line
+	2900 4800 2500 4800
+Wire Wire Line
+	2500 4800 2500 2800
+Wire Wire Line
+	2500 2800 2250 2800
+Wire Wire Line
+	3100 5050 2900 5050
+Wire Wire Line
+	2800 5050 2950 5050
+Connection ~ 2950 5050
+Connection ~ 2800 4500
+Wire Wire Line
+	3400 5050 3300 5050
+Connection ~ 3400 4500
+Wire Wire Line
+	3300 5350 4050 5350
+Wire Wire Line
+	4050 5350 4050 2900
+Wire Wire Line
+	4050 2900 4100 2900
+Wire Wire Line
+	2900 5350 2450 5350
+Wire Wire Line
+	2450 5350 2450 2900
+Wire Wire Line
+	2450 2900 2250 2900
+Wire Wire Line
+	2800 5650 3100 5650
+Connection ~ 2900 5650
+Connection ~ 2800 5050
+Wire Wire Line
+	3400 5650 3300 5650
+Connection ~ 3400 5050
+Wire Wire Line
+	3300 5950 4100 5950
+Wire Wire Line
+	4100 5950 4100 3000
+Wire Wire Line
+	2250 3000 2400 3000
+Wire Wire Line
+	2400 3000 2400 5950
+Wire Wire Line
+	2400 5950 2900 5950
+Text Label 3100 1650 0    60   ~ 0
+GND
+Connection ~ 3400 4000
+Text Label 4100 2000 2    60   ~ 0
+3v3
+$EndSCHEMATC
