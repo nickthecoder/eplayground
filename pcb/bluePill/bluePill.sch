@@ -97,13 +97,13 @@ Text Label 5200 1550 2    60   ~ 0
 VCC
 Text Label 5200 1650 2    60   ~ 0
 GND
-Text Label 5200 1850 2    60   ~ 0
+Text Label 5200 2150 2    60   ~ 0
 B0
-Text Label 5200 1950 2    60   ~ 0
+Text Label 5200 2250 2    60   ~ 0
 B1
-Text Label 5200 2450 2    60   ~ 0
+Text Label 6050 2450 2    60   ~ 0
 B8
-Text Label 5200 2550 2    60   ~ 0
+Text Label 6050 2550 2    60   ~ 0
 B9
 Text Label 4450 1650 2    60   ~ 0
 B10
@@ -111,7 +111,7 @@ Text Label 4450 1550 2    60   ~ 0
 B11
 Text Label 6050 1850 2    60   ~ 0
 B12
-Text Label 5200 2350 2    60   ~ 0
+Text Label 6050 2350 2    60   ~ 0
 A8
 Text Label 5300 3200 2    60   ~ 0
 VIN
@@ -338,21 +338,21 @@ Text Label 6050 2150 2    60   ~ 0
 A12
 Text Label 6050 2250 2    60   ~ 0
 A15
-Text Label 6050 2350 2    60   ~ 0
+Text Label 5200 2050 2    60   ~ 0
 C15
-Text Label 6050 2450 2    60   ~ 0
+Text Label 5200 1950 2    60   ~ 0
 C14
-Text Label 6050 2550 2    60   ~ 0
+Text Label 5200 1850 2    60   ~ 0
 C13
 Text Label 6050 1450 2    60   ~ 0
 VIN
-Text Label 6050 1550 2    60   ~ 0
+Text Label 5150 700  2    60   ~ 0
 VCC
 Text Label 6050 1650 2    60   ~ 0
 GND
-Text Label 5200 2050 2    60   ~ 0
+Text Label 5200 2350 2    60   ~ 0
 B3
-Text Label 5200 2250 2    60   ~ 0
+Text Label 5200 2550 2    60   ~ 0
 B5
 Text Label 6250 3900 2    60   ~ 0
 B12
@@ -370,7 +370,7 @@ Text Label 3600 1550 0    60   ~ 0
 RX3
 Text Label 3600 1650 0    60   ~ 0
 TX3
-Text Label 5200 2150 2    60   ~ 0
+Text Label 5200 2450 2    60   ~ 0
 B4
 Text Label 850  2450 2    60   ~ 0
 B6
@@ -443,4 +443,23 @@ Wire Wire Line
 	1550 3500 1550 2850
 Wire Wire Line
 	1550 2850 1950 2850
+$Comp
+L SW_SPDT SW1
+U 1 1 5ACB3745
+P 5350 800
+F 0 "SW1" H 5350 970 50  0000 C CNN
+F 1 "SW_SPDT" H 5350 600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5350 800 50  0001 C CNN
+F 3 "" H 5350 800 50  0001 C CNN
+	1    5350 800 
+	-1   0    0    1   
+$EndComp
+Text Label 5150 900  2    60   ~ 0
+5V
+Wire Wire Line
+	6050 1550 5750 1550
+Wire Wire Line
+	5750 1550 5750 800 
+Wire Wire Line
+	5750 800  5550 800 
 $EndSCHEMATC
