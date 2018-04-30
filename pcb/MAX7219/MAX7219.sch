@@ -383,4 +383,6 @@ Text Label 4000 2300 2    60   ~ 0
 GND
 Text Label 4000 1600 2    60   ~ 0
 GND
+Text Notes 7400 4850 1    60   ~ 0
+Note, there is space in the schema for the second bank of switches\n(attached to K2), but there is no room on a 5x5 module!
 $EndSCHEMATC
