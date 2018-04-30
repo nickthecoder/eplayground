@@ -33,7 +33,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:eplay
 LIBS:Switch
-LIBS:MCP23017-cache
+LIBS:ioExpansion-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -160,17 +160,6 @@ Text Label 5900 4250 2    60   ~ 0
 VCC
 Text Label 5900 4150 2    60   ~ 0
 GND
-$Comp
-L Header2-RESCUE-MCP23017 U2
-U 1 1 5AC33FEE
-P 5150 4150
-F 0 "U2" H 5150 3800 60  0000 C CNN
-F 1 "Header2" H 5150 4250 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5150 4150 60  0001 C CNN
-F 3 "" H 5150 4150 60  0001 C CNN
-	1    5150 4150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Headers8 H1
 U 1 1 5AC34BA3
@@ -390,8 +379,53 @@ Wire Wire Line
 	3900 4550 3700 4550
 Wire Wire Line
 	3700 4550 3700 3700
-Text Label 4900 4350 0    60   ~ 0
-IB
 Text Label 4900 4250 0    60   ~ 0
+IB
+Text Label 4900 4350 0    60   ~ 0
 IA
+$Comp
+L Conn_01x02 J4
+U 1 1 5AE71117
+P 5100 4250
+F 0 "J4" H 5100 4350 50  0000 C CNN
+F 1 "Interrupt" H 5100 4050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5100 4250 50  0001 C CNN
+F 3 "" H 5100 4250 50  0001 C CNN
+	1    5100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2CHeader-RESCUE-MCP23017 I2C2
+U 1 1 5AE715A1
+P 6750 4150
+F 0 "I2C2" H 6900 3750 60  0000 C CNN
+F 1 "I2CHeader" H 6900 4250 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6550 4200 60  0001 C CNN
+F 3 "" H 6550 4200 60  0001 C CNN
+	1    6750 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4150 7200 4150
+Wire Wire Line
+	5900 4250 7200 4250
+Wire Wire Line
+	5900 4350 7200 4350
+Wire Wire Line
+	5900 4450 7200 4450
+$Comp
+L I2CHeader-RESCUE-MCP23017 I2C3
+U 1 1 5AE717BC
+P 7400 4150
+F 0 "I2C3" H 7550 3750 60  0000 C CNN
+F 1 "I2CHeader" H 7550 4250 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7200 4200 60  0001 C CNN
+F 3 "" H 7200 4200 60  0001 C CNN
+	1    7400 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6550 4150
+Connection ~ 6550 4250
+Connection ~ 6550 4350
+Connection ~ 6550 4450
 $EndSCHEMATC
