@@ -141,7 +141,7 @@ GND
 Text Label 5350 3000 2    60   ~ 0
 eo
 Text Label 5350 2700 2    60   ~ 0
-GND
+VCC
 Text Label 4050 5800 1    60   ~ 0
 next
 Text Label 3850 5800 1    60   ~ 0
@@ -188,8 +188,8 @@ Text Notes 4750 4900 0    60   ~ 0
 Connection from the previous\nshift module.
 Text Notes 4750 6150 0    60   ~ 0
 Connection to the next\nshift module.
-Text Notes 4750 5450 0    60   ~ 0
-Note that only data pins 0..3 are used.
+Text Notes 4600 5550 0    60   ~ 0
+Note that only data pins 0..3 are used.\nThere's no reason to add header for the other pins.\nThey are included to make it easy to line up the\nVIN, VCC and GND pins in the "standard" place.
 Wire Wire Line
 	4450 5800 4450 5100
 Wire Wire Line
@@ -223,7 +223,7 @@ L Conn_01x04 J1
 U 1 1 5AC767D3
 P 2900 2600
 F 0 "J1" H 2900 2800 50  0000 C CNN
-F 1 "Conn_01x04" H 2900 2300 50  0000 C CNN
+F 1 "Select" H 2900 2300 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 2900 2600 50  0001 C CNN
 F 3 "" H 2900 2600 50  0001 C CNN
 	1    2900 2600
@@ -266,4 +266,27 @@ Text Label 3750 5800 1    60   ~ 0
 oe
 Text Notes 2800 3700 0    60   ~ 0
 On the master module, either\nSolder the bridge and only have 3 pins on J1\nOr leave the bridge unsoldered and have 4 pins on J1\n\nOn the slave module, use only 3 pins on J1\nand leave the bridge unsoldered.
+NoConn ~ 3350 5100
+NoConn ~ 3450 5100
+NoConn ~ 3550 5100
+NoConn ~ 3350 5800
+NoConn ~ 3450 5800
+NoConn ~ 3550 5800
+NoConn ~ 3650 5800
+NoConn ~ 3650 5100
+$Comp
+L C C1
+U 1 1 5AE71B02
+P 5800 4000
+F 0 "C1" H 5825 4100 50  0000 L CNN
+F 1 "C" H 5825 3900 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5838 3850 50  0001 C CNN
+F 3 "" H 5800 4000 50  0001 C CNN
+	1    5800 4000
+	1    0    0    -1  
+$EndComp
+Text Label 5800 3850 0    60   ~ 0
+VCC
+Text Label 5800 4150 0    60   ~ 0
+GND
 $EndSCHEMATC
