@@ -343,7 +343,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 1900 8300 1900
 Wire Wire Line
-	7250 2000 9450 2000
+	7250 2000 9650 2000
 Wire Wire Line
 	7250 2100 9000 2100
 Wire Wire Line
@@ -377,7 +377,7 @@ Connection ~ 9450 2600
 Connection ~ 9450 2500
 Connection ~ 9450 2400
 Wire Wire Line
-	9450 2000 9450 3000
+	9450 2000 9450 3250
 Text Label 7950 2100 0    60   ~ 0
 GND
 Connection ~ 9000 2300
@@ -482,4 +482,68 @@ Text Notes 2900 6450 0    60   ~ 0
 Level Converer
 Text Notes 7650 3700 0    60   ~ 0
 Triple Header
+$Comp
+L Conn_01x01 J1
+U 1 1 5AE81DFF
+P 9200 3650
+F 0 "J1" H 9200 3750 50  0000 C CNN
+F 1 "S" H 9200 3550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 9200 3650 50  0001 C CNN
+F 3 "" H 9200 3650 50  0001 C CNN
+	1    9200 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x03 J2
+U 1 1 5AE81E50
+P 9650 3650
+F 0 "J2" H 9650 3850 50  0000 C CNN
+F 1 "Term" H 9650 3450 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_3pol" H 9650 3650 50  0001 C CNN
+F 3 "" H 9650 3650 50  0001 C CNN
+	1    9650 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 3450 9550 3450
+Text Label 9750 3450 0    60   ~ 0
+GND
+$Comp
+L Conn_01x01 J3
+U 1 1 5AE82489
+P 9300 1850
+F 0 "J3" H 9300 1950 50  0000 C CNN
+F 1 "S" H 9300 1750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 9300 1850 50  0001 C CNN
+F 3 "" H 9300 1850 50  0001 C CNN
+	1    9300 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x03 J4
+U 1 1 5AE82510
+P 9650 1850
+F 0 "J4" H 9650 2050 50  0000 C CNN
+F 1 "Term" H 9650 1650 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_3pol" H 9650 1850 50  0001 C CNN
+F 3 "" H 9650 1850 50  0001 C CNN
+	1    9650 1850
+	0    1    1    0   
+$EndComp
+Text Label 9750 1650 0    60   ~ 0
+GND
+Wire Wire Line
+	9550 1650 9300 1650
+Wire Wire Line
+	9650 2000 9650 1650
+Connection ~ 9450 2000
+Wire Wire Line
+	9450 3250 9650 3250
+Wire Wire Line
+	9650 3250 9650 3450
+Connection ~ 9450 3000
+Text Notes 9950 3950 2    60   ~ 0
+Option for one triple\nusing screw terminal
+Text Notes 9950 1550 2    60   ~ 0
+Option for one triple\nusing screw terminal
 $EndSCHEMATC

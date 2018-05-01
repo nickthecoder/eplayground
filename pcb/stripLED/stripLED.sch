@@ -150,7 +150,7 @@ L Conn_01x04 J1
 U 1 1 5AC8230D
 P 4000 2900
 F 0 "J1" H 4000 3100 50  0000 C CNN
-F 1 "Conn_01x04" H 4000 2600 50  0000 C CNN
+F 1 "Term" H 4000 2600 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 4000 2900 50  0001 C CNN
 F 3 "" H 4000 2900 50  0001 C CNN
 	1    4000 2900
@@ -161,7 +161,7 @@ L Headers8L H1
 U 1 1 5AC82551
 P 3350 1900
 F 0 "H1" H 3350 850 60  0000 C CNN
-F 1 "Headers8L" H 3400 1850 60  0000 C CNN
+F 1 "Choice" H 3400 1850 60  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3400 1850 60  0001 C CNN
 F 3 "" H 3400 1850 60  0001 C CNN
 	1    3350 1900
@@ -205,256 +205,11 @@ F 3 "" H 4500 3400 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DATA DA1
-U 1 1 5AC83748
-P 8550 1000
-F 0 "DA1" H 8550 800 60  0000 C CNN
-F 1 "DATA" H 8550 1200 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8550 1200 60  0001 C CNN
-F 3 "" H 8550 1200 60  0001 C CNN
-	1    8550 1000
-	-1   0    0    1   
-$EndComp
-$Comp
-L DATA DA2
-U 1 1 5AC83857
-P 8550 1450
-F 0 "DA2" H 8550 1250 60  0000 C CNN
-F 1 "DATA" H 8550 1650 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8550 1650 60  0001 C CNN
-F 3 "" H 8550 1650 60  0001 C CNN
-	1    8550 1450
-	-1   0    0    1   
-$EndComp
-$Comp
-L DATA DA3
-U 1 1 5AC83892
-P 8550 1900
-F 0 "DA3" H 8550 1700 60  0000 C CNN
-F 1 "DATA" H 8550 2100 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8550 2100 60  0001 C CNN
-F 3 "" H 8550 2100 60  0001 C CNN
-	1    8550 1900
-	-1   0    0    1   
-$EndComp
-$Comp
-L DATA DA4
-U 1 1 5AC838DB
-P 8550 2350
-F 0 "DA4" H 8550 2150 60  0000 C CNN
-F 1 "DATA" H 8550 2550 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8550 2550 60  0001 C CNN
-F 3 "" H 8550 2550 60  0001 C CNN
-	1    8550 2350
-	-1   0    0    1   
-$EndComp
-$Comp
-L DATA DA5
-U 1 1 5AC83922
-P 8550 2800
-F 0 "DA5" H 8550 2600 60  0000 C CNN
-F 1 "DATA" H 8550 3000 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8550 3000 60  0001 C CNN
-F 3 "" H 8550 3000 60  0001 C CNN
-	1    8550 2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L DATA DA6
-U 1 1 5AC8396D
-P 8550 3250
-F 0 "DA6" H 8550 3050 60  0000 C CNN
-F 1 "DATA" H 8550 3450 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8550 3450 60  0001 C CNN
-F 3 "" H 8550 3450 60  0001 C CNN
-	1    8550 3250
-	-1   0    0    1   
-$EndComp
-$Comp
-L DATA DA7
-U 1 1 5AC839B8
-P 8550 3700
-F 0 "DA7" H 8550 3500 60  0000 C CNN
-F 1 "DATA" H 8550 3900 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8550 3900 60  0001 C CNN
-F 3 "" H 8550 3900 60  0001 C CNN
-	1    8550 3700
-	-1   0    0    1   
-$EndComp
-$Comp
-L DATA DA8
-U 1 1 5AC83A87
-P 8550 4150
-F 0 "DA8" H 8550 3950 60  0000 C CNN
-F 1 "DATA" H 8550 4350 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8550 4350 60  0001 C CNN
-F 3 "" H 8550 4350 60  0001 C CNN
-	1    8550 4150
-	-1   0    0    1   
-$EndComp
-Text Label 9100 4250 0    60   ~ 0
-GND2
-Text Label 8900 1000 0    60   ~ 0
-VCC2
-$Comp
-L Conn_01x01 J6
-U 1 1 5AC85882
-P 8050 4800
-F 0 "J6" H 8050 4900 50  0000 C CNN
-F 1 "Conn_01x01" H 8050 4700 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 8050 4800 50  0001 C CNN
-F 3 "" H 8050 4800 50  0001 C CNN
-	1    8050 4800
-	-1   0    0    1   
-$EndComp
-$Comp
-L DATA DA9
-U 1 1 5AC85968
-P 8550 4900
-F 0 "DA9" H 8550 4700 60  0000 C CNN
-F 1 "DATA" H 8550 5100 60  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_3pol" H 8550 5100 60  0001 C CNN
-F 3 "" H 8550 5100 60  0001 C CNN
-	1    8550 4900
-	-1   0    0    1   
-$EndComp
-$Comp
-L DATA DA10
-U 1 1 5AC859F3
-P 8550 5400
-F 0 "DA10" H 8550 5200 60  0000 C CNN
-F 1 "DATA" H 8550 5600 60  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_3pol" H 8550 5600 60  0001 C CNN
-F 3 "" H 8550 5600 60  0001 C CNN
-	1    8550 5400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Conn_01x01 J7
-U 1 1 5AC85AFC
-P 8050 5300
-F 0 "J7" H 8050 5400 50  0000 C CNN
-F 1 "Conn_01x01" H 8050 5200 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 8050 5300 50  0001 C CNN
-F 3 "" H 8050 5300 50  0001 C CNN
-	1    8050 5300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7100 2700 7900 2700
-Wire Wire Line
-	7100 2600 8000 2600
-Wire Wire Line
-	7100 2500 8150 2500
-Wire Wire Line
-	7100 2400 8250 2400
-Wire Wire Line
-	7100 2300 8250 2300
-Wire Wire Line
-	7100 2200 7850 2200
-Wire Wire Line
-	7100 2100 7750 2100
-Wire Wire Line
-	7100 2000 7650 2000
-Wire Wire Line
-	2400 2750 3050 2750
-Wire Wire Line
-	3050 2650 2400 2650
-Wire Wire Line
-	2400 2550 3050 2550
-Wire Wire Line
-	3050 2450 2400 2450
-Wire Wire Line
-	2400 2350 3050 2350
-Wire Wire Line
-	3050 2250 2400 2250
-Wire Wire Line
-	2400 2150 3050 2150
-Wire Wire Line
-	3900 3850 3900 3600
-Wire Wire Line
-	3050 2850 2400 2850
-Wire Wire Line
-	7650 900  8250 900 
-Wire Wire Line
-	7650 2000 7650 900 
-Wire Wire Line
-	7750 2100 7750 1350
-Wire Wire Line
-	7750 1350 8250 1350
-Wire Wire Line
-	7850 2200 7850 1800
-Wire Wire Line
-	7850 1800 8250 1800
-Wire Wire Line
-	8250 2300 8250 2250
-Wire Wire Line
-	8250 2400 8250 2700
-Wire Wire Line
-	8150 2500 8150 3150
-Wire Wire Line
-	8150 3150 8250 3150
-Wire Wire Line
-	8250 3600 8000 3600
-Wire Wire Line
-	8000 3600 8000 2600
-Wire Wire Line
-	7900 2700 7900 4050
-Wire Wire Line
-	7900 4050 8250 4050
-Wire Wire Line
-	9100 4250 8900 4250
-Wire Wire Line
-	9100 1100 9100 5500
-Wire Wire Line
-	9100 3800 8900 3800
-Wire Wire Line
-	9100 3350 8900 3350
-Connection ~ 9100 3800
-Wire Wire Line
-	9100 2900 8900 2900
-Connection ~ 9100 3350
-Wire Wire Line
-	9100 2450 8900 2450
-Connection ~ 9100 2900
-Wire Wire Line
-	9100 2000 8900 2000
-Connection ~ 9100 2450
-Wire Wire Line
-	9100 1550 8900 1550
-Connection ~ 9100 2000
-Wire Wire Line
-	9100 1100 8900 1100
-Connection ~ 9100 1550
-Wire Wire Line
-	8900 1000 8900 5400
-Connection ~ 8900 1450
-Connection ~ 8900 1900
-Connection ~ 8900 2350
-Connection ~ 8900 2800
-Connection ~ 8900 3250
-Connection ~ 8900 3700
-Connection ~ 8900 4150
-Wire Wire Line
-	9100 5000 8900 5000
-Connection ~ 9100 4250
-Wire Wire Line
-	9100 5500 8900 5500
-Connection ~ 9100 5000
-Connection ~ 8900 4900
-Wire Wire Line
-	3200 3600 3200 3850
-Wire Wire Line
-	3200 3850 4600 3850
-Connection ~ 3900 3850
-Wire Wire Line
-	4600 3850 4600 3600
-$Comp
 L Conn_01x03 J2
 U 1 1 5AC82502
 P 1800 3500
 F 0 "J2" H 1800 3700 50  0000 C CNN
-F 1 "Conn_01x03" H 1800 3300 50  0000 C CNN
+F 1 "Select" H 1800 3300 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 1800 3500 50  0001 C CNN
 F 3 "" H 1800 3500 50  0001 C CNN
 	1    1800 3500
@@ -493,6 +248,87 @@ F 3 "" H 4550 4650 50  0001 L CNN
 	1    4550 4650
 	1    0    0    -1  
 $EndComp
+$Comp
+L Conn_01x04 J8
+U 1 1 5AC8CA20
+P 3450 4050
+F 0 "J8" H 3450 4250 50  0000 C CNN
+F 1 "Term" H 3450 3750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3450 4050 50  0001 C CNN
+F 3 "" H 3450 4050 50  0001 C CNN
+	1    3450 4050
+	0    1    -1   0   
+$EndComp
+Text Label 3550 4250 0    60   ~ 0
+VIN
+Text Label 4650 4850 0    60   ~ 0
+GND
+Text Notes 3550 3750 0    60   ~ 0
+SOT23 MOSFETs
+Text Notes 3500 5000 0    60   ~ 0
+TO-220 MOSFETs
+Text Notes 1550 5700 0    60   ~ 0
+Drive 3 MOSFETs from any three data pins.\nThe board supports two packages : SOT23 and TO-220.\n
+$Comp
+L Conn_01x04 J4
+U 1 1 5AE8537C
+P 9550 5700
+F 0 "J4" H 9550 5900 50  0000 C CNN
+F 1 "Term" H 9550 5400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 9550 5700 50  0001 C CNN
+F 3 "" H 9550 5700 50  0001 C CNN
+	1    9550 5700
+	0    -1   1    0   
+$EndComp
+Text Notes 5650 6200 0    60   ~ 0
+Taken from Vovanium's solution :\nhttps://electronics.stackexchange.com/questions/70318/using-a-n-mosfet-to-switch-a-common-cathode-ledstrip
+$Comp
+L Headers8L H2
+U 1 1 5AE85443
+P 8050 1750
+F 0 "H2" H 8050 700 60  0000 C CNN
+F 1 "Choice" H 8100 1700 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 8100 1700 60  0001 C CNN
+F 3 "" H 8100 1700 60  0001 C CNN
+	1    8050 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x03 J3
+U 1 1 5AE8551D
+P 7450 3500
+F 0 "J3" H 7450 3700 50  0000 C CNN
+F 1 "Select" H 7450 3300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7450 3500 50  0001 C CNN
+F 3 "" H 7450 3500 50  0001 C CNN
+	1    7450 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 2750 3050 2750
+Wire Wire Line
+	3050 2650 2400 2650
+Wire Wire Line
+	2400 2550 3050 2550
+Wire Wire Line
+	3050 2450 2400 2450
+Wire Wire Line
+	2400 2350 3050 2350
+Wire Wire Line
+	3050 2250 2400 2250
+Wire Wire Line
+	2400 2150 3050 2150
+Wire Wire Line
+	3900 3850 3900 3600
+Wire Wire Line
+	3050 2850 2400 2850
+Wire Wire Line
+	3200 3600 3200 3850
+Wire Wire Line
+	3200 3850 4600 3850
+Connection ~ 3900 3850
+Wire Wire Line
+	4600 3850 4600 3600
 Wire Wire Line
 	3250 4850 4650 4850
 Connection ~ 3950 4850
@@ -506,17 +342,6 @@ Wire Wire Line
 	4000 3100 4000 3200
 Wire Wire Line
 	4000 3200 4600 3200
-$Comp
-L Conn_01x04 J8
-U 1 1 5AC8CA20
-P 3450 4050
-F 0 "J8" H 3450 4250 50  0000 C CNN
-F 1 "Conn_01x04" H 3450 3750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3450 4050 50  0001 C CNN
-F 3 "" H 3450 4050 50  0001 C CNN
-	1    3450 4050
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	3250 4250 3250 4450
 Wire Wire Line
@@ -527,19 +352,12 @@ Wire Wire Line
 	3450 4250 3450 4400
 Wire Wire Line
 	3450 4400 4650 4400
-Text Label 3550 4250 0    60   ~ 0
-VIN
 Wire Wire Line
 	3600 3500 3600 3400
 Wire Wire Line
-	4300 3400 4300 3650
+	4300 3600 4300 3400
 Wire Wire Line
-	4300 3650 2950 3650
-Wire Wire Line
-	2950 3650 2950 3600
-Connection ~ 4300 3600
-Wire Wire Line
-	2950 3600 2000 3600
+	2000 3600 4300 3600
 Wire Wire Line
 	4650 4400 4650 4450
 Wire Wire Line
@@ -561,20 +379,211 @@ Wire Wire Line
 Wire Wire Line
 	4350 5050 4350 4700
 Connection ~ 2350 3600
-Text Label 4650 4850 0    60   ~ 0
-GND
 Wire Wire Line
 	2000 3500 3600 3500
 Wire Wire Line
 	2000 3400 2900 3400
-Text Notes 3550 3750 0    60   ~ 0
-SOT23 MOSFETs
-Text Notes 3500 5000 0    60   ~ 0
-TO-220 MOSFETs
-Text Notes 1550 5700 0    60   ~ 0
-Drive 3 MOSFETs from any three data pins.\nThe board supports two packages : SOT23 and TO-220.
 Wire Bus Line
-	6050 950  6050 5500
-Text Notes 6750 5950 0    60   ~ 0
-Header pins, with GND and VCC next to each.\nThere is also an option for a screw terminal at each end.
+	5400 1000 5400 5550
+Wire Wire Line
+	7750 2000 7100 2000
+Wire Wire Line
+	7100 2100 7750 2100
+Wire Wire Line
+	7750 2200 7100 2200
+Wire Wire Line
+	7100 2300 7750 2300
+Wire Wire Line
+	7750 2400 7100 2400
+Wire Wire Line
+	7100 2500 7750 2500
+Wire Wire Line
+	7750 2600 7100 2600
+Wire Wire Line
+	7100 2700 7750 2700
+$Comp
+L 2N3904 Q7
+U 1 1 5AE858BB
+P 8500 3400
+F 0 "Q7" H 8700 3475 50  0000 L CNN
+F 1 "2N3904" H 8700 3400 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 8700 3325 50  0001 L CIN
+F 3 "" H 8500 3400 50  0001 L CNN
+	1    8500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Network04 RN1
+U 1 1 5AE85964
+P 8800 2700
+F 0 "RN1" V 8500 2700 50  0000 C CNN
+F 1 "10K" V 9000 2700 50  0000 C CNN
+F 2 "Resistors_THT:R_Array_SIP5" V 9075 2700 50  0001 C CNN
+F 3 "" H 8800 2700 50  0001 C CNN
+	1    8800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5AE85A2E
+P 8150 3400
+F 0 "R1" V 8230 3400 50  0000 C CNN
+F 1 "10K" V 8150 3400 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8080 3400 50  0001 C CNN
+F 3 "" H 8150 3400 50  0001 C CNN
+	1    8150 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 2900 8600 3200
+Text Label 8900 5500 0    60   ~ 0
+GND2
+$Comp
+L 2N7002 Q10
+U 1 1 5AE85D25
+P 9150 3100
+F 0 "Q10" H 9350 3175 50  0000 L CNN
+F 1 "2N7002" H 9350 3100 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9350 3025 50  0001 L CIN
+F 3 "" H 9150 3100 50  0001 L CNN
+	1    9150 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3100 8600 3100
+Connection ~ 8600 3100
+Wire Wire Line
+	8600 2500 9400 2500
+Text Label 8850 2500 0    60   ~ 0
+VIN2
+$Comp
+L R R2
+U 1 1 5AE8636A
+P 8150 4250
+F 0 "R2" V 8230 4250 50  0000 C CNN
+F 1 "10K" V 8150 4250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8080 4250 50  0001 C CNN
+F 3 "" H 8150 4250 50  0001 C CNN
+	1    8150 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 3400 8000 3400
+Wire Wire Line
+	7650 3500 7900 3500
+$Comp
+L 2N3904 Q8
+U 1 1 5AE864F6
+P 8500 4250
+F 0 "Q8" H 8700 4325 50  0000 L CNN
+F 1 "2N3904" H 8700 4250 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 8700 4175 50  0001 L CIN
+F 3 "" H 8500 4250 50  0001 L CNN
+	1    8500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N7002 Q11
+U 1 1 5AE868A7
+P 9150 3900
+F 0 "Q11" H 9350 3975 50  0000 L CNN
+F 1 "2N7002" H 9350 3900 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9350 3825 50  0001 L CIN
+F 3 "" H 9150 3900 50  0001 L CNN
+	1    9150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 4250 8000 4250
+Wire Wire Line
+	8350 4450 8600 4450
+Wire Wire Line
+	7900 3500 7900 4250
+$Comp
+L 2N3904 Q9
+U 1 1 5AE86F5F
+P 8500 5050
+F 0 "Q9" H 8700 5125 50  0000 L CNN
+F 1 "2N3904" H 8700 5050 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 8700 4975 50  0001 L CIN
+F 3 "" H 8500 5050 50  0001 L CNN
+	1    8500 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5AE86FEF
+P 8150 5050
+F 0 "R3" V 8230 5050 50  0000 C CNN
+F 1 "10K" V 8150 5050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8080 5050 50  0001 C CNN
+F 3 "" H 8150 5050 50  0001 C CNN
+	1    8150 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L 2N7002 Q12
+U 1 1 5AE87069
+P 9150 4750
+F 0 "Q12" H 9350 4825 50  0000 L CNN
+F 1 "2N7002" H 9350 4750 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9350 4675 50  0001 L CIN
+F 3 "" H 9150 4750 50  0001 L CNN
+	1    9150 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4750 8600 4850
+Wire Wire Line
+	8600 4750 8950 4750
+Wire Wire Line
+	8700 2900 8700 4050
+Wire Wire Line
+	9250 2900 9400 2900
+Wire Wire Line
+	9400 2500 9400 4550
+Wire Wire Line
+	9400 3700 9250 3700
+Connection ~ 9400 2900
+Wire Wire Line
+	8600 3600 8350 3600
+Wire Wire Line
+	8350 3600 8350 5500
+Connection ~ 8600 4450
+Wire Wire Line
+	8350 5250 8600 5250
+Connection ~ 8350 4450
+Wire Wire Line
+	9400 4550 9250 4550
+Connection ~ 9400 3700
+Wire Wire Line
+	8800 2900 8800 4750
+Connection ~ 8800 4750
+Wire Wire Line
+	8700 4050 8600 4050
+Wire Wire Line
+	8950 3900 8700 3900
+Connection ~ 8700 3900
+Wire Wire Line
+	9250 3300 9550 3300
+Wire Wire Line
+	9550 3300 9550 5500
+Wire Wire Line
+	9250 4100 9650 4100
+Wire Wire Line
+	9650 4100 9650 5500
+Wire Wire Line
+	9250 4950 9750 4950
+Wire Wire Line
+	9750 4950 9750 5500
+Wire Wire Line
+	8350 5500 9450 5500
+Connection ~ 8350 5250
+Wire Wire Line
+	7650 3600 7800 3600
+Wire Wire Line
+	7800 3600 7800 5050
+Wire Wire Line
+	7800 5050 8000 5050
+NoConn ~ 8900 2900
 $EndSCHEMATC

@@ -287,13 +287,11 @@ Wire Wire Line
 Wire Wire Line
 	5750 4500 6150 4500
 Wire Wire Line
-	4000 3200 3850 3200
+	3800 3200 4000 3200
 Wire Wire Line
-	3850 3200 3850 4800
+	6550 4800 3900 4800
 Wire Wire Line
-	3850 4800 6550 4800
-Wire Wire Line
-	6550 4800 6550 1900
+	6550 1900 6550 4800
 Connection ~ 6550 4150
 Connection ~ 6550 3800
 Connection ~ 6550 3450
@@ -303,45 +301,6 @@ Connection ~ 6550 2250
 Wire Wire Line
 	6550 1900 6500 1900
 Connection ~ 6550 4500
-Wire Wire Line
-	4000 3300 4000 4950
-Wire Wire Line
-	6050 1800 6750 1800
-Wire Wire Line
-	6050 1800 6050 1900
-Connection ~ 6050 1900
-Wire Wire Line
-	6750 2150 6050 2150
-Connection ~ 6050 2150
-Wire Wire Line
-	6750 2550 6000 2550
-Connection ~ 6000 2550
-Wire Wire Line
-	6750 2950 5950 2950
-Connection ~ 5950 2950
-Wire Wire Line
-	6750 3300 5900 3300
-Connection ~ 5900 3300
-Wire Wire Line
-	6750 3650 5850 3650
-Connection ~ 5850 3650
-Wire Wire Line
-	6750 4000 5800 4000
-Connection ~ 5800 4000
-Connection ~ 5750 4350
-Wire Wire Line
-	7150 1800 7150 4950
-Connection ~ 7150 2150
-Connection ~ 7150 2550
-Connection ~ 7150 2950
-Connection ~ 7150 3300
-Connection ~ 7150 3650
-Connection ~ 7150 4000
-Connection ~ 7150 4350
-Wire Wire Line
-	7150 4950 4000 4950
-Wire Wire Line
-	6750 4350 5750 4350
 Text Label 4000 1900 0    60   ~ 0
 CLK
 Text Label 4000 2000 0    60   ~ 0
@@ -383,6 +342,21 @@ Text Label 4000 2300 2    60   ~ 0
 GND
 Text Label 4000 1600 2    60   ~ 0
 GND
-Text Notes 7400 4850 1    60   ~ 0
-Note, there is space in the schema for the second bank of switches\n(attached to K2), but there is no room on a 5x5 module!
+$Comp
+L SW_SPDT SW9
+U 1 1 5AE7A76E
+P 3900 3900
+F 0 "SW9" H 3900 4070 50  0000 C CNN
+F 1 "SW_SPDT" H 3900 3700 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 3900 3900 50  0001 C CNN
+F 3 "" H 3900 3900 50  0001 C CNN
+	1    3900 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3800 3700 3800 3200
+Wire Wire Line
+	4000 3300 4000 3700
+Wire Wire Line
+	3900 4800 3900 4100
 $EndSCHEMATC
