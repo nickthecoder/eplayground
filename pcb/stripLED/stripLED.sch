@@ -272,16 +272,16 @@ Drive 3 MOSFETs from any three data pins.\nThe board supports two packages : SOT
 $Comp
 L Conn_01x04 J4
 U 1 1 5AE8537C
-P 9550 5700
-F 0 "J4" H 9550 5900 50  0000 C CNN
-F 1 "Term" H 9550 5400 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 9550 5700 50  0001 C CNN
-F 3 "" H 9550 5700 50  0001 C CNN
-	1    9550 5700
+P 9650 5350
+F 0 "J4" H 9650 5550 50  0000 C CNN
+F 1 "Term" H 9650 5050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 9650 5350 50  0001 C CNN
+F 3 "" H 9650 5350 50  0001 C CNN
+	1    9650 5350
 	0    -1   1    0   
 $EndComp
 Text Notes 5650 6200 0    60   ~ 0
-Taken from Vovanium's solution :\nhttps://electronics.stackexchange.com/questions/70318/using-a-n-mosfet-to-switch-a-common-cathode-ledstrip
+Taken from :\nhttps://electronics.stackexchange.com/questions/70318/using-a-n-mosfet-to-switch-a-common-cathode-ledstrip
 $Comp
 L Headers8L H2
 U 1 1 5AE85443
@@ -296,13 +296,57 @@ $EndComp
 $Comp
 L Conn_01x03 J3
 U 1 1 5AE8551D
-P 7450 3500
-F 0 "J3" H 7450 3700 50  0000 C CNN
-F 1 "Select" H 7450 3300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7450 3500 50  0001 C CNN
-F 3 "" H 7450 3500 50  0001 C CNN
-	1    7450 3500
+P 5850 4250
+F 0 "J3" H 5850 4450 50  0000 C CNN
+F 1 "Select" H 5850 4050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5850 4250 50  0001 C CNN
+F 3 "" H 5850 4250 50  0001 C CNN
+	1    5850 4250
 	-1   0    0    1   
+$EndComp
+$Comp
+L R_Network04 RN1
+U 1 1 5AE85964
+P 7500 3450
+F 0 "RN1" V 7200 3450 50  0000 C CNN
+F 1 "10K" V 7700 3450 50  0000 C CNN
+F 2 "Resistors_THT:R_Array_SIP5" V 7775 3450 50  0001 C CNN
+F 3 "" H 7500 3450 50  0001 C CNN
+	1    7500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N7002 Q10
+U 1 1 5AE85D25
+P 8900 4600
+F 0 "Q10" H 9100 4700 50  0000 L CNN
+F 1 "2N7002" H 9100 4800 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9100 4525 50  0001 L CIN
+F 3 "" H 8900 4600 50  0001 L CNN
+	1    8900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N7002 Q11
+U 1 1 5AE868A7
+P 9650 4600
+F 0 "Q11" H 9850 4700 50  0000 L CNN
+F 1 "2N7002" H 9850 4800 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9850 4525 50  0001 L CIN
+F 3 "" H 9650 4600 50  0001 L CNN
+	1    9650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N7002 Q12
+U 1 1 5AE87069
+P 10450 4600
+F 0 "Q12" H 10650 4700 50  0000 L CNN
+F 1 "2N7002" H 10650 4800 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 10650 4525 50  0001 L CIN
+F 3 "" H 10450 4600 50  0001 L CNN
+	1    10450 4600
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2400 2750 3050 2750
@@ -401,189 +445,127 @@ Wire Wire Line
 	7750 2600 7100 2600
 Wire Wire Line
 	7100 2700 7750 2700
-$Comp
-L 2N3904 Q7
-U 1 1 5AE858BB
-P 8500 3400
-F 0 "Q7" H 8700 3475 50  0000 L CNN
-F 1 "2N3904" H 8700 3400 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 8700 3325 50  0001 L CIN
-F 3 "" H 8500 3400 50  0001 L CNN
-	1    8500 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Network04 RN1
-U 1 1 5AE85964
-P 8800 2700
-F 0 "RN1" V 8500 2700 50  0000 C CNN
-F 1 "10K" V 9000 2700 50  0000 C CNN
-F 2 "Resistors_THT:R_Array_SIP5" V 9075 2700 50  0001 C CNN
-F 3 "" H 8800 2700 50  0001 C CNN
-	1    8800 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R1
-U 1 1 5AE85A2E
-P 8150 3400
-F 0 "R1" V 8230 3400 50  0000 C CNN
-F 1 "10K" V 8150 3400 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8080 3400 50  0001 C CNN
-F 3 "" H 8150 3400 50  0001 C CNN
-	1    8150 3400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	8600 2900 8600 3200
-Text Label 8900 5500 0    60   ~ 0
+	6050 4350 6400 4350
+Wire Wire Line
+	6400 4350 6400 4550
+Wire Wire Line
+	6050 4250 7100 4250
+Wire Wire Line
+	7100 4250 7100 4550
+Wire Wire Line
+	6050 4150 7850 4150
+Wire Wire Line
+	7850 4150 7850 4550
+Wire Wire Line
+	7400 3650 7400 4350
+Wire Wire Line
+	6700 3750 6700 4350
+Wire Wire Line
+	6700 3750 7300 3750
+Wire Wire Line
+	7300 3750 7300 3650
+Wire Wire Line
+	7500 3650 7500 3750
+Wire Wire Line
+	7500 3750 10250 3750
+Wire Wire Line
+	8150 3750 8150 4350
+NoConn ~ 7600 3650
+Text Label 6950 5150 0    60   ~ 0
 GND2
-$Comp
-L 2N7002 Q10
-U 1 1 5AE85D25
-P 9150 3100
-F 0 "Q10" H 9350 3175 50  0000 L CNN
-F 1 "2N7002" H 9350 3100 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 9350 3025 50  0001 L CIN
-F 3 "" H 9150 3100 50  0001 L CNN
-	1    9150 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8950 3100 8600 3100
-Connection ~ 8600 3100
+	9750 4800 9750 5150
 Wire Wire Line
-	8600 2500 9400 2500
-Text Label 8850 2500 0    60   ~ 0
+	9850 5150 9850 5050
+Wire Wire Line
+	9850 5050 10550 5050
+Wire Wire Line
+	10550 5050 10550 4800
+Wire Wire Line
+	9000 5050 9650 5050
+Wire Wire Line
+	9000 5050 9000 4800
+Wire Wire Line
+	7300 3250 10550 3250
+Wire Wire Line
+	10550 3250 10550 4400
+Wire Wire Line
+	9750 4400 9750 3250
+Connection ~ 9750 3250
+Wire Wire Line
+	9000 4400 9000 3250
+Connection ~ 9000 3250
+Wire Wire Line
+	10250 3750 10250 4600
+Connection ~ 8150 3750
+Wire Wire Line
+	7400 3850 9450 3850
+Wire Wire Line
+	9450 3850 9450 4600
+Connection ~ 7400 3850
+Wire Wire Line
+	6700 3950 8700 3950
+Wire Wire Line
+	8700 3950 8700 4600
+Connection ~ 6700 3950
+Wire Wire Line
+	9650 5050 9650 5150
+Wire Wire Line
+	9550 5150 6700 5150
+Wire Wire Line
+	6700 5150 6700 4750
+Wire Wire Line
+	7400 4750 7400 5150
+Connection ~ 7400 5150
+Wire Wire Line
+	8150 4750 8150 5150
+Connection ~ 8150 5150
+Text Label 8100 3250 0    60   ~ 0
 VIN2
 $Comp
-L R R2
-U 1 1 5AE8636A
-P 8150 4250
-F 0 "R2" V 8230 4250 50  0000 C CNN
-F 1 "10K" V 8150 4250 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8080 4250 50  0001 C CNN
-F 3 "" H 8150 4250 50  0001 C CNN
-	1    8150 4250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7650 3400 8000 3400
-Wire Wire Line
-	7650 3500 7900 3500
-$Comp
-L 2N3904 Q8
-U 1 1 5AE864F6
-P 8500 4250
-F 0 "Q8" H 8700 4325 50  0000 L CNN
-F 1 "2N3904" H 8700 4250 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 8700 4175 50  0001 L CIN
-F 3 "" H 8500 4250 50  0001 L CNN
-	1    8500 4250
+L BSS83P Q7
+U 1 1 5AE87358
+P 6600 4550
+F 0 "Q7" H 6800 4625 50  0000 L CNN
+F 1 "BSS83P" H 6800 4550 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6800 4475 50  0001 L CIN
+F 3 "" H 6600 4550 50  0001 L CNN
+	1    6600 4550
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2N7002 Q11
-U 1 1 5AE868A7
-P 9150 3900
-F 0 "Q11" H 9350 3975 50  0000 L CNN
-F 1 "2N7002" H 9350 3900 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 9350 3825 50  0001 L CIN
-F 3 "" H 9150 3900 50  0001 L CNN
-	1    9150 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 4250 8000 4250
-Wire Wire Line
-	8350 4450 8600 4450
-Wire Wire Line
-	7900 3500 7900 4250
-$Comp
-L 2N3904 Q9
-U 1 1 5AE86F5F
-P 8500 5050
-F 0 "Q9" H 8700 5125 50  0000 L CNN
-F 1 "2N3904" H 8700 5050 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 8700 4975 50  0001 L CIN
-F 3 "" H 8500 5050 50  0001 L CNN
-	1    8500 5050
+L BSS83P Q8
+U 1 1 5AE8750D
+P 7300 4550
+F 0 "Q8" H 7500 4625 50  0000 L CNN
+F 1 "BSS83P" H 7500 4550 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7500 4475 50  0001 L CIN
+F 3 "" H 7300 4550 50  0001 L CNN
+	1    7300 4550
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
-U 1 1 5AE86FEF
-P 8150 5050
-F 0 "R3" V 8230 5050 50  0000 C CNN
-F 1 "10K" V 8150 5050 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8080 5050 50  0001 C CNN
-F 3 "" H 8150 5050 50  0001 C CNN
-	1    8150 5050
-	0    1    1    0   
-$EndComp
-$Comp
-L 2N7002 Q12
-U 1 1 5AE87069
-P 9150 4750
-F 0 "Q12" H 9350 4825 50  0000 L CNN
-F 1 "2N7002" H 9350 4750 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 9350 4675 50  0001 L CIN
-F 3 "" H 9150 4750 50  0001 L CNN
-	1    9150 4750
+L BSS83P Q9
+U 1 1 5AE8757E
+P 8050 4550
+F 0 "Q9" H 8250 4625 50  0000 L CNN
+F 1 "BSS83P" H 8250 4550 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 8250 4475 50  0001 L CIN
+F 3 "" H 8050 4550 50  0001 L CNN
+	1    8050 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8600 4750 8600 4850
-Wire Wire Line
-	8600 4750 8950 4750
-Wire Wire Line
-	8700 2900 8700 4050
-Wire Wire Line
-	9250 2900 9400 2900
-Wire Wire Line
-	9400 2500 9400 4550
-Wire Wire Line
-	9400 3700 9250 3700
-Connection ~ 9400 2900
-Wire Wire Line
-	8600 3600 8350 3600
-Wire Wire Line
-	8350 3600 8350 5500
-Connection ~ 8600 4450
-Wire Wire Line
-	8350 5250 8600 5250
-Connection ~ 8350 4450
-Wire Wire Line
-	9400 4550 9250 4550
-Connection ~ 9400 3700
-Wire Wire Line
-	8800 2900 8800 4750
-Connection ~ 8800 4750
-Wire Wire Line
-	8700 4050 8600 4050
-Wire Wire Line
-	8950 3900 8700 3900
-Connection ~ 8700 3900
-Wire Wire Line
-	9250 3300 9550 3300
-Wire Wire Line
-	9550 3300 9550 5500
-Wire Wire Line
-	9250 4100 9650 4100
-Wire Wire Line
-	9650 4100 9650 5500
-Wire Wire Line
-	9250 4950 9750 4950
-Wire Wire Line
-	9750 4950 9750 5500
-Wire Wire Line
-	8350 5500 9450 5500
-Connection ~ 8350 5250
-Wire Wire Line
-	7650 3600 7800 3600
-Wire Wire Line
-	7800 3600 7800 5050
-Wire Wire Line
-	7800 5050 8000 5050
-NoConn ~ 8900 2900
+Text Label 6400 4350 0    60   ~ 0
+gate1
+Text Label 6400 4250 0    60   ~ 0
+gate2
+Text Label 6400 4150 0    60   ~ 0
+gate3
+Text Label 8500 3950 0    60   ~ 0
+gate4
+Text Label 8500 3850 0    60   ~ 0
+gate5
+Text Label 8500 3750 0    60   ~ 0
+gate6
 $EndSCHEMATC
