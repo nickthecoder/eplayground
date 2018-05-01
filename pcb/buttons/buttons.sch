@@ -48,35 +48,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L ePlayInput I1
-U 1 1 5AC243A7
-P 1950 1600
-F 0 "I1" H 1950 50  60  0000 C CNN
-F 1 "ePlayInput" H 2000 1550 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x13_Pitch2.54mm" H 2000 1550 60  0001 C CNN
-F 3 "" H 2000 1550 60  0001 C CNN
-	1    1950 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L ePlayOutput O1
-U 1 1 5AC241F8
-P 6400 1600
-F 0 "O1" H 6400 50  60  0000 C CNN
-F 1 "ePlayOutput" H 6450 1550 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x13_Pitch2.54mm" H 6450 1550 60  0001 C CNN
-F 3 "" H 6450 1550 60  0001 C CNN
-	1    6400 1600
-	1    0    0    -1  
-$EndComp
 Text Label 2250 2100 0    60   ~ 0
 GND
 Text Label 2250 2000 0    60   ~ 0
-3V3
-Text Label 2250 1900 0    60   ~ 0
 VCC
-Text Label 2250 1800 0    60   ~ 0
+Text Label 2250 1900 0    60   ~ 0
 VIN
 Text Label 2250 2300 0    60   ~ 0
 L0
@@ -121,7 +97,7 @@ L Headers8L H1
 U 1 1 5AC24E38
 P 2900 2050
 F 0 "H1" H 2900 1000 60  0000 C CNN
-F 1 "Headers8L" H 2950 2000 60  0000 C CNN
+F 1 "Choice" H 2950 2000 60  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 2950 2000 60  0001 C CNN
 F 3 "" H 2950 2000 60  0001 C CNN
 	1    2900 2050
@@ -132,7 +108,7 @@ L Headers8 H2
 U 1 1 5AC24EA5
 P 2900 3150
 F 0 "H2" H 2900 2100 60  0000 C CNN
-F 1 "Headers8" H 2950 3100 60  0000 C CNN
+F 1 "Select" H 2950 3100 60  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 2950 3100 60  0001 C CNN
 F 3 "" H 2950 3100 60  0001 C CNN
 	1    2900 3150
@@ -304,8 +280,6 @@ F 3 "" H 7550 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 1800 6100 1800
-Wire Wire Line
 	2250 1900 6100 1900
 Wire Wire Line
 	2250 2000 6100 2000
@@ -328,10 +302,9 @@ Wire Wire Line
 Wire Wire Line
 	2250 3000 6100 3000
 Wire Wire Line
-	3500 3100 3500 1900
-Connection ~ 3500 1900
+	3500 3100 3500 2000
 Wire Wire Line
-	3900 3400 3900 2100
+	3900 2100 3900 3400
 Connection ~ 3900 2100
 Wire Wire Line
 	3500 3400 3200 3400
@@ -402,4 +375,27 @@ Connection ~ 2600 2900
 Connection ~ 2600 3000
 Wire Wire Line
 	4050 3500 3200 3500
+$Comp
+L Output O1
+U 1 1 5AE876D3
+P 6400 1600
+F 0 "O1" H 6400 50  60  0000 C CNN
+F 1 "Output" H 6300 1550 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 6450 1550 60  0001 C CNN
+F 3 "" H 6450 1550 60  0001 C CNN
+	1    6400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Input I1
+U 1 1 5AE8792E
+P 1950 1600
+F 0 "I1" H 1950 50  60  0000 C CNN
+F 1 "Input" H 2000 1550 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 2000 1550 60  0001 C CNN
+F 3 "" H 2000 1550 60  0001 C CNN
+	1    1950 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 2000
 $EndSCHEMATC
