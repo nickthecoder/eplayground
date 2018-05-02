@@ -61,95 +61,91 @@ SCL2
 $Comp
 L Output O2
 U 1 1 5AC3A751
-P 5500 1150
-F 0 "O2" H 5500 -400 60  0000 C CNN
-F 1 "Output" H 5400 1100 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 5550 1100 60  0001 C CNN
-F 3 "" H 5550 1100 60  0001 C CNN
-	1    5500 1150
+P 7350 1250
+F 0 "O2" H 7350 -300 60  0000 C CNN
+F 1 "Output" H 7250 1200 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 7400 1200 60  0001 C CNN
+F 3 "" H 7400 1200 60  0001 C CNN
+	1    7350 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L SerialOutput O1
 U 1 1 5AC3A80A
-P 5600 2900
-F 0 "O1" H 5600 1350 60  0000 C CNN
-F 1 "SerialOutput" H 5650 2850 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 5650 2850 60  0001 C CNN
-F 3 "" H 5650 2850 60  0001 C CNN
-	1    5600 2900
+P 7450 3000
+F 0 "O1" H 7450 1450 60  0000 C CNN
+F 1 "SerialOutput" H 7500 2950 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 7500 2950 60  0001 C CNN
+F 3 "" H 7500 2950 60  0001 C CNN
+	1    7450 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Output O3
 U 1 1 5AC3A8AB
-P 7450 1150
-F 0 "O3" H 7450 -400 60  0000 C CNN
-F 1 "Output" H 7350 1100 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 7500 1100 60  0001 C CNN
-F 3 "" H 7500 1100 60  0001 C CNN
-	1    7450 1150
+P 9300 1250
+F 0 "O3" H 9300 -300 60  0000 C CNN
+F 1 "Output" H 9200 1200 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 9350 1200 60  0001 C CNN
+F 3 "" H 9350 1200 60  0001 C CNN
+	1    9300 1250
 	1    0    0    -1  
 $EndComp
-Text Label 5200 1450 2    60   ~ 0
+Text Label 7050 1550 2    60   ~ 0
 VIN
-Text Label 5200 1550 2    60   ~ 0
+Text Label 7050 1650 2    60   ~ 0
 VCC
-Text Label 5200 1650 2    60   ~ 0
+Text Label 7050 1750 2    60   ~ 0
 GND
-Text Label 5200 2150 2    60   ~ 0
+Text Label 7050 2250 2    60   ~ 0
 B0
-Text Label 5200 2250 2    60   ~ 0
+Text Label 7050 2350 2    60   ~ 0
 B1
-Text Label 6050 2450 2    60   ~ 0
+Text Label 7900 2550 2    60   ~ 0
 B8
-Text Label 6050 2550 2    60   ~ 0
+Text Label 7900 2650 2    60   ~ 0
 B9
-Text Label 4450 1650 2    60   ~ 0
-B10
-Text Label 4450 1550 2    60   ~ 0
-B11
-Text Label 6050 1850 2    60   ~ 0
+Text Label 7900 1950 2    60   ~ 0
 B12
-Text Label 6050 2350 2    60   ~ 0
+Text Label 7900 2450 2    60   ~ 0
 A8
-Text Label 5300 3200 2    60   ~ 0
+Text Label 7150 3300 2    60   ~ 0
 VIN
-Text Label 5300 3300 2    60   ~ 0
+Text Label 7150 3400 2    60   ~ 0
 VCC
-Text Label 5300 3400 2    60   ~ 0
+Text Label 7150 3500 2    60   ~ 0
 GND
-Text Label 5300 4100 2    60   ~ 0
+Text Label 7150 4200 2    60   ~ 0
 SCL1
-Text Label 5300 4000 2    60   ~ 0
+Text Label 7150 4100 2    60   ~ 0
 SDA1
-Text Label 5300 3600 2    60   ~ 0
+Text Label 7150 3700 2    60   ~ 0
 SCK1
-Text Label 5300 3700 2    60   ~ 0
+Text Label 7150 3800 2    60   ~ 0
 MISO1
-Text Label 5300 3800 2    60   ~ 0
+Text Label 7150 3900 2    60   ~ 0
 MOSI1
-Text Label 5300 4200 2    60   ~ 0
+Text Label 7150 4300 2    60   ~ 0
 TX1
-Text Label 5300 4300 2    60   ~ 0
+Text Label 7150 4400 2    60   ~ 0
 RX1
-Text Label 7150 1450 2    60   ~ 0
+Text Label 9000 1550 2    60   ~ 0
 VIN
-Text Label 7150 1550 2    60   ~ 0
+Text Label 9000 1650 2    60   ~ 0
 VCC
-Text Label 7150 1650 2    60   ~ 0
+Text Label 9000 1750 2    60   ~ 0
 GND
-Text Label 7150 2550 2    60   ~ 0
+Text Label 9000 2650 2    60   ~ 0
 A0
-Text Label 7150 2450 2    60   ~ 0
+Text Label 9000 2550 2    60   ~ 0
 A1
-Text Label 7150 2350 2    60   ~ 0
+Text Label 9000 2450 2    60   ~ 0
 A2
-Text Label 7150 2250 2    60   ~ 0
+Text Label 9000 2350 2    60   ~ 0
 A3
-Text Label 7150 2150 2    60   ~ 0
+Text Label 9000 2250 2    60   ~ 0
 A4
-Text Label 7150 2050 2    60   ~ 0
+Text Label 9000 2150 2    60   ~ 0
 A5
 $Comp
 L BluePill U1
@@ -243,34 +239,34 @@ B13
 Text Label 1950 1150 2    60   ~ 0
 B12
 Wire Wire Line
-	1400 2550 1950 2550
+	1050 2550 1950 2550
 Wire Wire Line
-	1400 2450 1950 2450
+	1050 2450 1950 2450
 Text Label 1350 1650 2    60   ~ 0
 TX1
 Text Label 1350 1750 2    60   ~ 0
 RX1
 Wire Wire Line
-	1350 1650 1950 1650
+	1050 1650 1950 1650
 Wire Wire Line
-	1950 1750 1350 1750
+	1050 1750 1950 1750
 Text Label 3250 2350 0    60   ~ 0
 RX2
 Text Label 3250 2450 0    60   ~ 0
 TX2
 Wire Wire Line
-	3250 2350 2850 2350
+	2850 2350 3850 2350
 Wire Wire Line
-	3250 2450 2850 2450
-Text Label 7150 1950 2    60   ~ 0
+	2850 2450 3850 2450
+Text Label 9000 2050 2    60   ~ 0
 A6
-Text Label 7150 1850 2    60   ~ 0
+Text Label 9000 1950 2    60   ~ 0
 A7
-Text Label 1400 2150 2    60   ~ 0
+Text Label 700  2150 2    60   ~ 0
 SCK1
-Text Label 1400 2250 2    60   ~ 0
+Text Label 700  2250 2    60   ~ 0
 MISO1
-Text Label 1400 2350 2    60   ~ 0
+Text Label 700  2350 2    60   ~ 0
 MOSI1
 Text Label 1350 1450 2    60   ~ 0
 MOSI2
@@ -279,187 +275,194 @@ MISO2
 Text Label 1350 1250 2    60   ~ 0
 SCK2
 Wire Wire Line
-	1350 1250 1950 1250
+	1050 1250 1950 1250
 Wire Wire Line
 	1950 1350 1350 1350
 Wire Wire Line
-	1350 1450 1950 1450
+	1050 1450 1950 1450
 $Comp
 L Output O4
 U 1 1 5AC9FE6A
-P 6350 1150
-F 0 "O4" H 6350 -400 60  0000 C CNN
-F 1 "Output" H 6250 1100 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 6400 1100 60  0001 C CNN
-F 3 "" H 6400 1100 60  0001 C CNN
-	1    6350 1150
+P 8200 1250
+F 0 "O4" H 8200 -300 60  0000 C CNN
+F 1 "Output" H 8100 1200 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 8250 1200 60  0001 C CNN
+F 3 "" H 8250 1200 60  0001 C CNN
+	1    8200 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L SerialOutput O5
 U 1 1 5ACA07B3
-P 6550 2900
-F 0 "O5" H 6550 1350 60  0000 C CNN
-F 1 "SerialOutput" H 6600 2850 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 6600 2850 60  0001 C CNN
-F 3 "" H 6600 2850 60  0001 C CNN
-	1    6550 2900
+P 8400 3000
+F 0 "O5" H 8400 1450 60  0000 C CNN
+F 1 "SerialOutput" H 8450 2950 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 8450 2950 60  0001 C CNN
+F 3 "" H 8450 2950 60  0001 C CNN
+	1    8400 3000
 	1    0    0    -1  
 $EndComp
-Text Label 6250 3200 2    60   ~ 0
+Text Label 8100 3300 2    60   ~ 0
 VIN
-Text Label 6250 3300 2    60   ~ 0
+Text Label 8100 3400 2    60   ~ 0
 VCC
-Text Label 6250 3400 2    60   ~ 0
+Text Label 8100 3500 2    60   ~ 0
 GND
-Text Label 6250 3600 2    60   ~ 0
+Text Label 8100 3700 2    60   ~ 0
 SCK2
-Text Label 6250 3700 2    60   ~ 0
+Text Label 8100 3800 2    60   ~ 0
 MISO2
-Text Label 6250 3800 2    60   ~ 0
+Text Label 8100 3900 2    60   ~ 0
 MOSI2
-Text Label 6250 4000 2    60   ~ 0
+Text Label 8100 4100 2    60   ~ 0
 SDA2
-Text Label 6250 4100 2    60   ~ 0
+Text Label 8100 4200 2    60   ~ 0
 SCL2
-Text Label 6250 4200 2    60   ~ 0
+Text Label 8100 4300 2    60   ~ 0
 TX2
-Text Label 6250 4300 2    60   ~ 0
+Text Label 8100 4400 2    60   ~ 0
 RX2
 Wire Wire Line
-	3250 2150 2850 2150
+	2850 2150 3850 2150
 Wire Wire Line
-	3250 1950 2850 1950
+	2850 1950 3850 1950
 Wire Wire Line
-	2850 2050 3250 2050
-Text Label 6050 2050 2    60   ~ 0
+	2850 2050 3850 2050
+Text Label 7900 2150 2    60   ~ 0
 A11
-Text Label 6050 2150 2    60   ~ 0
+Text Label 7900 2250 2    60   ~ 0
 A12
-Text Label 6050 2250 2    60   ~ 0
+Text Label 7900 2350 2    60   ~ 0
 A15
-Text Label 5200 2050 2    60   ~ 0
+Text Label 7050 2150 2    60   ~ 0
 C15
-Text Label 5200 1950 2    60   ~ 0
+Text Label 7050 2050 2    60   ~ 0
 C14
-Text Label 5200 1850 2    60   ~ 0
+Text Label 7050 1950 2    60   ~ 0
 C13
-Text Label 6050 1450 2    60   ~ 0
+Text Label 7900 1550 2    60   ~ 0
 VIN
-Text Label 5150 700  2    60   ~ 0
+Text Label 7000 800  2    60   ~ 0
 VCC
-Text Label 6050 1650 2    60   ~ 0
+Text Label 7900 1750 2    60   ~ 0
 GND
-Text Label 5200 2350 2    60   ~ 0
+Text Label 7050 2450 2    60   ~ 0
 B3
-Text Label 5200 2550 2    60   ~ 0
+Text Label 7050 2650 2    60   ~ 0
 B5
-Text Label 6250 3900 2    60   ~ 0
+Text Label 8100 4000 2    60   ~ 0
 B12
-Text Label 5300 3900 2    60   ~ 0
+Text Label 7150 4000 2    60   ~ 0
 A4
 Text Label 3250 1550 0    60   ~ 0
 SDA2
 Wire Wire Line
-	2850 1550 3600 1550
+	2850 1550 3850 1550
 Wire Wire Line
-	2850 1650 3600 1650
+	2850 1650 3850 1650
 Text Label 1400 2450 2    60   ~ 0
 SCL1
 Text Label 3600 1550 0    60   ~ 0
 RX3
 Text Label 3600 1650 0    60   ~ 0
 TX3
-Text Label 5200 2450 2    60   ~ 0
+Text Label 7050 2550 2    60   ~ 0
 B4
-Text Label 850  2450 2    60   ~ 0
-B6
-Text Label 850  2550 2    60   ~ 0
-B7
-Text Label 6050 1950 2    60   ~ 0
+Text Label 7900 2050 2    60   ~ 0
 B13
-Text Label 850  1300 2    60   ~ 0
-B14
-Text Label 850  1400 2    60   ~ 0
-B15
-Text Label 900  1750 2    60   ~ 0
-A10
-Text Label 900  1650 2    60   ~ 0
-A9
-$Comp
-L L7805 U2
-U 1 1 5ACA407A
-P 1250 4300
-F 0 "U2" H 1100 4425 50  0000 C CNN
-F 1 "L7805" H 1250 4425 50  0000 L CNN
-F 2 "Power_Integrations:TO-220" H 1275 4150 50  0001 L CIN
-F 3 "" H 1250 4250 50  0001 C CNN
-	1    1250 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C1
-U 1 1 5ACA411D
-P 950 4450
-F 0 "C1" H 975 4550 50  0000 L CNN
-F 1 "C" H 975 4350 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 988 4300 50  0001 C CNN
-F 3 "" H 950 4450 50  0001 C CNN
-	1    950  4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C2
-U 1 1 5ACA4158
-P 1550 4450
-F 0 "C2" H 1575 4550 50  0000 L CNN
-F 1 "C" H 1575 4350 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 1588 4300 50  0001 C CNN
-F 3 "" H 1550 4450 50  0001 C CNN
-	1    1550 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  4600 1550 4600
-Connection ~ 1250 4600
-Text Label 950  4300 2    60   ~ 0
-VIN
-Text Label 950  4600 2    60   ~ 0
-GND
-$Comp
-L D D1
-U 1 1 5ACA4326
-P 1550 3650
-F 0 "D1" H 1550 3750 50  0000 C CNN
-F 1 "D" H 1550 3550 50  0000 C CNN
-F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 1550 3650 50  0001 C CNN
-F 3 "" H 1550 3650 50  0001 C CNN
-	1    1550 3650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1550 4300 1550 3800
-Wire Wire Line
-	1550 3500 1550 2850
-Wire Wire Line
-	1550 2850 1950 2850
 $Comp
 L SW_SPDT SW1
 U 1 1 5ACB3745
-P 5350 800
-F 0 "SW1" H 5350 970 50  0000 C CNN
-F 1 "SW_SPDT" H 5350 600 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5350 800 50  0001 C CNN
-F 3 "" H 5350 800 50  0001 C CNN
-	1    5350 800 
+P 7200 900
+F 0 "SW1" H 7200 1070 50  0000 C CNN
+F 1 "SW_SPDT" H 7200 700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7200 900 50  0001 C CNN
+F 3 "" H 7200 900 50  0001 C CNN
+	1    7200 900 
 	-1   0    0    1   
 $EndComp
-Text Label 5150 900  2    60   ~ 0
+Text Label 7000 1000 2    60   ~ 0
 5V
 Wire Wire Line
-	6050 1550 5750 1550
+	7900 1650 7600 1650
 Wire Wire Line
-	5750 1550 5750 800 
+	7600 1650 7600 900 
 Wire Wire Line
-	5750 800  5550 800 
+	7600 900  7400 900 
+$Comp
+L Conn_01x20 J2
+U 1 1 5AE980E2
+P 4050 2050
+F 0 "J2" H 4050 3050 50  0000 C CNN
+F 1 "Header1" H 4050 950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x20_Pitch2.54mm" H 4050 2050 50  0001 C CNN
+F 3 "" H 4050 2050 50  0001 C CNN
+	1    4050 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1150 3850 1150
+Wire Wire Line
+	3850 1250 2850 1250
+Wire Wire Line
+	2850 1350 3850 1350
+Wire Wire Line
+	3850 1450 2850 1450
+Wire Wire Line
+	3850 1750 2850 1750
+Wire Wire Line
+	2850 1850 3850 1850
+Wire Wire Line
+	2850 2250 3850 2250
+Wire Wire Line
+	3850 2550 2850 2550
+Wire Wire Line
+	2850 2650 3850 2650
+Wire Wire Line
+	3850 2750 2850 2750
+Wire Wire Line
+	2850 2850 3850 2850
+Wire Wire Line
+	3850 2950 2850 2950
+Wire Wire Line
+	2850 3050 3850 3050
+$Comp
+L Conn_01x20 J1
+U 1 1 5AE98591
+P 850 2050
+F 0 "J1" H 850 3050 50  0000 C CNN
+F 1 "Header2" H 850 950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x20_Pitch2.54mm" H 850 2050 50  0001 C CNN
+F 3 "" H 850 2050 50  0001 C CNN
+	1    850  2050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1150 1050 1150
+Wire Wire Line
+	1300 1350 1050 1350
+Wire Wire Line
+	1050 1550 1950 1550
+Wire Wire Line
+	1050 1850 1950 1850
+Wire Wire Line
+	1950 1950 1050 1950
+Wire Wire Line
+	1050 2050 1950 2050
+Wire Wire Line
+	1950 2150 1050 2150
+Wire Wire Line
+	1050 2250 1950 2250
+Wire Wire Line
+	1950 2350 1050 2350
+Wire Wire Line
+	1050 2650 1950 2650
+Wire Wire Line
+	1950 2750 1050 2750
+Wire Wire Line
+	1050 2850 1950 2850
+Wire Wire Line
+	1950 2950 1050 2950
+Wire Wire Line
+	1050 3050 1950 3050
 $EndSCHEMATC

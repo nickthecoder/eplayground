@@ -131,17 +131,17 @@ Text Label 6050 3300 2    60   ~ 0
 VCC
 Text Label 6050 3400 2    60   ~ 0
 GND
-Text Label 6050 3600 2    60   ~ 0
+Text Label 6050 4300 2    60   ~ 0
 A0
-Text Label 6050 3700 2    60   ~ 0
+Text Label 6050 4200 2    60   ~ 0
 A1
-Text Label 6050 3800 2    60   ~ 0
-A2
-Text Label 6050 3900 2    60   ~ 0
-A3
-Text Label 6050 4000 2    60   ~ 0
-A4
 Text Label 6050 4100 2    60   ~ 0
+A2
+Text Label 6050 4000 2    60   ~ 0
+A3
+Text Label 6050 3900 2    60   ~ 0
+A4
+Text Label 6050 3800 2    60   ~ 0
 A5
 Text Label 4200 1650 0    60   ~ 0
 D2
@@ -225,9 +225,9 @@ Text Label 1300 2350 2    60   ~ 0
 SCL
 Text Label 1300 2450 2    60   ~ 0
 SDA
-Text Label 6050 4200 2    60   ~ 0
+Text Label 6050 3700 2    60   ~ 0
 A6
-Text Label 6050 4300 2    60   ~ 0
+Text Label 6050 3600 2    60   ~ 0
 A7
 $Comp
 L Arduino_Mini_01_Socket XA1

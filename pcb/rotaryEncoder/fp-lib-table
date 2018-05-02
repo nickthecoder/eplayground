@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Rotary Encoder")(type KiCad)(uri /home/nick/projects/eplayground/pcb/library/Rotary-Encoders.pretty)(options "")(descr ""))
+)

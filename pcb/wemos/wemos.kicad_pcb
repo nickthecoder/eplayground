@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -194,12 +194,12 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   )
 
-  (module Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm (layer F.Cu) (tedit 58CD5446) (tstamp 5AC3D673)
+  (module Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm (layer F.Cu) (tedit 5AE8A52B) (tstamp 5AC3D673)
     (at 170.18 93.345)
     (descr "Through hole straight socket strip, 1x12, 2.54mm pitch, single row")
     (tags "Through hole socket strip THT 1x12 2.54mm single row")
     (path /5AC3D61D)
-    (fp_text reference O1 (at 0 -2.33) (layer F.SilkS)
+    (fp_text reference O1 (at 0 -2.33) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Output (at 0 30.27) (layer F.Fab)
@@ -219,7 +219,7 @@
     (fp_line (start -1.8 29.75) (end 1.8 29.75) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1.8 29.75) (end 1.8 -1.8) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1.8 -1.8) (end -1.8 -1.8) (layer F.CrtYd) (width 0.05))
-    (fp_text user %R (at 0 -2.33) (layer F.Fab)
+    (fp_text user %R (at 0 -2.33) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
@@ -360,12 +360,12 @@
       (net 2 /VCC))
   )
 
-  (module Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm (layer F.Cu) (tedit 5ACB5618) (tstamp 5ACB53F9)
+  (module Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm (layer F.Cu) (tedit 5AE8A51F) (tstamp 5ACB53F9)
     (at 128.27 93.345)
     (descr "Through hole straight socket strip, 1x12, 2.54mm pitch, single row")
     (tags "Through hole socket strip THT 1x12 2.54mm single row")
     (path /5ACB4E97)
-    (fp_text reference I1 (at 0 -2.33) (layer F.SilkS)
+    (fp_text reference I1 (at 0 -2.33) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value SerialInput (at 3.175 25.4 90) (layer F.Fab)
@@ -385,7 +385,7 @@
     (fp_line (start -1.8 29.75) (end 1.8 29.75) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1.8 29.75) (end 1.8 -1.8) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1.8 -1.8) (end -1.8 -1.8) (layer F.CrtYd) (width 0.05))
-    (fp_text user %R (at 0 -2.33) (layer F.Fab)
+    (fp_text user %R (at 0 -2.33) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
@@ -491,7 +491,7 @@
   (gr_text "Power\nFrom\nInput?" (at 130.81 91.44) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)) (justify left))
   )
-  (gr_text "WeMos v1.0\nhttp://nickthecoder.co.uk" (at 135.255 128.27) (layer F.SilkS)
+  (gr_text "WeMos v1.0\nnickthecoder.co.uk" (at 135.255 128.27) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
 
