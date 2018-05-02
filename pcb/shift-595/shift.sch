@@ -148,7 +148,7 @@ Text Label 3100 2400 0    60   ~ 0
 latch
 Text Notes 8500 2600 2    60   ~ 0
 Connection to the next\nshift module.
-Text Notes 4600 5550 0    60   ~ 0
+Text Notes 8600 3900 0    60   ~ 0
 Note that only data pins 0..3 are used.\nThere's no reason to add header for the other pins.\nThey are included to make it easy to line up the\nVIN, VCC and GND pins in the "standard" place.
 Text Label 8100 2950 2    60   ~ 0
 VIN

@@ -342,8 +342,6 @@ Text Label 7050 1950 2    60   ~ 0
 C13
 Text Label 7900 1550 2    60   ~ 0
 VIN
-Text Label 7000 800  2    60   ~ 0
-VCC
 Text Label 7900 1750 2    60   ~ 0
 GND
 Text Label 7050 2450 2    60   ~ 0
@@ -370,25 +368,6 @@ Text Label 7050 2550 2    60   ~ 0
 B4
 Text Label 7900 2050 2    60   ~ 0
 B13
-$Comp
-L SW_SPDT SW1
-U 1 1 5ACB3745
-P 7200 900
-F 0 "SW1" H 7200 1070 50  0000 C CNN
-F 1 "SW_SPDT" H 7200 700 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7200 900 50  0001 C CNN
-F 3 "" H 7200 900 50  0001 C CNN
-	1    7200 900 
-	-1   0    0    1   
-$EndComp
-Text Label 7000 1000 2    60   ~ 0
-5V
-Wire Wire Line
-	7900 1650 7600 1650
-Wire Wire Line
-	7600 1650 7600 900 
-Wire Wire Line
-	7600 900  7400 900 
 $Comp
 L Conn_01x20 J2
 U 1 1 5AE980E2
@@ -465,4 +444,6 @@ Wire Wire Line
 	1950 2950 1050 2950
 Wire Wire Line
 	1050 3050 1950 3050
+Text Label 7900 1650 2    60   ~ 0
+VCC
 $EndSCHEMATC
