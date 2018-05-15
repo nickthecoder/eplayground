@@ -8,6 +8,9 @@ all eight signals.
 This is a half-sized module. There is also a full sized module, which uses regular axial resistors, instead of the
 9 pin resistor networks used by this module. The choice is yours!
 
+There's also a "Headers" module, which exposes each data pin in a triple header, with VCC and GND.
+This is particularly useful for servos.
+
 ## Version History
 
 ### Version 1.0

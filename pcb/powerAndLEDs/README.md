@@ -1,0 +1,33 @@
+Power
+=====
+
+Connects a DC Barrel Jack to the VIN pin of the standard connector.
+
+I use this in conjunction with the Strip LED modules to power strips of LEDs.
+
+LEDs
+====
+
+As this is a half-sized module, I've included another half-sized module which is simply a bank of LEDs for each pin.
+
+Use jumpers links between H1 and H2 to enable each of the LEDs.
+
+## Soldering Notes
+
+**Power Module**
+
+There's an option to add a screw connector in the middle of the board.
+
+Check the orientation of the toggle switch SW1.
+
+**LED module**
+
+A board can be configured in two ways.
+With the solder bridge to GND, the LEDs work as normal.
+
+With the solder bridge to VCC, the LEDs work in reverse, i.e. **on** when the signal is **low** and **off** when it is **high**.
+The polarity of the LEDs must be reversed.
+
+Don't use the minimum value resistor, there really is no point having ultra bright indicators.
+For a 5V VCC, I find 1K resistors are fine. This is probably too high for a 3.3V VCC though.
+
