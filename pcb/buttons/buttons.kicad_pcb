@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -1158,7 +1158,7 @@
   (gr_text 0 (at 139.065 92.075) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text nickthecoder.co.uk (at 172.72 106.68 90) (layer F.SilkS)
+  (gr_text nickthecoder.co.uk (at 167.005 106.68 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text "Buttons v1.1" (at 151.765 129.54) (layer F.SilkS)

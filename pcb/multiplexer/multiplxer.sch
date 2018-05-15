@@ -322,4 +322,42 @@ Text Label 4000 2750 0    60   ~ 0
 LATCH
 Text Label 4000 2850 0    60   ~ 0
 M
+$Comp
+L C C2
+U 1 1 5AF991BA
+P 5050 6600
+F 0 "C2" H 5075 6700 50  0000 L CNN
+F 1 "100nF" H 5075 6500 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 5088 6450 50  0001 C CNN
+F 3 "" H 5050 6600 50  0001 C CNN
+	1    5050 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5AF99270
+P 4700 6600
+F 0 "C1" H 4725 6700 50  0000 L CNN
+F 1 "100nF" H 4725 6500 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 4738 6450 50  0001 C CNN
+F 3 "" H 4700 6600 50  0001 C CNN
+	1    4700 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 6450 5050 6450
+Wire Wire Line
+	4700 6750 5050 6750
+Text Label 4700 6750 2    60   ~ 0
+GND
+Text Label 4700 6450 2    60   ~ 0
+VCC
+Text Label 4400 3850 1    60   ~ 0
+VCC
+Text Label 5050 6450 0    60   ~ 0
+VDD
+Text Label 5050 6750 3    60   ~ 0
+VSS
+NoConn ~ 5800 3450
+NoConn ~ 7150 3250
 $EndSCHEMATC

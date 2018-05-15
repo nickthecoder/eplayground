@@ -446,4 +446,25 @@ Wire Wire Line
 	1050 3050 1950 3050
 Text Label 7900 1650 2    60   ~ 0
 VCC
+Text Label 5100 3350 2    60   ~ 0
+VBAT
+Text Label 5100 3250 2    60   ~ 0
+5V
+Text Label 5100 3650 2    60   ~ 0
+RESET
+Text Label 5100 3450 2    60   ~ 0
+VCC
+Text Label 5100 3550 2    60   ~ 0
+GND
+$Comp
+L Conn_01x05 J3
+U 1 1 5AFAA468
+P 5300 3450
+F 0 "J3" H 5300 3750 50  0000 C CNN
+F 1 "Power" H 5300 3150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 5300 3450 50  0001 C CNN
+F 3 "" H 5300 3450 50  0001 C CNN
+	1    5300 3450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

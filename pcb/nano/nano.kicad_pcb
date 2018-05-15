@@ -5,7 +5,7 @@
     (no_connects 0)
     (area 104.626999 31.115 158.115001 80.645001)
     (thickness 1.6)
-    (drawings 29)
+    (drawings 31)
     (tracks 159)
     (zones 0)
     (modules 10)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 0.5)
     (trace_clearance 0.2)
@@ -627,6 +627,12 @@
     )
   )
 
+  (gr_text S (at 129.54 71.755) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.2)))
+  )
+  (gr_text S (at 132.08 71.755) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.2)))
+  )
   (gr_text "Arduino Nano v1.0\nnickthecoder.co.uk" (at 129.54 58.42) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
