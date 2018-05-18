@@ -45,3 +45,5 @@ Moved the C3 capacitor, further away from the crystal (the footprint for my crys
 Change the position of the voltage regulator, so that it isn't pointing its heat directly at the electrolytic capacitors.
 
 Added an "S" above A4 and A5 to hint that they are also used by the Serial connector.
+
+Added a jumper for AREF and VCC, so that AREF can be set to VCC, or another value if needed.

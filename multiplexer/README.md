@@ -19,9 +19,9 @@ In which case, use an AddressSelector in the AbstractIO library.
 
 ## Soldering Notes
 
-The Master module doesn't need the "Prev" angled header pins to the north (I2).
+The Master module doesn't need the "Prev Input" angled header pins to the north (I2).
 
-The slave modules doesn't need "Input" (I1), "Select" (H1), "Choice" (J1) or the 74xx595 (U1).
+The slave modules doesn't need "Master Input" (I1), "Select" (J1), "Choice" (J2) or the 74xx595 (U1).
 
 The "Prev" and "Next" angled headers don't use pin 12, so I suggest using only 11 pins,
 which will make it clear that theses connections are not the standard eplayground 12 pin connections.
@@ -50,6 +50,14 @@ Version 1.0 of the module placed the J1 connector such that simple jumpers canno
 
 Also, I didn't connect VEE, and I can't blame that on hidden pins.
 
+VCC should be passed to the last pin of the "Next Output" (O2), but isn't.
+This means only 6 slaves can be added without adding "bodge" wires manually.
+I don't plan on using anywhere near this amount, so won't be adding them.
+
 ### Version 1.1
 
-Fixed the power problems, and moved "Select" (J1) to a more suitable position, so that simpler jumpers can be used.
+Fixed the power problems, the 7th slave problem and moved "Select" (J1) to a more suitable position, so that simpler jumpers can be used.
+
+Consider reworking it, so that there is only one input (i.e. merge Master Input and Prev Input)
+Use solder bridges on the back for the slave modules.
+This will then allow the spare side to be used for pass-through, and we won't get errors from KiCAD's schematic checker.

@@ -1,4 +1,4 @@
-update=Mon 02 Apr 2018 15:42:57 BST
+update=Fri 18 May 2018 10:48:43 BST
 version=1
 last_client=eeschema
 [general]
@@ -29,7 +29,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=
+LibDir=../library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -63,5 +63,4 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=/home/nick/projects/eplayground/pcb/library/eplay
-LibName34=/home/nick/projects/eplayground/pcb/library/Switch
+LibName33=eplay

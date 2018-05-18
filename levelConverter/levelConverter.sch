@@ -32,7 +32,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:eplay
-LIBS:levelConverter-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -69,17 +68,6 @@ Text Label 2250 2900 0    60   ~ 0
 L6
 Text Label 2250 3000 0    60   ~ 0
 L7
-$Comp
-L Earth #PWR01
-U 1 1 5AC24527
-P 2250 2100
-F 0 "#PWR01" H 2250 1850 50  0001 C CNN
-F 1 "Earth" H 2250 1950 50  0001 C CNN
-F 2 "" H 2250 2100 50  0001 C CNN
-F 3 "" H 2250 2100 50  0001 C CNN
-	1    2250 2100
-	1    0    0    -1  
-$EndComp
 $Comp
 L Input I1
 U 1 1 5AC3D559
@@ -533,4 +521,16 @@ GND
 Connection ~ 3400 4000
 Text Label 4100 2000 2    60   ~ 0
 3v3
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 5AFEC326
+P 3650 2000
+F 0 "#FLG01" H 3650 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 3650 2150 50  0000 C CNN
+F 2 "" H 3650 2000 50  0001 C CNN
+F 3 "" H 3650 2000 50  0001 C CNN
+	1    3650 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 2000
 $EndSCHEMATC

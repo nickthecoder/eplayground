@@ -56,30 +56,15 @@ VIN
 Text Label 2250 2300 0    60   ~ 0
 SCK
 Text Label 2250 2400 0    60   ~ 0
-L1
+MISO
 Text Label 2250 2500 0    60   ~ 0
 MOSI
 Text Label 2250 2600 0    60   ~ 0
-L3
-Text Label 1600 2650 0    60   ~ 0
-L4
-Text Label 1400 2800 0    60   ~ 0
-L5
+D10
 Text Label 2250 2900 0    60   ~ 0
-L6
+TXD
 Text Label 2250 3000 0    60   ~ 0
-L7
-$Comp
-L Earth #PWR1
-U 1 1 5AC24527
-P 2250 2100
-F 0 "#PWR1" H 2250 1850 50  0001 C CNN
-F 1 "Earth" H 2250 1950 50  0001 C CNN
-F 2 "" H 2250 2100 50  0001 C CNN
-F 3 "" H 2250 2100 50  0001 C CNN
-	1    2250 2100
-	1    0    0    -1  
-$EndComp
+RXD
 $Comp
 L SerialInput I1
 U 1 1 5ACC9378
@@ -212,8 +197,6 @@ Wire Wire Line
 	3900 2900 2250 2900
 Wire Wire Line
 	2250 3000 3900 3000
-Wire Wire Line
-	2750 3350 4600 3350
 Connection ~ 4000 3350
 Wire Wire Line
 	2750 3450 4600 3450
@@ -299,4 +282,11 @@ F 3 "" H 4950 2850 50  0001 C CNN
 $EndComp
 Text Label 4750 2850 2    60   ~ 0
 GND
+Text Label 2250 2700 0    60   ~ 0
+SDA
+Text Label 2250 2800 0    60   ~ 0
+SCL
+Wire Wire Line
+	2750 3350 4600 3350
+Connection ~ 3350 3350
 $EndSCHEMATC

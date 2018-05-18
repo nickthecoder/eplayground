@@ -32,8 +32,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:eplay
-LIBS:Switch
-LIBS:ioExpansion-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -141,17 +139,6 @@ Text Label 4900 4950 0    60   ~ 0
 SCL
 Text Label 4900 3850 0    60   ~ 0
 VCC
-$Comp
-L I2CHeader-RESCUE-MCP23017 I2C1
-U 1 1 5AC33E90
-P 6100 4150
-F 0 "I2C1" H 6250 3750 60  0000 C CNN
-F 1 "I2CHeader" H 6250 4250 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 5900 4200 60  0001 C CNN
-F 3 "" H 5900 4200 60  0001 C CNN
-	1    6100 4150
-	1    0    0    -1  
-$EndComp
 Text Label 5900 4350 2    60   ~ 0
 SCL
 Text Label 5900 4450 2    60   ~ 0
@@ -160,17 +147,6 @@ Text Label 5900 4250 2    60   ~ 0
 VCC
 Text Label 5900 4150 2    60   ~ 0
 GND
-$Comp
-L Headers8 H1
-U 1 1 5AC34BA3
-P 5800 2050
-F 0 "H1" H 5800 1000 60  0000 C CNN
-F 1 "Headers8" H 5850 2000 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 5850 2000 60  0001 C CNN
-F 3 "" H 5850 2000 60  0001 C CNN
-	1    5800 2050
-	1    0    0    -1  
-$EndComp
 $Comp
 L GS3 J1
 U 1 1 5AC7B0E5
@@ -394,17 +370,6 @@ F 3 "" H 5100 4250 50  0001 C CNN
 	1    5100 4250
 	1    0    0    -1  
 $EndComp
-$Comp
-L I2CHeader-RESCUE-MCP23017 I2C2
-U 1 1 5AE715A1
-P 6750 4150
-F 0 "I2C2" H 6900 3750 60  0000 C CNN
-F 1 "I2CHeader" H 6900 4250 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6550 4200 60  0001 C CNN
-F 3 "" H 6550 4200 60  0001 C CNN
-	1    6750 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5900 4150 7200 4150
 Wire Wire Line
@@ -413,9 +378,13 @@ Wire Wire Line
 	5900 4350 7200 4350
 Wire Wire Line
 	5900 4450 7200 4450
+Connection ~ 6550 4150
+Connection ~ 6550 4250
+Connection ~ 6550 4350
+Connection ~ 6550 4450
 $Comp
-L I2CHeader-RESCUE-MCP23017 I2C3
-U 1 1 5AE717BC
+L I2CHeader I2C3
+U 1 1 5AFEAB9E
 P 7400 4150
 F 0 "I2C3" H 7550 3750 60  0000 C CNN
 F 1 "I2CHeader" H 7550 4250 60  0000 C CNN
@@ -424,8 +393,26 @@ F 3 "" H 7200 4200 60  0001 C CNN
 	1    7400 4150
 	1    0    0    -1  
 $EndComp
-Connection ~ 6550 4150
-Connection ~ 6550 4250
-Connection ~ 6550 4350
-Connection ~ 6550 4450
+$Comp
+L I2CHeader I2C2
+U 1 1 5AFEAC2B
+P 6750 4150
+F 0 "I2C2" H 6900 3750 60  0000 C CNN
+F 1 "I2CHeader" H 6900 4250 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6550 4200 60  0001 C CNN
+F 3 "" H 6550 4200 60  0001 C CNN
+	1    6750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L I2CHeader I2C1
+U 1 1 5AFEAC77
+P 6100 4150
+F 0 "I2C1" H 6250 3750 60  0000 C CNN
+F 1 "I2CHeader" H 6250 4250 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 5900 4200 60  0001 C CNN
+F 3 "" H 5900 4200 60  0001 C CNN
+	1    6100 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

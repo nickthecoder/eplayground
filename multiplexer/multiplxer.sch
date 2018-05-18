@@ -32,7 +32,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:eplay
-LIBS:multiplxer-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -85,7 +84,7 @@ L Input I1
 U 1 1 5AC3D559
 P 1950 1600
 F 0 "I1" H 1950 50  60  0000 C CNN
-F 1 "Input" H 2000 1550 60  0000 C CNN
+F 1 "Master Input" H 2000 1550 60  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 2000 1550 60  0001 C CNN
 F 3 "" H 2000 1550 60  0001 C CNN
 	1    1950 1600
@@ -119,17 +118,6 @@ Text Label 7150 3950 2    60   ~ 0
 VCC
 Text Label 7150 4050 2    60   ~ 0
 GND
-$Comp
-L Headers8L H1
-U 1 1 5ACC6450
-P 3100 2050
-F 0 "H1" H 3100 1000 60  0000 C CNN
-F 1 "Headers8L" H 3150 2000 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3150 2000 60  0001 C CNN
-F 3 "" H 3150 2000 60  0001 C CNN
-	1    3100 2050
-	1    0    0    -1  
-$EndComp
 Text Label 4400 2850 2    60   ~ 0
 VCC
 Text Label 4400 3150 2    60   ~ 0
@@ -139,7 +127,7 @@ L Output O2
 U 1 1 5ACC676A
 P 7450 1850
 F 0 "O2" H 7450 300 60  0000 C CNN
-F 1 "Output" H 7350 1800 60  0000 C CNN
+F 1 "Next Output" H 7350 1800 60  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 7500 1800 60  0001 C CNN
 F 3 "" H 7500 1800 60  0001 C CNN
 	1    7450 1850
@@ -156,7 +144,7 @@ L Input I2
 U 1 1 5ACC6FCD
 P 5400 650
 F 0 "I2" H 5400 -900 60  0000 C CNN
-F 1 "Input" H 5450 600 60  0000 C CNN
+F 1 "Prev Input" H 5450 600 60  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 5450 600 60  0001 C CNN
 F 3 "" H 5450 600 60  0001 C CNN
 	1    5400 650 
@@ -186,7 +174,7 @@ L Conn_01x04 J1
 U 1 1 5ACC8E17
 P 3700 2750
 F 0 "J1" H 3700 2950 50  0000 C CNN
-F 1 "Conn_01x04" H 3700 2450 50  0000 C CNN
+F 1 "Select" H 3700 2450 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3700 2750 50  0001 C CNN
 F 3 "" H 3700 2750 50  0001 C CNN
 	1    3700 2750
@@ -359,5 +347,19 @@ VDD
 Text Label 5050 6750 3    60   ~ 0
 VSS
 NoConn ~ 5800 3450
-NoConn ~ 7150 3250
+$Comp
+L Conn_01x08 J2
+U 1 1 5AFECC5F
+P 3000 2600
+F 0 "J2" H 3000 3000 50  0000 C CNN
+F 1 "Choice" H 3000 2100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3000 2600 50  0001 C CNN
+F 3 "" H 3000 2600 50  0001 C CNN
+	1    3000 2600
+	1    0    0    -1  
+$EndComp
+Text Notes 1950 1100 0    60   ~ 0
+ERRORS.\nThe two configurations, means there are 3 errors\nreported by KiCAD, which I don't know how to avoid.\nOnly I1 or I2 will be populated, so there is no problems\nin the actual boards.
+Text Label 7150 3250 2    60   ~ 0
+VCC
 $EndSCHEMATC

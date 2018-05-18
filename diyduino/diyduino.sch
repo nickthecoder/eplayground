@@ -33,7 +33,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:eplay
 LIBS:arduino
-LIBS:diyduino-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -80,8 +79,6 @@ Text Label 1750 3300 2    60   ~ 0
 GND
 Text Label 1750 1600 2    60   ~ 0
 AREF
-Text Label 1400 1500 2    60   ~ 0
-AVCC
 Text Label 3650 2800 0    60   ~ 0
 D2
 Text Label 3650 2900 0    60   ~ 0
@@ -114,17 +111,6 @@ Text Label 4000 2600 0    60   ~ 0
 RXD
 Text Label 4000 2700 0    60   ~ 0
 TXD
-$Comp
-L Earth #PWR01
-U 1 1 5ABE6C80
-P 1750 3700
-F 0 "#PWR01" H 1750 3450 50  0001 C CNN
-F 1 "Earth" H 1750 3550 50  0001 C CNN
-F 2 "" H 1750 3700 50  0001 C CNN
-F 3 "" H 1750 3700 50  0001 C CNN
-	1    1750 3700
-	1    0    0    -1  
-$EndComp
 $Comp
 L ATMEGA328-PU U1
 U 1 1 5ABEDA30
@@ -223,7 +209,7 @@ F 3 "" H 4400 2850 50  0001 C CNN
 $EndComp
 Text Label 4400 3000 2    60   ~ 0
 GND
-Text Label 1550 1300 2    60   ~ 0
+Text Label 1750 1300 2    60   ~ 0
 VCC
 $Comp
 L L7805 U2
@@ -234,17 +220,6 @@ F 1 "L7805" H 2800 4325 50  0000 L CNN
 F 2 "Power_Integrations:TO-220" H 2825 4050 50  0001 L CIN
 F 3 "" H 2800 4150 50  0001 C CNN
 	1    2800 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L FTDI FT1
-U 1 1 5AC1B1CC
-P 2000 5350
-F 0 "FT1" H 2000 5000 60  0000 C CNN
-F 1 "FTDI" H 2000 5700 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 2000 5350 60  0001 C CNN
-F 3 "" H 2000 5350 60  0001 C CNN
-	1    2000 5350
 	1    0    0    -1  
 $EndComp
 Text Label 2300 5100 0    60   ~ 0
@@ -394,9 +369,6 @@ Wire Wire Line
 	3650 2600 4000 2600
 Wire Wire Line
 	3650 2700 4000 2700
-Connection ~ 1750 3300
-Wire Wire Line
-	1750 3200 1750 3700
 Wire Wire Line
 	3650 2450 4400 2450
 Wire Wire Line
@@ -405,12 +377,6 @@ Wire Wire Line
 	3650 1600 4500 1600
 Wire Wire Line
 	3650 1700 4200 1700
-Wire Wire Line
-	1750 1600 1550 1600
-Wire Wire Line
-	1550 1000 1750 1000
-Wire Wire Line
-	1750 1300 1550 1300
 Wire Wire Line
 	2200 4200 2500 4200
 Wire Wire Line
@@ -453,17 +419,6 @@ Wire Wire Line
 Wire Wire Line
 	3400 4500 3400 4800
 Connection ~ 3400 4800
-$Comp
-L FTDI FT2
-U 1 1 5AC50B3D
-P 2950 6150
-F 0 "FT2" H 2950 5800 60  0000 C CNN
-F 1 "FTDI" H 2950 6500 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 2950 6150 60  0001 C CNN
-F 3 "" H 2950 6150 60  0001 C CNN
-	1    2950 6150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2300 5600 3200 5600
 Wire Wire Line
@@ -488,4 +443,80 @@ Wire Wire Line
 	2300 5500 3000 5500
 Wire Wire Line
 	3000 5500 3000 5850
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 5AFEA938
+P 2700 5100
+F 0 "#FLG01" H 2700 5175 50  0001 C CNN
+F 1 "PWR_FLAG" H 2700 5250 50  0000 C CNN
+F 2 "" H 2700 5100 50  0001 C CNN
+F 3 "" H 2700 5100 50  0001 C CNN
+	1    2700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 5AFEA970
+P 3200 5300
+F 0 "#FLG02" H 3200 5375 50  0001 C CNN
+F 1 "PWR_FLAG" H 3200 5450 50  0000 C CNN
+F 2 "" H 3200 5300 50  0001 C CNN
+F 3 "" H 3200 5300 50  0001 C CNN
+	1    3200 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J1
+U 1 1 5AFEAAC5
+P 2100 5300
+F 0 "J1" H 2100 5600 50  0000 C CNN
+F 1 "ICSP" H 2100 4900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 2100 5300 50  0001 C CNN
+F 3 "" H 2100 5300 50  0001 C CNN
+	1    2100 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J2
+U 1 1 5AFEAC6B
+P 2900 6050
+F 0 "J2" H 2900 6350 50  0000 C CNN
+F 1 "ICSP" H 2900 5650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 2900 6050 50  0001 C CNN
+F 3 "" H 2900 6050 50  0001 C CNN
+	1    2900 6050
+	0    -1   1    0   
+$EndComp
+NoConn ~ 6050 4200
+NoConn ~ 6050 4300
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 5AFEB6CD
+P 4950 3200
+F 0 "#FLG03" H 4950 3275 50  0001 C CNN
+F 1 "PWR_FLAG" H 4950 3350 50  0000 C CNN
+F 2 "" H 4950 3200 50  0001 C CNN
+F 3 "" H 4950 3200 50  0001 C CNN
+	1    4950 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3200 4950 3200
+$Comp
+L Conn_01x02 J3
+U 1 1 5AFEC722
+P 1000 1500
+F 0 "J3" H 1000 1600 50  0000 C CNN
+F 1 "Conn_01x02" H 1000 1300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1000 1500 50  0001 C CNN
+F 3 "" H 1000 1500 50  0001 C CNN
+	1    1000 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1600 1750 1600
+Wire Wire Line
+	1750 1300 1200 1300
+Wire Wire Line
+	1200 1300 1200 1500
 $EndSCHEMATC

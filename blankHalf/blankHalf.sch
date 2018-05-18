@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:power
 LIBS:device
 LIBS:switches
 LIBS:relays
@@ -32,7 +31,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:eplay
-LIBS:blankHalf-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -69,17 +67,6 @@ Text Label 2400 2750 0    60   ~ 0
 L6
 Text Label 2400 2850 0    60   ~ 0
 L7
-$Comp
-L Earth #PWR01
-U 1 1 5AC24527
-P 2400 1950
-F 0 "#PWR01" H 2400 1700 50  0001 C CNN
-F 1 "Earth" H 2400 1800 50  0001 C CNN
-F 2 "" H 2400 1950 50  0001 C CNN
-F 3 "" H 2400 1950 50  0001 C CNN
-	1    2400 1950
-	1    0    0    -1  
-$EndComp
 $Comp
 L Input I1
 U 1 1 5AC3D559
@@ -146,20 +133,4 @@ F 3 "" H 5350 1400 60  0001 C CNN
 	1    5300 1450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6050 2850 5600 2850
-Wire Wire Line
-	5600 2750 6050 2750
-Wire Wire Line
-	6050 2650 5600 2650
-Wire Wire Line
-	5600 2550 6050 2550
-Wire Wire Line
-	6050 2450 5600 2450
-Wire Wire Line
-	5600 2350 6050 2350
-Wire Wire Line
-	6050 2250 5600 2250
-Wire Wire Line
-	5600 2150 6050 2150
 $EndSCHEMATC

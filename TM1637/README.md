@@ -1,7 +1,7 @@
-MAX 7219
-========
+TM1637
+======
 
-The MAX 7219 can drive six eight segment displays, or a 6x8 LED matrix, as well as upto 16 buttons.
+The TM1637 can drive six eight segment displays, or a 6x8 LED matrix, as well as upto 16 buttons.
 
 The module only has 8 buttons, however, you can switch between the two banks of buttons using a switch.
 
@@ -19,4 +19,5 @@ The name of the module is missing. It reads "Module Name". Oops.
 
 Not printed.
 
+Renamed the directory.
 Corrected the module name.

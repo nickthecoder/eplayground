@@ -32,7 +32,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:eplay
-LIBS:MAX7219-cache
+LIBS:TM1637-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -58,17 +58,6 @@ SDA
 Text Label 2250 2800 0    60   ~ 0
 SCL
 $Comp
-L Earth #PWR01
-U 1 1 5AC24527
-P 2250 2100
-F 0 "#PWR01" H 2250 1850 50  0001 C CNN
-F 1 "Earth" H 2250 1950 50  0001 C CNN
-F 2 "" H 2250 2100 50  0001 C CNN
-F 3 "" H 2250 2100 50  0001 C CNN
-	1    2250 2100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Output O1
 U 1 1 5AC3D61D
 P 2550 1600
@@ -91,22 +80,11 @@ F 3 "" H 4500 1750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Headers8L H1
-U 1 1 5ACCD535
-P 3150 2050
-F 0 "H1" H 3150 1000 60  0000 C CNN
-F 1 "Headers8L" H 3200 2000 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3200 2000 60  0001 C CNN
-F 3 "" H 3200 2000 60  0001 C CNN
-	1    3150 2050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Conn_01x02 J1
 U 1 1 5ACCD61E
 P 3800 1900
 F 0 "J1" H 3800 2000 50  0000 C CNN
-F 1 "Conn_01x02" H 3800 1700 50  0000 C CNN
+F 1 "Select" H 3800 1700 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3800 1900 50  0001 C CNN
 F 3 "" H 3800 1900 50  0001 C CNN
 	1    3800 1900
@@ -121,7 +99,7 @@ L Conn_01x06 J3
 U 1 1 5ACCD806
 P 5150 3000
 F 0 "J3" H 5150 3300 50  0000 C CNN
-F 1 "Conn_01x06" H 5150 2600 50  0000 C CNN
+F 1 "Grids" H 5150 2600 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 5150 3000 50  0001 C CNN
 F 3 "" H 5150 3000 50  0001 C CNN
 	1    5150 3000
@@ -132,7 +110,7 @@ L Conn_01x08 J2
 U 1 1 5ACCD86B
 P 5150 2200
 F 0 "J2" H 5150 2600 50  0000 C CNN
-F 1 "Conn_01x08" H 5150 1700 50  0000 C CNN
+F 1 "Segments" H 5150 1700 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 5150 2200 50  0001 C CNN
 F 3 "" H 5150 2200 50  0001 C CNN
 	1    5150 2200
@@ -226,22 +204,6 @@ F 3 "" H 6350 4500 50  0001 C CNN
 	1    6350 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2250 2300 2850 2300
-Wire Wire Line
-	2250 2400 2850 2400
-Wire Wire Line
-	2250 2500 2850 2500
-Wire Wire Line
-	2850 2600 2250 2600
-Wire Wire Line
-	2250 2700 2850 2700
-Wire Wire Line
-	2850 2800 2250 2800
-Wire Wire Line
-	2250 2900 2850 2900
-Wire Wire Line
-	2850 3000 2250 3000
 Wire Wire Line
 	6100 1900 4950 1900
 Wire Wire Line
@@ -359,4 +321,31 @@ Wire Wire Line
 	4000 3300 4000 3700
 Wire Wire Line
 	3900 4800 3900 4100
+$Comp
+L Conn_01x08 J4
+U 1 1 5AFEC8DF
+P 3000 2600
+F 0 "J4" H 3000 3000 50  0000 C CNN
+F 1 "Choice" H 3000 2100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3000 2600 50  0001 C CNN
+F 3 "" H 3000 2600 50  0001 C CNN
+	1    3000 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2300 2250 2300
+Wire Wire Line
+	2250 2400 2800 2400
+Wire Wire Line
+	2800 2500 2250 2500
+Wire Wire Line
+	2250 2600 2800 2600
+Wire Wire Line
+	2800 2700 2250 2700
+Wire Wire Line
+	2250 2800 2800 2800
+Wire Wire Line
+	2800 2900 2250 2900
+Wire Wire Line
+	2250 3000 2800 3000
 $EndSCHEMATC

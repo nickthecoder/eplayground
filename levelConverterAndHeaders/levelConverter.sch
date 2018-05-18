@@ -32,7 +32,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:eplay
-LIBS:levelConverter-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -69,17 +68,6 @@ Text Label 1750 2900 0    60   ~ 0
 L6
 Text Label 1750 3000 0    60   ~ 0
 L7
-$Comp
-L Earth #PWR01
-U 1 1 5AC24527
-P 1750 2100
-F 0 "#PWR01" H 1750 1850 50  0001 C CNN
-F 1 "Earth" H 1750 1950 50  0001 C CNN
-F 2 "" H 1750 2100 50  0001 C CNN
-F 3 "" H 1750 2100 50  0001 C CNN
-	1    1750 2100
-	1    0    0    -1  
-$EndComp
 $Comp
 L Input I1
 U 1 1 5AC3D559
@@ -233,39 +221,6 @@ F 3 "" H 8650 1550 60  0001 C CNN
 	1    8600 1600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Headers8L H1
-U 1 1 5AE76E66
-P 7550 2050
-F 0 "H1" H 7550 1000 60  0000 C CNN
-F 1 "Data" H 7600 2000 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 7600 2000 60  0001 C CNN
-F 3 "" H 7600 2000 60  0001 C CNN
-	1    7550 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Headers8L H2
-U 1 1 5AE76ECE
-P 9300 2050
-F 0 "H2" H 9300 1000 60  0000 C CNN
-F 1 "GND" H 9350 2000 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 9350 2000 60  0001 C CNN
-F 3 "" H 9350 2000 60  0001 C CNN
-	1    9300 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Headers8L H3
-U 1 1 5AE76F97
-P 9750 2050
-F 0 "H3" H 9750 1000 60  0000 C CNN
-F 1 "VCC" H 9800 2000 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 9800 2000 60  0001 C CNN
-F 3 "" H 9800 2000 60  0001 C CNN
-	1    9750 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3300 2300 4800 2300
 Wire Wire Line
@@ -343,23 +298,23 @@ Wire Wire Line
 Wire Wire Line
 	7250 1900 8300 1900
 Wire Wire Line
-	7250 2000 9650 2000
+	7250 2000 9450 2000
 Wire Wire Line
 	7250 2100 9000 2100
 Wire Wire Line
-	8300 2300 7250 2300
+	7250 2300 8300 2300
 Wire Wire Line
 	7250 2400 8300 2400
 Wire Wire Line
-	8300 2500 7250 2500
+	7250 2500 8300 2500
 Wire Wire Line
 	7250 2600 8300 2600
 Wire Wire Line
-	8300 2700 7250 2700
+	7250 2700 8300 2700
 Wire Wire Line
 	7250 2800 8300 2800
 Wire Wire Line
-	8300 2900 7250 2900
+	7250 2900 8300 2900
 Wire Wire Line
 	7250 3000 8300 3000
 Wire Wire Line
@@ -377,9 +332,9 @@ Connection ~ 9450 2600
 Connection ~ 9450 2500
 Connection ~ 9450 2400
 Wire Wire Line
-	9450 2000 9450 3250
+	9450 1650 9450 3250
 Text Label 7950 2100 0    60   ~ 0
-GND
+GND2
 Connection ~ 9000 2300
 Connection ~ 8300 2000
 Connection ~ 8300 2100
@@ -433,25 +388,25 @@ Wire Wire Line
 Wire Wire Line
 	2700 2800 2900 2800
 Wire Wire Line
-	2900 3300 2600 3300
+	2600 3300 2900 3300
 Wire Wire Line
-	2600 3300 2600 1900
+	2600 1900 2600 3300
 Wire Wire Line
 	2500 1900 2500 3800
 Wire Wire Line
 	2500 3800 2900 3800
 Wire Wire Line
-	2400 4300 2400 1900
+	2400 1900 2400 4300
 Wire Wire Line
-	2900 4300 2400 4300
+	2400 4300 2900 4300
 Wire Wire Line
-	2900 4800 2300 4800
+	2300 4800 2900 4800
 Wire Wire Line
-	2300 4800 2300 1900
+	2300 1900 2300 4800
 Wire Wire Line
-	2900 5350 2200 5350
+	2200 5350 2900 5350
 Wire Wire Line
-	2200 5350 2200 1900
+	2200 1900 2200 5350
 Wire Wire Line
 	2100 1900 2100 5950
 Wire Wire Line
@@ -507,35 +462,31 @@ $EndComp
 Wire Wire Line
 	9200 3450 9550 3450
 Text Label 9750 3450 0    60   ~ 0
-GND
+GND2
 $Comp
 L Conn_01x01 J3
 U 1 1 5AE82489
-P 9300 1850
-F 0 "J3" H 9300 1950 50  0000 C CNN
-F 1 "S" H 9300 1750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 9300 1850 50  0001 C CNN
-F 3 "" H 9300 1850 50  0001 C CNN
-	1    9300 1850
+P 9350 1850
+F 0 "J3" H 9350 1950 50  0000 C CNN
+F 1 "S" H 9350 1750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 9350 1850 50  0001 C CNN
+F 3 "" H 9350 1850 50  0001 C CNN
+	1    9350 1850
 	0    1    1    0   
 $EndComp
 $Comp
 L Conn_01x03 J4
 U 1 1 5AE82510
-P 9650 1850
-F 0 "J4" H 9650 2050 50  0000 C CNN
-F 1 "Term" H 9650 1650 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_3pol" H 9650 1850 50  0001 C CNN
-F 3 "" H 9650 1850 50  0001 C CNN
-	1    9650 1850
-	0    1    1    0   
+P 9450 1450
+F 0 "J4" H 9450 1650 50  0000 C CNN
+F 1 "Term" H 9450 1250 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_3pol" H 9450 1450 50  0001 C CNN
+F 3 "" H 9450 1450 50  0001 C CNN
+	1    9450 1450
+	0    -1   -1   0   
 $EndComp
-Text Label 9750 1650 0    60   ~ 0
-GND
-Wire Wire Line
-	9550 1650 9300 1650
-Wire Wire Line
-	9650 2000 9650 1650
+Text Label 9550 1650 0    60   ~ 0
+GND2
 Connection ~ 9450 2000
 Wire Wire Line
 	9450 3250 9650 3250
@@ -544,6 +495,60 @@ Wire Wire Line
 Connection ~ 9450 3000
 Text Notes 9950 3950 2    60   ~ 0
 Option for one triple\nusing screw terminal
-Text Notes 9950 1550 2    60   ~ 0
+Text Notes 9950 1300 2    60   ~ 0
 Option for one triple\nusing screw terminal
+$Comp
+L Conn_01x08 J5
+U 1 1 5AFEC944
+P 9200 2600
+F 0 "J5" H 9200 3000 50  0000 C CNN
+F 1 "GND" H 9200 2100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 9200 2600 50  0001 C CNN
+F 3 "" H 9200 2600 50  0001 C CNN
+	1    9200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x08 J6
+U 1 1 5AFEC9E1
+P 9650 2600
+F 0 "J6" H 9650 3000 50  0000 C CNN
+F 1 "VCC" H 9650 2100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 9650 2600 50  0001 C CNN
+F 3 "" H 9650 2600 50  0001 C CNN
+	1    9650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 5AFECBDF
+P 4400 1350
+F 0 "#FLG01" H 4400 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 4400 1500 50  0000 C CNN
+F 2 "" H 4400 1350 50  0001 C CNN
+F 3 "" H 4400 1350 50  0001 C CNN
+	1    4400 1350
+	1    0    0    -1  
+$EndComp
+Text Label 7950 2000 0    60   ~ 0
+VCC2
+$Comp
+L Conn_01x08 J7
+U 1 1 5AFED967
+P 7850 2600
+F 0 "J7" H 7850 3000 50  0000 C CNN
+F 1 "Data" H 7850 2100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 7850 2600 50  0001 C CNN
+F 3 "" H 7850 2600 50  0001 C CNN
+	1    7850 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 7650 2300
+Connection ~ 7650 2400
+Connection ~ 7650 2500
+Connection ~ 7650 2600
+Connection ~ 7650 2700
+Connection ~ 7650 2800
+Connection ~ 7650 2900
+Connection ~ 7650 3000
 $EndSCHEMATC
