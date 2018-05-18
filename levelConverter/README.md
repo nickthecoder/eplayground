@@ -8,7 +8,7 @@ all eight signals.
 ## Notes
 
 I think I should have added headers to enable/disable each of the eight lines as it is likely that a project
-will need to only convert SOME of the GPIOs. On second thoughts, it should be fine.
+will need to only convert SOME of the GPIOs. On second thoughts, it should be fine. Need to check!
 
 There is a half-sized version of this module, which uses 9 pin resistor packs, instead of the axial resistors
 on this module.

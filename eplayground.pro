@@ -1,4 +1,4 @@
-update=Wed 04 Apr 2018 13:52:50 BST
+update=Fri 18 May 2018 10:18:02 BST
 version=1
 last_client=kicad
 [cvpcb]
@@ -23,9 +23,11 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=library;library/eplay.pretty;library/arduino/Arduino.pretty
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -56,8 +58,6 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=eplay
-LibName31=Switch
-LibName32=library/arduino/arduino
-[general]
-version=1
+LibName30=Switch
+LibName31=library/arduino/arduino
+LibName32=library/eplay

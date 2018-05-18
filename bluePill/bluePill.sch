@@ -32,7 +32,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:eplay
-LIBS:arduino
 LIBS:bluePill-cache
 EELAYER 25 0
 EELAYER END
@@ -238,26 +237,14 @@ Text Label 1950 1250 2    60   ~ 0
 B13
 Text Label 1950 1150 2    60   ~ 0
 B12
-Wire Wire Line
-	1050 2550 1950 2550
-Wire Wire Line
-	1050 2450 1950 2450
 Text Label 1350 1650 2    60   ~ 0
 TX1
 Text Label 1350 1750 2    60   ~ 0
 RX1
-Wire Wire Line
-	1050 1650 1950 1650
-Wire Wire Line
-	1050 1750 1950 1750
 Text Label 3250 2350 0    60   ~ 0
 RX2
 Text Label 3250 2450 0    60   ~ 0
 TX2
-Wire Wire Line
-	2850 2350 3850 2350
-Wire Wire Line
-	2850 2450 3850 2450
 Text Label 9000 2050 2    60   ~ 0
 A6
 Text Label 9000 1950 2    60   ~ 0
@@ -274,12 +261,6 @@ Text Label 1350 1350 2    60   ~ 0
 MISO2
 Text Label 1350 1250 2    60   ~ 0
 SCK2
-Wire Wire Line
-	1050 1250 1950 1250
-Wire Wire Line
-	1950 1350 1350 1350
-Wire Wire Line
-	1050 1450 1950 1450
 $Comp
 L Output O4
 U 1 1 5AC9FE6A
@@ -322,12 +303,6 @@ Text Label 8100 4300 2    60   ~ 0
 TX2
 Text Label 8100 4400 2    60   ~ 0
 RX2
-Wire Wire Line
-	2850 2150 3850 2150
-Wire Wire Line
-	2850 1950 3850 1950
-Wire Wire Line
-	2850 2050 3850 2050
 Text Label 7900 2150 2    60   ~ 0
 A11
 Text Label 7900 2250 2    60   ~ 0
@@ -354,10 +329,6 @@ Text Label 7150 4000 2    60   ~ 0
 A4
 Text Label 3250 1550 0    60   ~ 0
 SDA2
-Wire Wire Line
-	2850 1550 3850 1550
-Wire Wire Line
-	2850 1650 3850 1650
 Text Label 1400 2450 2    60   ~ 0
 SCL1
 Text Label 3600 1550 0    60   ~ 0
@@ -379,6 +350,68 @@ F 3 "" H 4050 2050 50  0001 C CNN
 	1    4050 2050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Conn_01x20 J1
+U 1 1 5AE98591
+P 850 2050
+F 0 "J1" H 850 3050 50  0000 C CNN
+F 1 "Header2" H 850 950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x20_Pitch2.54mm" H 850 2050 50  0001 C CNN
+F 3 "" H 850 2050 50  0001 C CNN
+	1    850  2050
+	-1   0    0    -1  
+$EndComp
+Text Label 7900 1650 2    60   ~ 0
+VCC
+Text Label 5100 3350 2    60   ~ 0
+VBAT
+Text Label 5100 3250 2    60   ~ 0
+5V
+Text Label 5100 3650 2    60   ~ 0
+RESET
+Text Label 5100 3450 2    60   ~ 0
+VCC
+Text Label 5100 3550 2    60   ~ 0
+GND
+$Comp
+L Conn_01x05 J3
+U 1 1 5AFAA468
+P 5300 3450
+F 0 "J3" H 5300 3750 50  0000 C CNN
+F 1 "Power" H 5300 3150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 5300 3450 50  0001 C CNN
+F 3 "" H 5300 3450 50  0001 C CNN
+	1    5300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2550 1950 2550
+Wire Wire Line
+	1050 2450 1950 2450
+Wire Wire Line
+	1050 1650 1950 1650
+Wire Wire Line
+	1050 1750 1950 1750
+Wire Wire Line
+	2850 2350 3850 2350
+Wire Wire Line
+	2850 2450 3850 2450
+Wire Wire Line
+	1050 1250 1950 1250
+Wire Wire Line
+	1050 1350 1950 1350
+Wire Wire Line
+	1050 1450 1950 1450
+Wire Wire Line
+	2850 2150 3850 2150
+Wire Wire Line
+	2850 1950 3850 1950
+Wire Wire Line
+	2850 2050 3850 2050
+Wire Wire Line
+	2850 1550 3850 1550
+Wire Wire Line
+	2850 1650 3850 1650
 Wire Wire Line
 	2850 1150 3850 1150
 Wire Wire Line
@@ -405,21 +438,8 @@ Wire Wire Line
 	3850 2950 2850 2950
 Wire Wire Line
 	2850 3050 3850 3050
-$Comp
-L Conn_01x20 J1
-U 1 1 5AE98591
-P 850 2050
-F 0 "J1" H 850 3050 50  0000 C CNN
-F 1 "Header2" H 850 950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x20_Pitch2.54mm" H 850 2050 50  0001 C CNN
-F 3 "" H 850 2050 50  0001 C CNN
-	1    850  2050
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	1950 1150 1050 1150
-Wire Wire Line
-	1300 1350 1050 1350
 Wire Wire Line
 	1050 1550 1950 1550
 Wire Wire Line
@@ -444,27 +464,32 @@ Wire Wire Line
 	1950 2950 1050 2950
 Wire Wire Line
 	1050 3050 1950 3050
-Text Label 7900 1650 2    60   ~ 0
-VCC
-Text Label 5100 3350 2    60   ~ 0
-VBAT
-Text Label 5100 3250 2    60   ~ 0
-5V
-Text Label 5100 3650 2    60   ~ 0
-RESET
-Text Label 5100 3450 2    60   ~ 0
-VCC
-Text Label 5100 3550 2    60   ~ 0
-GND
 $Comp
-L Conn_01x05 J3
-U 1 1 5AFAA468
-P 5300 3450
-F 0 "J3" H 5300 3750 50  0000 C CNN
-F 1 "Power" H 5300 3150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 5300 3450 50  0001 C CNN
-F 3 "" H 5300 3450 50  0001 C CNN
-	1    5300 3450
+L PWR_FLAG #FLG01
+U 1 1 5AFEA06F
+P 4650 3300
+F 0 "#FLG01" H 4650 3375 50  0001 C CNN
+F 1 "PWR_FLAG" H 4650 3450 50  0000 C CNN
+F 2 "" H 4650 3300 50  0001 C CNN
+F 3 "" H 4650 3300 50  0001 C CNN
+	1    4650 3300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5100 3350 4650 3350
+Wire Wire Line
+	4650 3350 4650 3300
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 5AFEA32E
+P 6650 1550
+F 0 "#FLG02" H 6650 1625 50  0001 C CNN
+F 1 "PWR_FLAG" H 6650 1700 50  0000 C CNN
+F 2 "" H 6650 1550 50  0001 C CNN
+F 3 "" H 6650 1550 50  0001 C CNN
+	1    6650 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 1550 6650 1550
 $EndSCHEMATC

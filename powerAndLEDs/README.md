@@ -1,22 +1,20 @@
 Power
 =====
 
-Connects a DC Barrel Jack to the VIN pin of the standard connector.
+A half-sized module to connect power via a DC Barrel Jack or screw terminals to the VIN pin of the standard connector.
 
 I use this in conjunction with the Strip LED modules to power strips of LEDs.
 
 LEDs
 ====
 
-As this is a half-sized module, I've included another half-sized module which is simply a bank of LEDs for each pin.
+A half-sized module which is simply a bank of LEDs for each pin.
 
 Use jumpers links between H1 and H2 to enable each of the LEDs.
 
 ## Soldering Notes
 
 **Power Module**
-
-There's an option to add a screw connector in the middle of the board.
 
 Check the orientation of the toggle switch SW1.
 
