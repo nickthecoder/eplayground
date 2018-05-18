@@ -1,4 +1,4 @@
-update=Fri 18 May 2018 10:18:02 BST
+update=Fri 18 May 2018 16:09:46 BST
 version=1
 last_client=kicad
 [cvpcb]
@@ -27,7 +27,7 @@ ModuleOutlineThickness=0.15
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=library
 [eeschema/libraries]
 LibName1=power
 LibName2=device

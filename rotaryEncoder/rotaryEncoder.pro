@@ -1,4 +1,4 @@
-update=Wed 02 May 2018 11:36:11 BST
+update=Fri 18 May 2018 19:17:48 BST
 version=1
 last_client=eeschema
 [general]
@@ -64,4 +64,3 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=../library/eplay
-LibName34=/home/nick/projects/eplayground/pcb/library/Rotary-Encoders.pretty/Schematic-Symbols/Rotary-Encoders

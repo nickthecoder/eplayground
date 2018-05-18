@@ -1,4 +1,4 @@
-update=Wed 04 Apr 2018 12:40:13 BST
+update=Fri 18 May 2018 16:16:39 BST
 version=1
 last_client=eeschema
 [general]
@@ -29,7 +29,7 @@ BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
 [eeschema]
 version=1
-LibDir=
+LibDir=../library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -63,4 +63,4 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=/home/nick/projects/eplayground/pcb/library/eplay
+LibName33=eplay

@@ -31,7 +31,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:eplay
-LIBS:stripLED-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -68,17 +67,6 @@ Text Label 2400 2750 0    60   ~ 0
 L6
 Text Label 2400 2850 0    60   ~ 0
 L7
-$Comp
-L Earth #PWR01
-U 1 1 5AC24527
-P 2400 1950
-F 0 "#PWR01" H 2400 1700 50  0001 C CNN
-F 1 "Earth" H 2400 1800 50  0001 C CNN
-F 2 "" H 2400 1950 50  0001 C CNN
-F 3 "" H 2400 1950 50  0001 C CNN
-	1    2400 1950
-	1    0    0    -1  
-$EndComp
 $Comp
 L Input I1
 U 1 1 5AC3D559
@@ -155,17 +143,6 @@ F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 4000 2900 50  0001 C CN
 F 3 "" H 4000 2900 50  0001 C CNN
 	1    4000 2900
 	0    1    -1   0   
-$EndComp
-$Comp
-L Headers8L H1
-U 1 1 5AC82551
-P 3350 1900
-F 0 "H1" H 3350 850 60  0000 C CNN
-F 1 "Choice" H 3400 1850 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3400 1850 60  0001 C CNN
-F 3 "" H 3400 1850 60  0001 C CNN
-	1    3350 1900
-	1    0    0    -1  
 $EndComp
 Text Label 4100 3100 0    60   ~ 0
 VIN
@@ -568,4 +545,15 @@ Text Label 8500 3850 0    60   ~ 0
 gate5
 Text Label 8500 3750 0    60   ~ 0
 gate6
+$Comp
+L Conn_01x08 J5
+U 1 1 5AFF1C50
+P 3250 2450
+F 0 "J5" H 3250 2850 50  0000 C CNN
+F 1 "Choice" H 3250 1950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3250 2450 50  0001 C CNN
+F 3 "" H 3250 2450 50  0001 C CNN
+	1    3250 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

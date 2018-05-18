@@ -32,7 +32,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:eplay
-LIBS:wemos-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -53,17 +52,6 @@ Text Label 6000 1950 2    60   ~ 0
 VCC
 Text Label 6000 1850 2    60   ~ 0
 VIN
-$Comp
-L Earth #PWR01
-U 1 1 5AC24527
-P 6000 2050
-F 0 "#PWR01" H 6000 1800 50  0001 C CNN
-F 1 "Earth" H 6000 1900 50  0001 C CNN
-F 2 "" H 6000 2050 50  0001 C CNN
-F 3 "" H 6000 2050 50  0001 C CNN
-	1    6000 2050
-	1    0    0    -1  
-$EndComp
 $Comp
 L Output O1
 U 1 1 5AC3D61D

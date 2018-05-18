@@ -168,8 +168,6 @@ D12
 Text Label 4200 2750 0    60   ~ 0
 D13
 Wire Wire Line
-	4200 2450 4550 2450
-Wire Wire Line
 	4200 2550 4550 2550
 Wire Wire Line
 	4200 2650 4550 2650
@@ -244,17 +242,6 @@ Text Label 1600 3250 2    60   ~ 0
 GND
 Text Label 1600 3450 2    60   ~ 0
 VCC
-$Comp
-L FTDI FT1
-U 1 1 5AE78A82
-P 6650 1850
-F 0 "FT1" H 6650 1500 60  0000 C CNN
-F 1 "FTDI" H 6650 2200 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 6650 1850 60  0001 C CNN
-F 3 "" H 6650 1850 60  0001 C CNN
-	1    6650 1850
-	1    0    0    -1  
-$EndComp
 Text Label 6950 1600 0    60   ~ 0
 GND
 Text Label 6950 1700 0    60   ~ 0
@@ -269,17 +256,6 @@ Text Label 6950 2100 0    60   ~ 0
 RESET
 Text Label 4200 3600 0    60   ~ 0
 RESET
-$Comp
-L FTDI FT2
-U 1 1 5AE78D08
-P 7550 1850
-F 0 "FT2" H 7550 1500 60  0000 C CNN
-F 1 "FTDI" H 7550 2200 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 7550 1850 60  0001 C CNN
-F 3 "" H 7550 1850 60  0001 C CNN
-	1    7550 1850
-	1    0    0    -1  
-$EndComp
 Text Label 7850 1600 0    60   ~ 0
 GND
 Text Label 7850 1700 0    60   ~ 0
@@ -292,4 +268,44 @@ Text Label 7850 1900 0    60   ~ 0
 RXD
 Text Label 7850 2100 0    60   ~ 0
 RESET
+$Comp
+L Conn_01x06 J1
+U 1 1 5AFEF05A
+P 6750 1800
+F 0 "J1" H 6750 2100 50  0000 C CNN
+F 1 "ICSP" H 6750 1400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 6750 1800 50  0001 C CNN
+F 3 "" H 6750 1800 50  0001 C CNN
+	1    6750 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J2
+U 1 1 5AFEF100
+P 7650 1800
+F 0 "J2" H 7650 2100 50  0000 C CNN
+F 1 "ICSP" H 7650 1400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 7650 1800 50  0001 C CNN
+F 3 "" H 7650 1800 50  0001 C CNN
+	1    7650 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 5AFEF1E7
+P 5000 3200
+F 0 "#FLG01" H 5000 3275 50  0001 C CNN
+F 1 "PWR_FLAG" H 5000 3350 50  0000 C CNN
+F 2 "" H 5000 3200 50  0001 C CNN
+F 3 "" H 5000 3200 50  0001 C CNN
+	1    5000 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 3200 5300 3200
+NoConn ~ 4200 2950
+NoConn ~ 4200 3050
+NoConn ~ 4200 3150
+NoConn ~ 4200 3250
+NoConn ~ 4200 3350
 $EndSCHEMATC

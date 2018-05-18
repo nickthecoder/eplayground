@@ -31,8 +31,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:eplay
 LIBS:arduino
+LIBS:eplay
 LIBS:nano-cache
 EELAYER 25 0
 EELAYER END
@@ -324,4 +324,17 @@ Text Label 950  2000 0    60   ~ 0
 GND
 Text Label 950  1900 0    60   ~ 0
 VIN
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 5AFEEDBE
+P 5650 1450
+F 0 "#FLG01" H 5650 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 5650 1600 50  0000 C CNN
+F 2 "" H 5650 1450 50  0001 C CNN
+F 3 "" H 5650 1450 50  0001 C CNN
+	1    5650 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1450 5650 1450
 $EndSCHEMATC

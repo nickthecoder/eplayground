@@ -1,4 +1,4 @@
-update=Wed 04 Apr 2018 12:48:01 BST
+update=Fri 18 May 2018 19:24:40 BST
 version=1
 last_client=eeschema
 [general]
@@ -29,7 +29,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=
+LibDir=../library
 [eeschema/libraries]
 LibName1=power
 LibName2=device

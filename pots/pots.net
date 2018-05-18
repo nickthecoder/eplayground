@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /home/nick/projects/eplayground/pcb/pots/pots.sch)
-    (date "Tue 01 May 2018 15:56:26 BST")
+    (source /home/nick/projects/eplayground/pots/pots.sch)
+    (date "Fri 18 May 2018 16:15:10 BST")
     (tool "Eeschema 4.0.7+dfsg1-1~bpo9+1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -95,9 +95,9 @@
         (field (name Reference) I)
         (field (name Value) Input))
       (pins
-        (pin (num 1) (name VIN) (type power_in))
-        (pin (num 2) (name VCC) (type power_in))
-        (pin (num 3) (name GND) (type power_in))
+        (pin (num 1) (name VIN) (type power_out))
+        (pin (num 2) (name VCC) (type power_out))
+        (pin (num 3) (name GND) (type power_out))
         (pin (num 4) (name NC) (type NotConnected))
         (pin (num 5) (name L0) (type BiDi))
         (pin (num 6) (name L1) (type BiDi))
@@ -114,9 +114,9 @@
         (field (name Reference) O)
         (field (name Value) Output))
       (pins
-        (pin (num 1) (name VIN) (type power_out))
-        (pin (num 2) (name VCC) (type power_out))
-        (pin (num 3) (name GND) (type power_out))
+        (pin (num 1) (name VIN) (type power_in))
+        (pin (num 2) (name VCC) (type power_in))
+        (pin (num 3) (name GND) (type power_in))
         (pin (num 4) (name NC) (type NotConnected))
         (pin (num 5) (name L0) (type BiDi))
         (pin (num 6) (name L1) (type BiDi))
@@ -138,12 +138,12 @@
         (pin (num 2) (name 2) (type passive))
         (pin (num 3) (name 3) (type passive)))))
   (libraries
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
+    (library (logical eplay)
+      (uri /home/nick/projects/eplayground/library/eplay.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
-    (library (logical eplay)
-      (uri /home/nick/projects/eplayground/pcb/library/eplay.lib)))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib)))
   (nets
     (net (code 1) (name /GND2)
       (node (ref O2) (pin 3))

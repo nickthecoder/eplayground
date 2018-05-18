@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /home/nick/projects/eplayground/pcb/shift-595/shift.sch)
-    (date "Mon 30 Apr 2018 16:08:53 BST")
+    (source /home/nick/projects/eplayground/shift-595/shift.sch)
+    (date "Fri 18 May 2018 19:19:38 BST")
     (tool "Eeschema 4.0.7+dfsg1-1~bpo9+1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -42,7 +42,7 @@
     (comp (ref H1)
       (value Headers8L)
       (footprint Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm)
-      (libsource (lib eplay) (part Headers8L))
+      (libsource (lib shift-cache) (part Headers8L))
       (sheetpath (names /) (tstamps /))
       (tstamp 5AC75392))
     (comp (ref J1)
@@ -171,7 +171,7 @@
       (pins
         (pin (num 1) (name G1) (type passive))
         (pin (num 2) (name G2) (type passive))))
-    (libpart (lib eplay) (part Headers8L)
+    (libpart (lib shift-cache) (part Headers8L)
       (footprints
         (fp Pin_Header*)
         (fp Socket_Strip*))
@@ -194,9 +194,9 @@
         (field (name Reference) I)
         (field (name Value) Input))
       (pins
-        (pin (num 1) (name VIN) (type power_in))
-        (pin (num 2) (name VCC) (type power_in))
-        (pin (num 3) (name GND) (type power_in))
+        (pin (num 1) (name VIN) (type power_out))
+        (pin (num 2) (name VCC) (type power_out))
+        (pin (num 3) (name GND) (type power_out))
         (pin (num 4) (name NC) (type NotConnected))
         (pin (num 5) (name L0) (type BiDi))
         (pin (num 6) (name L1) (type BiDi))
@@ -213,9 +213,9 @@
         (field (name Reference) O)
         (field (name Value) Output))
       (pins
-        (pin (num 1) (name VIN) (type power_out))
-        (pin (num 2) (name VCC) (type power_out))
-        (pin (num 3) (name GND) (type power_out))
+        (pin (num 1) (name VIN) (type power_in))
+        (pin (num 2) (name VCC) (type power_in))
+        (pin (num 3) (name GND) (type power_in))
         (pin (num 4) (name NC) (type NotConnected))
         (pin (num 5) (name L0) (type BiDi))
         (pin (num 6) (name L1) (type BiDi))
@@ -233,7 +233,9 @@
     (library (logical 74xx)
       (uri /usr/share/kicad/library/74xx.lib))
     (library (logical eplay)
-      (uri /home/nick/projects/eplayground/pcb/shift-595/../library/eplay.lib)))
+      (uri /home/nick/projects/eplayground/shift-595/../library/eplay.lib))
+    (library (logical shift-cache)
+      (uri /home/nick/projects/eplayground/shift-595/shift-cache.lib)))
   (nets
     (net (code 1) (name /L2)
       (node (ref J5) (pin 2))
